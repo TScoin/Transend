@@ -22,8 +22,9 @@
 <ul>
 <li>PoW Phase: 28 900 020 Coins</li>
 </ul>
+<p><strong><span style="color: #800080;"><em>Premine:</em></span></strong></p>
 <ul>
-<li>[block# 1] 100 000 Premine to support exchange listings.</li>
+<li>[block# 1] 100 000 Coins premine to support exchange listings.</li>
 </ul>
 <br/>
 <p>&nbsp;</p>
