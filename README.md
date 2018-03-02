@@ -8,9 +8,15 @@
 <p><strong><span style="color: #800080;"><em>PoW Block Reward:</em></span></strong></p>
 <ul>
 <li>[block# 2-480] 5 coins in block</li>
+<li>[block# 481-960] 10 coins in block</li>
+<li>[block# 961-1440] 15 coins in block</li>
+<li>[block# 1441-2000] 20 coins in block</li>
+<li>[block# 2001-5000] 25 coins in block</li>
+<li>[block# 5001 - end of emission] 30 coins in block</li>
 </ul>
 <ul>
 <li>60 Minutes with Retargeting every Block</li>
+<li>Block time 3 minutes</li>
 </ul>
 <p><strong><span style="color: #800080;"><em>Max Coin Supply:</em></span></strong></p>
 <ul>
@@ -21,7 +27,7 @@
 </ul>
 <br/>
 <p>&nbsp;</p>
-<p>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</p>
+<p>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</p>
 <p>&nbsp;</p>
 <p>Transend is a cutting edge cryptocurrency, with many features not available in most other cryptocurrencies.</p>
 <p>Anonymized transactions using coin mixing technology, we call it <em>Hodgepodge</em>.</p>
