@@ -1,38 +1,59 @@
-<h2><strong>Transend Staging Repository (Version 1.0.0)</strong></h2>
-<p>More information at https://transendcoin.com</p>
-<p>Visit our ANN thread at https://bitcointalk.org/index.php?topic=1831629</p>
-<h3><strong>Coin specs:</strong></h3>
-<p><strong><span style="color: #800080;"><em>Algo:</em></span></strong></p>
-<ul>
-<li>Xevan</li>
-</ul>
-<p><strong><span style="color: #800080;"><em>PoW Block Reward:</em></span></strong></p>
-<ul>
-<li>[block# 2-480] 5 coins in block</li>
-<li>[block# 481-960] 10 coins in block</li>
-<li>[block# 961-1440] 15 coins in block</li>
-<li>[block# 1441-2000] 20 coins in block</li>
-<li>[block# 2001-5000] 25 coins in block</li>
-<li>[block# 5001 - end of emission] 30 coins in block</li>
-</ul>
-<p><strong><span style="color: #800080;"><em>Chain information:</em></span></strong></p>
-<ul>
-<li>60 Minutes with Retargeting every Block</li>
-<li>Block time 3 minutes</li>
-</ul>
-<p><strong><span style="color: #800080;"><em>Max Coin Supply:</em></span></strong></p>
-<ul>
-<li>PoW Phase: 28 900 020 Coins</li>
-</ul>
-<p><strong><span style="color: #800080;"><em>Premine:</em></span></strong></p>
-<ul>
-<li>[block# 1] 100 000 Coins premine to support exchange listings.</li>
-</ul>
-<br/>
-<p>&nbsp;</p>
-<p>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</p>
-<p>&nbsp;</p>
-<p>Transend is a cutting edge cryptocurrency, with many features not available in most other cryptocurrencies.</p>
-<p>Anonymized transactions using coin mixing technology, we call it <em>Hodgepodge</em>.</p>
-<p>Fast transactions featuring guaranteed zero confirmation transactions, we call it <em>SwiftTX</em>.</p>
-<p>Decentralized blockchain voting providing for consensus based advancement of the current Masternode technology used to secure the network and provide the above features, each Masternode is secured with collateral of 5000 TSC</p>
+### Usage
+
+To build dependencies for the current arch+OS:
+
+    make
+
+To build for another arch/OS:
+
+    make HOST=host-platform-triplet
+
+For example:
+
+    make HOST=x86_64-w64-mingw32 -j4
+
+A prefix will be generated that's suitable for plugging into Bitcoin's
+configure. In the above example, a dir named x86_64-w64-mingw32 will be
+created. To use it for Bitcoin:
+
+    ./configure --prefix=`pwd`/depends/x86_64-w64-mingw32
+
+Common `host-platform-triplets` for cross compilation are:
+
+- `i686-w64-mingw32` for Win32
+- `x86_64-w64-mingw32` for Win64
+- `x86_64-apple-darwin11` for MacOSX
+- `arm-linux-gnueabihf` for Linux ARM 32 bit
+- `aarch64-linux-gnu` for Linux ARM 64 bit
+
+No other options are needed, the paths are automatically configured.
+
+Dependency Options:
+The following can be set when running make: make FOO=bar
+
+    SOURCES_PATH: downloaded sources will be placed here
+    BASE_CACHE: built packages will be placed here
+    SDK_PATH: Path where sdk's can be found (used by OSX)
+    FALLBACK_DOWNLOAD_PATH: If a source file can't be fetched, try here before giving up
+    NO_QT: Don't download/build/cache qt and its dependencies
+    NO_WALLET: Don't download/build/cache libs needed to enable the wallet
+    NO_UPNP: Don't download/build/cache packages needed for enabling upnp
+    DEBUG: disable some optimizations and enable more runtime checking
+    HOST_ID_SALT: Optional salt to use when generating host package ids
+    BUILD_ID_SALT: Optional salt to use when generating build package ids
+
+If some packages are not built, for example `make NO_WALLET=1`, the appropriate
+options will be passed to bitcoin's configure. In this case, `--disable-wallet`.
+
+Additional targets:
+
+    download: run 'make download' to fetch all sources without building them
+    download-osx: run 'make download-osx' to fetch all sources needed for osx builds
+    download-win: run 'make download-win' to fetch all sources needed for win builds
+    download-linux: run 'make download-linux' to fetch all sources needed for linux builds
+
+### Other documentation
+
+- [description.md](description.md): General description of the depends system
+- [packages.md](packages.md): Steps for adding packages
+
