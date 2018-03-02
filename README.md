@@ -14,6 +14,7 @@
 <li>[block# 2001-5000] 25 coins in block</li>
 <li>[block# 5001 - end of emission] 30 coins in block</li>
 </ul>
+<p><strong><span style="color: #800080;"><em>Chain information:</em></span></strong></p>
 <ul>
 <li>60 Minutes with Retargeting every Block</li>
 <li>Block time 3 minutes</li>
