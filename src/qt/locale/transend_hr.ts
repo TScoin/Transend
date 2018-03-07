@@ -790,7 +790,7 @@
     </message>
     </context>
 <context>
-    <name>Transend-core</name>
+    <name>transend-core</name>
     <message>
         <source>Error</source>
         <translation>Greška</translation>

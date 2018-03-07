@@ -786,7 +786,7 @@
     </message>
     <message>
         <location line="+11"/>
-        <source>Request payments (generates QR codes and Transend: URIs)</source>
+        <source>Request payments (generates QR codes and transend: URIs)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1097,7 +1097,7 @@ Address: %4
     </message>
     <message>
         <location filename="../blockexplorer.cpp" line="+476"/>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (Transend.conf).</source>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (transend.conf).</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1927,7 +1927,7 @@ Please check the address and try again.</source>
 <context>
     <name>HodgepodgeConfig</name>
     <message>
-        <location filename="../forms/Hodgepodgeconfig.ui" line="+14"/>
+        <location filename="../forms/hodgepodgeconfig.ui" line="+14"/>
         <source>Configure Hodgepodge</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1987,7 +1987,7 @@ Please check the address and try again.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Hodgepodgeconfig.cpp" line="+42"/>
+        <location filename="../hodgepodgeconfig.cpp" line="+42"/>
         <location line="+14"/>
         <location line="+14"/>
         <source>Hodgepodge Configuration</source>
@@ -2152,7 +2152,7 @@ Please check the address and try again.</source>
     <message>
         <location line="+21"/>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/Transend-project/Transend-project-translations</source>
+https://www.transifex.com/transend-project/transend-project-translations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2562,13 +2562,13 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
     </message>
     <message>
         <location line="+1"/>
-        <source>To disable AutoMint add &apos;enablezeromint=0&apos; in Transend.conf.</source>
+        <source>To disable AutoMint add &apos;enablezeromint=0&apos; in transend.conf.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
         <source>AutoMint is currently disabled.
-To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1&apos; in Transend.conf</source>
+To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1&apos; in transend.conf</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2608,7 +2608,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="-108"/>
-        <source>Cannot start Transend: click-to-pay handler</source>
+        <source>Cannot start transend: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5666,7 +5666,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>ZTSCControlDialog</name>
     <message>
-        <location filename="../forms/zTSCcontroldialog.ui" line="+20"/>
+        <location filename="../forms/zxlrcontroldialog.ui" line="+20"/>
         <source>Select zTSC to Spend</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5698,9 +5698,9 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>Transend-core</name>
+    <name>transend-core</name>
     <message>
-        <location filename="../Transendstrings.cpp" line="+15"/>
+        <location filename="../transendstrings.cpp" line="+15"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation type="unfinished">(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
     </message>
@@ -5941,10 +5941,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+4"/>
-        <source>To use Transendd, or the -server option to Transend-qt, you must set an rpcpassword in the configuration file:
+        <source>To use transendd, or the -server option to transend-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=Transendrpc
+rpcuser=transendrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

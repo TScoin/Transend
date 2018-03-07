@@ -610,8 +610,8 @@
         <translation>Send coins to a Transend address</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Transend: URIs)</source>
-        <translation>Request payments (generates QR codes and Transend: URIs)</translation>
+        <source>Request payments (generates QR codes and transend: URIs)</source>
+        <translation>Request payments (generates QR codes and transend: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -837,8 +837,8 @@ Address: %4
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (Transend.conf).</source>
-        <translation>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (Transend.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (transend.conf).</source>
+        <translation>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (transend.conf).</translation>
     </message>
 </context>
 <context>
@@ -1719,9 +1719,9 @@ Please check the address and try again.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/Transend-project/Transend-project-translations</source>
+https://www.transifex.com/transend-project/transend-project-translations</source>
         <translation>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/Transend-project/Transend-project-translations</translation>
+https://www.transifex.com/transend-project/transend-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -2092,8 +2092,8 @@ https://www.transifex.com/Transend-project/Transend-project-translations</transl
         <translation>Invalid payment address %1</translation>
     </message>
     <message>
-        <source>Cannot start Transend: click-to-pay handler</source>
-        <translation>Cannot start Transend: click-to-pay handler</translation>
+        <source>Cannot start transend: click-to-pay handler</source>
+        <translation>Cannot start transend: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Transend address or malformed URI parameters.</source>
@@ -2996,8 +2996,8 @@ https://www.transifex.com/Transend-project/Transend-project-translations</transl
         <translation>The recipient address is not valid, please recheck.</translation>
     </message>
     <message>
-        <source>(Hodgepodge requires this amount to be rounded up to the nearest %1).</source>
-        <translation>(Hodgepodge requires this amount to be rounded up to the nearest %1).</translation>
+        <source>(hodgepodge requires this amount to be rounded up to the nearest %1).</source>
+        <translation>(hodgepodge requires this amount to be rounded up to the nearest %1).</translation>
     </message>
     <message>
         <source> split into %1 outputs using the UTXO splitter.</source>
@@ -3884,7 +3884,7 @@ https://www.transifex.com/Transend-project/Transend-project-translations</transl
     </message>
 </context>
 <context>
-    <name>Transend-core</name>
+    <name>transend-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
@@ -3946,8 +3946,8 @@ https://www.transifex.com/Transend-project/Transend-project-translations</transl
         <translation>Enable swifttx, show confirmations for locked transactions (bool, default: %s)</translation>
     </message>
     <message>
-        <source>Enable use of automated Hodgepodge for funds stored in this wallet (0-1, default: %u)</source>
-        <translation>Enable use of automated Hodgepodge for funds stored in this wallet (0-1, default: %u)</translation>
+        <source>Enable use of automated hodgepodge for funds stored in this wallet (0-1, default: %u)</source>
+        <translation>Enable use of automated hodgepodge for funds stored in this wallet (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
@@ -4082,10 +4082,10 @@ https://www.transifex.com/Transend-project/Transend-project-translations</transl
         <translation>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use Transendd, or the -server option to Transend-qt, you must set an rpcpassword in the configuration file:
+        <source>To use transendd, or the -server option to transend-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=Transendrpc
+rpcuser=transendrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -4093,10 +4093,10 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "Transend Alert" admin@foo.com
 </source>
-        <translation>To use Transendd, or the -server option to Transend-qt, you must set an rpcpassword in the configuration file:
+        <translation>To use transendd, or the -server option to transend-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=Transendrpc
+rpcuser=transendrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

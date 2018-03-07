@@ -610,7 +610,7 @@
         <translation>Verstuur munten naar een Transend adres</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Transend: URIs)</source>
+        <source>Request payments (generates QR codes and transend: URIs)</source>
         <translation>Vraag betaling aan (genereert QR-codes en Transend: URI's)</translation>
     </message>
     <message>
@@ -849,8 +849,8 @@ MultiSend: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (Transend.conf).</source>
-        <translation>Niet alle transacties worden getoond. Om alle transacties te bekijken moet u txindex=1 instellen in het configuratie bestand (Transend.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (transend.conf).</source>
+        <translation>Niet alle transacties worden getoond. Om alle transacties te bekijken moet u txindex=1 instellen in het configuratie bestand (transend.conf).</translation>
     </message>
 </context>
 <context>
@@ -1690,9 +1690,9 @@ Controleer het adres alsjeblieft en probeer het opnieuw.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/Transend-project/Transend-project-translations</source>
+https://www.transifex.com/transend-project/transend-project-translations</source>
         <translation>Taal ontbreekt of vertaling onvolledig? Help om bij te dragen aan vertalingen:
-https://www.transifex.com/Transend-project/Transend-project-translations</translation>
+https://www.transifex.com/transend-project/transend-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1961,8 +1961,8 @@ https://www.transifex.com/Transend-project/Transend-project-translations</transl
         <translation>Ongeldig betalingsadres %1</translation>
     </message>
     <message>
-        <source>Cannot start Transend: click-to-pay handler</source>
-        <translation>Kan Transend niet starten: click-to-pay handler</translation>
+        <source>Cannot start transend: click-to-pay handler</source>
+        <translation>Kan transend niet starten: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Transend address or malformed URI parameters.</source>
@@ -4282,7 +4282,7 @@ Wees alsjeblieft geduldig...</translation>
     </message>
 </context>
 <context>
-    <name>Transend-core</name>
+    <name>transend-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = houd tx meta data, bijvoorbeeld account eigenaar en betalingsverzoek informatie, 2 = drop tx meta data)</translation>
@@ -4476,10 +4476,10 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in de OpenSSL Toolkit &lt;https://www.openssl.org/&gt; en cryptografische software geschreven door Eric Young en UPnP software geschreven door Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use Transendd, or the -server option to Transend-qt, you must set an rpcpassword in the configuration file:
+        <source>To use transendd, or the -server option to transend-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=Transendrpc
+rpcuser=transendrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -4487,10 +4487,10 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "Transend Alert" admin@foo.com
 </source>
-        <translation>Om Transendd of de -server optie om Transend-qt te gebruiken, moet je een rpcpassword instellen in het configuratiebestand:
+        <translation>Om transendd of de -server optie om transend-qt te gebruiken, moet je een rpcpassword instellen in het configuratiebestand:
 %s
 Het is aan te raden het volgende willekeurige wachtwoord te gebruiken:
-rpcuser=Transendrpc
+rpcuser=transendrpc
 rpcpassword=%s
 (je hoeft dit wachtwoord niet te onthouden)
 De gebruikersnaam en het wachtwoord MOETEN NIET hetzelfde zijn.

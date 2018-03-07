@@ -73,7 +73,7 @@ public:
     // Keep track of all pings I've seen
     map<uint256, CMasternodePing> mapSeenMasternodePing;
 
-    // keep track of dsq count to prevent masternodes from gaming Hodgepodge queue
+    // keep track of dsq count to prevent masternodes from gaming obfuscation queue
     int64_t nDsqCount;
 
     ADD_SERIALIZE_METHODS;

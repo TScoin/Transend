@@ -25,7 +25,7 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called Transend (http://www.Transend.com),
+ * This is the developer documentation of the reference client for an experimental new digital currency called Transend (http://www.transend.com),
  * which enables instant payments to anyone, anywhere in the world. Transend uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
@@ -65,7 +65,7 @@ bool AppInit(int argc, char* argv[])
     //
     // Parameters
     //
-    // If Qt is used, parameters/Transend.conf are parsed in qt/Transend.cpp's main()
+    // If Qt is used, parameters/transend.conf are parsed in qt/transend.cpp's main()
     ParseParameters(argc, argv);
 
     // Process help and version before taking care about datadir
@@ -76,7 +76,7 @@ bool AppInit(int argc, char* argv[])
             strUsage += LicenseInfo();
         } else {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  Transendd [options]                     " + _("Start Transend Core Daemon") + "\n";
+                        "  transendd [options]                     " + _("Start Transend Core Daemon") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -112,11 +112,11 @@ bool AppInit(int argc, char* argv[])
         // Command-line RPC
         bool fCommandLine = false;
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "Transend:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "transend:"))
                 fCommandLine = true;
 
         if (fCommandLine) {
-            fprintf(stderr, "Error: There is no RPC client functionality in Transendd anymore. Use the Transend-cli utility instead.\n");
+            fprintf(stderr, "Error: There is no RPC client functionality in transendd anymore. Use the transend-cli utility instead.\n");
             exit(1);
         }
 #ifndef WIN32
@@ -175,7 +175,7 @@ int main(int argc, char* argv[])
 {
     SetupEnvironment();
 
-    // Connect Transendd signal handlers
+    // Connect transendd signal handlers
     noui_connect();
 
     return (AppInit(argc, argv) ? 0 : 1);

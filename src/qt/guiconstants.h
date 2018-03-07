@@ -50,7 +50,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 35
 
 #define QAPP_ORG_NAME "Transend"
-#define QAPP_ORG_DOMAIN "Transend.com"
+#define QAPP_ORG_DOMAIN "transend.com"
 #define QAPP_APP_NAME_DEFAULT "Transend-Qt"
 #define QAPP_APP_NAME_TESTNET "Transend-Qt-testnet"
 

@@ -66,15 +66,15 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += Transendd
+  bin_PROGRAMS += transendd
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += Transend-cli Transend-tx
+  bin_PROGRAMS += transend-cli transend-tx
 endif
 
 .PHONY: FORCE
-# Transend core #
+# transend core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   accumulators.h \
@@ -104,8 +104,8 @@ BITCOIN_CORE_H = \
   core_io.h \
   crypter.h \
   denomination_functions.h \
-  Hodgepodge.h \
-  Hodgepodge-relay.h \
+  obfuscation.h \
+  obfuscation-relay.h \
   db.h \
   eccryptoverify.h \
   ecwrapper.h \
@@ -190,7 +190,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between Transendd and Transend-qt
+# server: shared between transendd and transend-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
@@ -236,7 +236,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between Transendd and Transend-qt, but only linked
+# wallet: shared between transendd and transend-qt, but only linked
 # when wallet enabled
 
 libbitcoin_wallet_a_CFLAGS = -fPIC
@@ -245,8 +245,8 @@ libbitcoin_wallet_a_SOURCES = \
   activemasternode.cpp \
   bip38.cpp \
   denomination_functions.cpp \
-  Hodgepodge.cpp \
-  Hodgepodge-relay.cpp \
+  obfuscation.cpp \
+  obfuscation-relay.cpp \
   db.cpp \
   crypter.cpp \
   swifttx.cpp \
@@ -355,7 +355,7 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/Params.cpp \
   libzerocoin/SerialNumberSignatureOfKnowledge.cpp
 
-# common: shared between Transendd, and Transend-qt and non-server tools
+# common: shared between transendd, and transend-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   accumulators.cpp \
@@ -415,7 +415,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 libbitcoin_util_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-# cli: shared between Transend-cli and Transend-qt
+# cli: shared between transend-cli and transend-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -425,7 +425,7 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-Transendd_LDADD = \
+transendd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UNIVALUE) \
@@ -437,26 +437,26 @@ Transendd_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-Transendd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+transendd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-Transendd_LDADD += libbitcoin_wallet.a
+transendd_LDADD += libbitcoin_wallet.a
 endif
-Transendd_SOURCES = Transendd.cpp
+transendd_SOURCES = transendd.cpp
 #
 
 if TARGET_WINDOWS
-Transendd_SOURCES += Transendd-res.rc
+transendd_SOURCES += transendd-res.rc
 endif
 
-Transendd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-Transendd_CPPFLAGS = $(BITCOIN_INCLUDES)
-Transendd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+transendd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+transendd_CPPFLAGS = $(BITCOIN_INCLUDES)
+transendd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
-# Transend-cli binary #
-Transend_cli_LDADD = \
+# transend-cli binary #
+transend_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
   $(BOOST_LIBS) \
@@ -464,14 +464,14 @@ Transend_cli_LDADD = \
   $(CRYPTO_LIBS) \
   $(EVENT_LIBS)
 
-Transend_cli_SOURCES = \
-  Transend-cli.cpp
+transend_cli_SOURCES = \
+  transend-cli.cpp
 
-Transend_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+transend_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 #
 
-# Transend-tx binary #
-Transend_tx_LDADD = \
+# transend-tx binary #
+transend_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -481,15 +481,15 @@ Transend_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-Transend_tx_SOURCES = Transend-tx.cpp
-Transend_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+transend_tx_SOURCES = transend-tx.cpp
+transend_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-Transend_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+transend_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-Transend_cli_SOURCES += Transend-cli-res.rc
+transend_cli_SOURCES += transend-cli-res.rc
 endif
-Transend_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+transend_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h

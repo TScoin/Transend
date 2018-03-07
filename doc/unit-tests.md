@@ -6,13 +6,13 @@ and tests weren't explicitly disabled.
 
 After configuring, they can be run with 'make check'.
 
-To run the Transendd tests manually, launch src/test/test_Transend .
+To run the solarisd tests manually, launch src/test/test_solaris .
 
-To add more Transendd tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
+To add more solarisd tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the test/ directory or add new .cpp files that
 implement new BOOST_AUTO_TEST_SUITE sections.
 
-To run the Transend-qt tests manually, launch src/qt/test/Transend-qt_test
+To run the solaris-qt tests manually, launch src/qt/test/solaris-qt_test
 
-To add more Transend-qt tests, add them to the `src/qt/test/` directory and
+To add more solaris-qt tests, add them to the `src/qt/test/` directory and
 the `src/qt/test/test_main.cpp` file.

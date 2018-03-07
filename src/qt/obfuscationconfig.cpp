@@ -1,5 +1,5 @@
-#include "Hodgepodgeconfig.h"
-#include "ui_Hodgepodgeconfig.h"
+#include "obfuscationconfig.h"
+#include "ui_obfuscationconfig.h"
 
 #include "bitcoinunits.h"
 #include "guiconstants.h"

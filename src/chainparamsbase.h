@@ -9,7 +9,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between Transend-cli and Transendd)
+ * CBaseChainParams defines the base parameters (shared between transend-cli and transendd)
  * of a given instance of the Transend system.
  */
 class CBaseChainParams

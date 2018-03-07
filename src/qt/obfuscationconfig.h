@@ -1,5 +1,5 @@
-#ifndef HodgepodgeCONFIG_H
-#define HodgepodgeCONFIG_H
+#ifndef OBFUSCATIONCONFIG_H
+#define OBFUSCATIONCONFIG_H
 
 #include <QDialog>
 
@@ -34,4 +34,4 @@ private slots:
     void clickMax();
 };
 
-#endif // HodgepodgeCONFIG_H
+#endif // OBFUSCATIONCONFIG_H

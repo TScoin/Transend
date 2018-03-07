@@ -52,14 +52,14 @@ void SendMoney(const CTxDestination& address, CAmount nValue, CWalletTx& wtxNew,
         throw JSONRPCError(RPC_WALLET_ERROR, "Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.");
 }
 
-Value Hodgepodge(const Array& params, bool fHelp)
+Value obfuscation(const Array& params, bool fHelp)
 {
-    throw runtime_error("Hodgepodge is not supported any more. User Zerocoin\n");
+    throw runtime_error("Obfuscation is not supported any more. User Zerocoin\n");
     
     if (fHelp || params.size() == 0)
         throw runtime_error(
-            "Hodgepodge <Transendaddress> <amount>\n"
-            "Transendaddress, reset, or auto (AutoDenominate)"
+            "obfuscation <transendaddress> <amount>\n"
+            "transendaddress, reset, or auto (AutoDenominate)"
             "<amount> is a real and will be rounded to the next 0.1" +
             HelpRequiringPassphrase());
 
@@ -68,20 +68,20 @@ Value Hodgepodge(const Array& params, bool fHelp)
 
     if (params[0].get_str() == "auto") {
         if (fMasterNode)
-            return "Hodgepodge is not supported from masternodes";
+            return "ObfuScation is not supported from masternodes";
 
-        return "DoAutomaticDenominating " + (HodgepodgePool.DoAutomaticDenominating() ? "successful" : ("failed: " + HodgepodgePool.GetStatus()));
+        return "DoAutomaticDenominating " + (obfuScationPool.DoAutomaticDenominating() ? "successful" : ("failed: " + obfuScationPool.GetStatus()));
     }
 
     if (params[0].get_str() == "reset") {
-        HodgepodgePool.Reset();
-        return "successfully reset Hodgepodge";
+        obfuScationPool.Reset();
+        return "successfully reset obfuscation";
     }
 
     if (params.size() != 2)
         throw runtime_error(
-            "Hodgepodge <Transendaddress> <amount>\n"
-            "Transendaddress, denominate, or auto (AutoDenominate)"
+            "obfuscation <transendaddress> <amount>\n"
+            "transendaddress, denominate, or auto (AutoDenominate)"
             "<amount> is a real and will be rounded to the next 0.1" +
             HelpRequiringPassphrase());
 
@@ -122,9 +122,9 @@ Value getpoolinfo(const Array& params, bool fHelp)
 
     Object obj;
     obj.push_back(Pair("current_masternode", mnodeman.GetCurrentMasterNode()->addr.ToString()));
-    obj.push_back(Pair("state", HodgepodgePool.GetState()));
-    obj.push_back(Pair("entries", HodgepodgePool.GetEntriesCount()));
-    obj.push_back(Pair("entries_accepted", HodgepodgePool.GetCountEntriesAccepted()));
+    obj.push_back(Pair("state", obfuScationPool.GetState()));
+    obj.push_back(Pair("entries", obfuScationPool.GetEntriesCount()));
+    obj.push_back(Pair("entries_accepted", obfuScationPool.GetCountEntriesAccepted()));
     return obj;
 }
 
@@ -155,7 +155,7 @@ Value masternode(const Array& params, bool fHelp)
             "  debug        - Print masternode status\n"
             "  genkey       - Generate new masternodeprivkey\n"
             "  outputs      - Print masternode compatible outputs\n"
-            "  start        - Start masternode configured in Transend.conf\n"
+            "  start        - Start masternode configured in transend.conf\n"
             "  start-alias  - Start single masternode by assigned alias configured in masternode.conf\n"
             "  start-<mode> - Start masternodes configured in masternode.conf (<mode>: 'all', 'missing', 'disabled')\n"
             "  status       - Print masternode status information\n"
@@ -352,7 +352,7 @@ Value getmasternodecount (const Array& params, bool fHelp)
             "{\n"
             "  \"total\": n,        (numeric) Total masternodes\n"
             "  \"stable\": n,       (numeric) Stable count\n"
-            "  \"obfcompat\": n,    (numeric) Hodgepodge Compatible\n"
+            "  \"obfcompat\": n,    (numeric) Obfuscation Compatible\n"
             "  \"enabled\": n,      (numeric) Enabled masternodes\n"
             "  \"inqueue\": n       (numeric) Masternodes in queue\n"
             "}\n"

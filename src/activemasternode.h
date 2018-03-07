@@ -11,7 +11,7 @@
 #include "key.h"
 #include "masternode.h"
 #include "net.h"
-#include "Hodgepodge.h"
+#include "obfuscation.h"
 #include "sync.h"
 #include "wallet.h"
 

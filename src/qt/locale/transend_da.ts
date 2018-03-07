@@ -606,7 +606,7 @@
         <translation>Send mønter til en Transend adresse</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Transend: URIs)</source>
+        <source>Request payments (generates QR codes and transend: URIs)</source>
         <translation>Anmod om betaling (genrerer QR kode og Transend URL)</translation>
     </message>
     <message>
@@ -813,8 +813,8 @@ Adresse: %4
         <translation>Tekstmærke</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (Transend.conf).</source>
-        <translation>Ikke alle transaktioner vil blive vist. For at vise alle transaktioner må De sætte "txindex=1" i konfigurationsfilen (Transend.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (transend.conf).</source>
+        <translation>Ikke alle transaktioner vil blive vist. For at vise alle transaktioner må De sætte "txindex=1" i konfigurationsfilen (transend.conf).</translation>
     </message>
 </context>
 <context>
@@ -1663,9 +1663,9 @@ Kontroller adressen og prøv igen.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/Transend-project/Transend-project-translations</source>
+https://www.transifex.com/transend-project/transend-project-translations</source>
         <translation>Det valgte sprog mangler, eller oversættelsen er mangelfuld. Hjælp ved at bidrage med oversættelser her:
-https://www.transifex.com/Transend-project/Transend-project-translations</translation>
+https://www.transifex.com/transend-project/transend-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1890,7 +1890,7 @@ https://www.transifex.com/Transend-project/Transend-project-translations</transl
         <translation>Ugyldig betalingsadresse: %1</translation>
     </message>
     <message>
-        <source>Cannot start Transend: click-to-pay handler</source>
+        <source>Cannot start transend: click-to-pay handler</source>
         <translation>Kan ikke starte Transend "klik for at betale" systemet</translation>
     </message>
     <message>
@@ -3768,7 +3768,7 @@ https://www.transifex.com/Transend-project/Transend-project-translations</transl
     </message>
     </context>
 <context>
-    <name>Transend-core</name>
+    <name>transend-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = beholdtx metadata. For eksempel information om kontoejer og betalngsanmodninger, 2 = drop TX metadata)</translation>
@@ -3955,10 +3955,10 @@ https://www.transifex.com/Transend-project/Transend-project-translations</transl
         <translation>Dette produkt anvender software udviklet i OpenSSL projektet til brug i OpenSSL værktøjssættet &lt;https://www.openssl.org/&gt; og kryptosoftware skrevet afEric Young og UPnP software skrevet af Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use Transendd, or the -server option to Transend-qt, you must set an rpcpassword in the configuration file:
+        <source>To use transendd, or the -server option to transend-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=Transendrpc
+rpcuser=transendrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3966,10 +3966,10 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "Transend Alert" admin@foo.com
 </source>
-        <translation>For at bruge Transendd eller -server muligheden sammen med Transend-qt skal der angives et rpc kodeord i konfigurationsfilen:
+        <translation>For at bruge transendd eller -server muligheden sammen med transend-qt skal der angives et rpc kodeord i konfigurationsfilen:
 %s
 De anbefales at benytte følgende tilfældige kodeord
-Rpcuser=Transendrpc
+Rpcuser=transendrpc
 rpcpasswrd=%s
 (Det er ikke nødvendigt at huske dette kodeord)
 Brugernavn og kodeord MÅ IKKE VÆRE ENS!

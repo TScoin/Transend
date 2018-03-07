@@ -423,7 +423,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="../Transend.qrc">
+            <iconset resource="../transend.qrc">
              <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
            </property>
            <property name="shortcut">
@@ -1387,7 +1387,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../Transend.qrc"/>
+  <include location="../transend.qrc"/>
  </resources>
  <connections/>
 </ui>

@@ -621,8 +621,8 @@
         <translation>Koinleri Transend adresine gönder</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Transend: URIs)</source>
-        <translation>Ödeme talep etme (QR kodları ve Transend üretir: URI'ler)</translation>
+        <source>Request payments (generates QR codes and transend: URIs)</source>
+        <translation>Ödeme talep etme (QR kodları ve transend üretir: URI'ler)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -834,8 +834,8 @@ Adres: %4</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (Transend.conf).</source>
-        <translation>Tüm işlemler gösterilmez. Tüm işlemleri görmek için yapılandırma dosyasında txindex = 1 ayarlamanız gerekir (Transend.conf).
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (transend.conf).</source>
+        <translation>Tüm işlemler gösterilmez. Tüm işlemleri görmek için yapılandırma dosyasında txindex = 1 ayarlamanız gerekir (transend.conf).
 </translation>
     </message>
 </context>
@@ -1694,7 +1694,7 @@ Adres: %4</translation>
     </message>
     </context>
 <context>
-    <name>Transend-core</name>
+    <name>transend-core</name>
     <message>
         <source>Error</source>
         <translation>hata</translation>

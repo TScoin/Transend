@@ -610,7 +610,7 @@
         <translation>Изпратете монети до Transend адрес</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Transend: URIs)</source>
+        <source>Request payments (generates QR codes and transend: URIs)</source>
         <translation>Поискай плащане (генерира QR кодове и  Transend:URI)</translation>
     </message>
     <message>
@@ -853,8 +853,8 @@ Address: %4
         <translation>ТекстовЕтикет</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (Transend.conf).</source>
-        <translation>Не всички преводи ще бъдат показани. За да разгледате всички преводи, трябва да зададете txindex=1 в конфигурационния файл (Transend.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (transend.conf).</source>
+        <translation>Не всички преводи ще бъдат показани. За да разгледате всички преводи, трябва да зададете txindex=1 в конфигурационния файл (transend.conf).</translation>
     </message>
 </context>
 <context>
@@ -1707,9 +1707,9 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/Transend-project/Transend-project-translations</source>
+https://www.transifex.com/transend-project/transend-project-translations</source>
         <translation>Липсващ език или непълен превод? Помогнете с преводите тук:
-https://www.transifex.com/Transend-project/Transend-project-translations</translation>
+https://www.transifex.com/transend-project/transend-project-translations</translation>
     </message>
     <message>
         <source>Percentage of incoming TSC which get automatically converted to zTSC via Zerocoin Protocol (min: 10%)</source>
@@ -1974,8 +1974,8 @@ https://www.transifex.com/Transend-project/Transend-project-translations</transl
         <translation>Грешен адрес за плащане %1</translation>
     </message>
     <message>
-        <source>Cannot start Transend: click-to-pay handler</source>
-        <translation>Провал при стартирането на Transend: click-to-pay обработвател</translation>
+        <source>Cannot start transend: click-to-pay handler</source>
+        <translation>Провал при стартирането на transend: click-to-pay обработвател</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Transend address or malformed URI parameters.</source>
@@ -4286,7 +4286,7 @@ Please be patient...</source>
     </message>
 </context>
 <context>
-    <name>Transend-core</name>
+    <name>transend-core</name>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
         <translation>Промяна на поведението на автоматично финализираното гласоподаване. mode=auto: Гласувай само за точни финализирани бюджети, които съвпадат с моят генериран бюджет. (string, default:auto)</translation>

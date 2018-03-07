@@ -48,10 +48,10 @@ static bool AppInitRawTx(int argc, char* argv[])
 
     if (argc < 2 || mapArgs.count("-?") || mapArgs.count("-help")) {
         // First part of help message is specific to this utility
-        std::string strUsage = _("Transend Core Transend-tx utility version") + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = _("Transend Core transend-tx utility version") + " " + FormatFullVersion() + "\n\n" +
                                _("Usage:") + "\n" +
-                               "  Transend-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded Transend transaction") + "\n" +
-                               "  Transend-tx [options] -create [commands]   " + _("Create hex-encoded Transend transaction") + "\n" +
+                               "  transend-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded transend transaction") + "\n" +
+                               "  transend-tx [options] -create [commands]   " + _("Create hex-encoded transend transaction") + "\n" +
                                "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());
@@ -553,7 +553,7 @@ static int CommandLineRawTx(int argc, char* argv[])
             if (argc < 2)
                 throw runtime_error("too few parameters");
 
-            // param: hex-encoded Transend transaction
+            // param: hex-encoded transend transaction
             string strHexTx(argv[1]);
             if (strHexTx == "-") // "-" implies standard input
                 strHexTx = readStdin();

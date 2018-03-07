@@ -602,7 +602,7 @@
         <translation>Отправить монеты на Transend адрес</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Transend: URIs)</source>
+        <source>Request payments (generates QR codes and transend: URIs)</source>
         <translation>Запросить платежи (генерирует QR-код и Transend: URI)</translation>
     </message>
     <message>
@@ -825,8 +825,8 @@ MultiSend: %1</translation>
         <translation>Текстовая метка</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (Transend.conf).</source>
-        <translation>Будут показаны не все транзакции. Для отображения всех транзакций необходимо выставить txindex=1 в конфигурационном файле (Transend.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (transend.conf).</source>
+        <translation>Будут показаны не все транзакции. Для отображения всех транзакций необходимо выставить txindex=1 в конфигурационном файле (transend.conf).</translation>
     </message>
 </context>
 <context>
@@ -1675,9 +1675,9 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/Transend-project/Transend-project-translations</source>
+https://www.transifex.com/transend-project/transend-project-translations</source>
         <translation>Отсутствует ваш язык или заметили незавершенный перевод? Вы можете помочь нам стать лучше:
-https://www.transifex.com/Transend-project/Transend-project-translations</translation>
+https://www.transifex.com/transend-project/transend-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1934,8 +1934,8 @@ https://www.transifex.com/Transend-project/Transend-project-translations</transl
         <translation>Неверный адрес оплаты %1</translation>
     </message>
     <message>
-        <source>Cannot start Transend: click-to-pay handler</source>
-        <translation>Не удалось запустить Transend: обработчик click-to-pay </translation>
+        <source>Cannot start transend: click-to-pay handler</source>
+        <translation>Не удалось запустить transend: обработчик click-to-pay </translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Transend address or malformed URI parameters.</source>
@@ -3205,7 +3205,7 @@ https://www.transifex.com/Transend-project/Transend-project-translations</transl
     </message>
     </context>
 <context>
-    <name>Transend-core</name>
+    <name>transend-core</name>
     <message>
         <source>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
         <translation>Для SwiftTX требуется как минимум 6 подтверждений, Вам нужно подождать несколько минут и попытаться снова.</translation>

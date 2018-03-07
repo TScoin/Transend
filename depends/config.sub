@@ -117,7 +117,7 @@ case $maybe_os in
   nto-qnx* | linux-gnu* | linux-android* | linux-dietlibc | linux-newlib* | \
   linux-musl* | linux-uclibc* | uclinux-uclibc* | uclinux-gnu* | kfreebsd*-gnu* | \
   knetbsd*-gnu* | netbsd*-gnu* | netbsd*-eabi* | \
-  kopenTransend*-gnu* | cloudabi*-eabi* | \
+  kopensolaris*-gnu* | cloudabi*-eabi* | \
   storm-chaos* | os2-emx* | rtmk-nova*)
     os=-$maybe_os
     basic_machine=`echo $1 | sed 's/^\(.*\)-\([^-]*-[^-]*\)$/\1/'`
@@ -770,7 +770,7 @@ case $basic_machine in
 		;;
 	i*86sol2)
 		basic_machine=`echo $1 | sed -e 's/86.*/86-pc/'`
-		os=-Transend2
+		os=-solaris2
 		;;
 	i386mach)
 		basic_machine=i386-mach
@@ -1160,7 +1160,7 @@ case $basic_machine in
 		;;
 	sun4sol2)
 		basic_machine=sparc-sun
-		os=-Transend2
+		os=-solaris2
 		;;
 	sun3 | sun3-*)
 		basic_machine=m68k-sun
@@ -1360,15 +1360,15 @@ then
 case $os in
 	# First match some system type aliases
 	# that might get confused with valid system types.
-	# -Transend* is a basic system type, with this one exception.
+	# -solaris* is a basic system type, with this one exception.
 	-auroraux)
 		os=-auroraux
 		;;
-	-Transend1 | -Transend1.*)
-		os=`echo $os | sed -e 's|Transend1|sunos4|'`
+	-solaris1 | -solaris1.*)
+		os=`echo $os | sed -e 's|solaris1|sunos4|'`
 		;;
-	-Transend)
-		os=-Transend2
+	-solaris)
+		os=-solaris2
 		;;
 	-svr4*)
 		os=-sysv4
@@ -1385,8 +1385,8 @@ case $os in
 	# -sysv* is not here because it comes later, after sysvr4.
 	-gnu* | -bsd* | -mach* | -minix* | -genix* | -ultrix* | -irix* \
 	      | -*vms* | -sco* | -esix* | -isc* | -aix* | -cnk* | -sunos | -sunos[34]*\
-	      | -hpux* | -unos* | -osf* | -luna* | -dgux* | -auroraux* | -Transend* \
-	      | -sym* | -kopenTransend* | -plan9* \
+	      | -hpux* | -unos* | -osf* | -luna* | -dgux* | -auroraux* | -solaris* \
+	      | -sym* | -kopensolaris* | -plan9* \
 	      | -amigaos* | -amigados* | -msdos* | -newsos* | -unicos* | -aof* \
 	      | -aos* | -aros* | -cloudabi* | -sortix* \
 	      | -nindy* | -vxsim* | -vxworks* | -ebmon* | -hms* | -mvs* \
@@ -1440,10 +1440,10 @@ case $os in
 		os=`echo $os | sed -e 's|linux|linux-gnu|'`
 		;;
 	-sunos5*)
-		os=`echo $os | sed -e 's|sunos5|Transend2|'`
+		os=`echo $os | sed -e 's|sunos5|solaris2|'`
 		;;
 	-sunos6*)
-		os=`echo $os | sed -e 's|sunos6|Transend3|'`
+		os=`echo $os | sed -e 's|sunos6|solaris3|'`
 		;;
 	-opened*)
 		os=-openedition

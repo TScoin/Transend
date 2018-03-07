@@ -14,7 +14,7 @@
 #include "sendcoinsentry.h"
 #include "walletmodel.h"
 #include "coincontrol.h"
-#include "zTSCcontroldialog.h"
+#include "zxlrcontroldialog.h"
 #include "spork.h"
 
 #include <QClipboard>
@@ -434,7 +434,7 @@ void PrivacyDialog::sendzTSC()
         return;
     }
 
-    // Clear zTSC selector in case it was used
+    // Clear zxlr selector in case it was used
     ZTSCControlDialog::listSelectedMints.clear();
 
     // Some statistics for entertainment

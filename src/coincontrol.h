@@ -16,7 +16,7 @@ class CCoinControl
 {
 public:
     CTxDestination destChange;
-    bool useHodgepodge;
+    bool useObfuScation;
     bool useSwiftTX;
     bool fSplitBlock;
     int nSplitBlock;
@@ -37,7 +37,7 @@ public:
         destChange = CNoDestination();
         setSelected.clear();
         useSwiftTX = false;
-        useHodgepodge = false;
+        useObfuScation = false;
         fAllowOtherInputs = false;
         fAllowWatchOnly = true;
         nMinimumTotalFee = 0;

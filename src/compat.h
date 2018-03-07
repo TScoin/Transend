@@ -7,7 +7,7 @@
 #define BITCOIN_COMPAT_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/Transend-config.h"
+#include "config/transend-config.h"
 #endif
 
 #ifdef WIN32

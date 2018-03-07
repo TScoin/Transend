@@ -28,7 +28,7 @@
       </sizepolicy>
      </property>
      <property name="pixmap">
-      <pixmap resource="../Transend.qrc">:/images/about</pixmap>
+      <pixmap resource="../transend.qrc">:/images/about</pixmap>
      </property>
     </widget>
    </item>
@@ -97,7 +97,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../Transend.qrc"/>
+  <include location="../transend.qrc"/>
  </resources>
  <connections>
   <connection>

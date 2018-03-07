@@ -62,15 +62,15 @@ SendCoinsDialog::SendCoinsDialog(QWidget* parent) : QDialog(parent),
 
     // Transend specific
     QSettings settings;
-    if (!settings.contains("bUseHodgepodge"))
-        settings.setValue("bUseHodgepodge", false);
+    if (!settings.contains("bUseObfuScation"))
+        settings.setValue("bUseObfuScation", false);
     if (!settings.contains("bUseSwiftTX"))
         settings.setValue("bUseSwiftTX", false);
 
     bool useSwiftTX = settings.value("bUseSwiftTX").toBool();
     if (fLiteMode) {
         ui->checkSwiftTX->setVisible(false);
-        CoinControlDialog::coinControl->useHodgepodge = false;
+        CoinControlDialog::coinControl->useObfuScation = false;
         CoinControlDialog::coinControl->useSwiftTX = false;
     } else {
         ui->checkSwiftTX->setChecked(useSwiftTX);

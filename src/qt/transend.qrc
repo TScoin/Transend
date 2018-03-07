@@ -38,12 +38,12 @@
         <file alias="tx_input">res/icons/tx_input.png</file>
         <file alias="tx_output">res/icons/tx_output.png</file>
         <file alias="tx_inout">res/icons/tx_inout.png</file>
-        <file alias="unit_Transend">res/icons/unit_Transend.png</file>
-        <file alias="unit_mTransend">res/icons/unit_mTransend.png</file>
-        <file alias="unit_uTransend">res/icons/unit_uTransend.png</file>
-        <file alias="unit_tTransend">res/icons/unit_tTransend.png</file>
-        <file alias="unit_tmTransend">res/icons/unit_tmTransend.png</file>
-        <file alias="unit_tuTransend">res/icons/unit_tuTransend.png</file>
+        <file alias="unit_transend">res/icons/unit_transend.png</file>
+        <file alias="unit_mtransend">res/icons/unit_mtransend.png</file>
+        <file alias="unit_utransend">res/icons/unit_utransend.png</file>
+        <file alias="unit_ttransend">res/icons/unit_ttransend.png</file>
+        <file alias="unit_tmtransend">res/icons/unit_tmtransend.png</file>
+        <file alias="unit_tutransend">res/icons/unit_tutransend.png</file>
         <file alias="lock_closed">res/icons/lock_closed.png</file>
         <file alias="lock_open">res/icons/lock_open.png</file>
         <file alias="key">res/icons/key.png</file>
@@ -59,7 +59,7 @@
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
-        <file alias="Transend_logo_horizontal">res/images/Transend_logo_horizontal.png</file>
+        <file alias="transend_logo_horizontal">res/images/transend_logo_horizontal.png</file>
         <file alias="downArrow">res/images/downArrow.png</file>
         <file alias="downArrow_small">res/images/downArrow_small.png</file>
         <file alias="upArrow_small">res/images/upArrow_small.png</file>

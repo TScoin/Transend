@@ -370,6 +370,6 @@
     <name>ZTSCControlDialog</name>
     </context>
 <context>
-    <name>Transend-core</name>
+    <name>transend-core</name>
     </context>
 </TS>

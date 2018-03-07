@@ -15,7 +15,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"io.Transend.Transend-Qt";
+        return @"io.transend.Transend-Qt";
     } else {
         return [self __bundleIdentifier];
     }

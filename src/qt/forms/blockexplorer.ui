@@ -168,7 +168,7 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="../Transend.qrc"/>
+  <include location="../transend.qrc"/>
  </resources>
  <connections/>
 </ui>

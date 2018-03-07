@@ -526,8 +526,8 @@
         <translation>Wyślij monety do adresu Transend</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Transend: URIs)</source>
-        <translation>Zarządaj płatności (generuje kod QR i Transend:URI)</translation>
+        <source>Request payments (generates QR codes and transend: URIs)</source>
+        <translation>Zarządaj płatności (generuje kod QR i transend:URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -1217,9 +1217,9 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/Transend-project/Transend-project-translations</source>
+https://www.transifex.com/transend-project/transend-project-translations</source>
         <translation>Brakuje języka bądź nieukończona pełnego tłumaczenia? Pomóż w tłumaczeniu tutaj:
-https://www.transifex.com/Transend-project/Transend-project-translations </translation>
+https://www.transifex.com/transend-project/transend-project-translations </translation>
     </message>
     <message>
         <source>Connect to the Transend network through a SOCKS5 proxy.</source>
@@ -2034,7 +2034,7 @@ https://www.transifex.com/Transend-project/Transend-project-translations </trans
     </message>
     </context>
 <context>
-    <name>Transend-core</name>
+    <name>transend-core</name>
     <message>
         <source>Error</source>
         <translation>Błąd</translation>

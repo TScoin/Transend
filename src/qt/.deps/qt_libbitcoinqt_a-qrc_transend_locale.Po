@@ -1,0 +1,1 @@
+qt/qt_libbitcoinqt_a-qrc_transend_locale.o: qt/qrc_transend_locale.cpp

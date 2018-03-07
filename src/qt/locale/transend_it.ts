@@ -598,8 +598,8 @@
         <translation>Invia monete all' indirizzo Transend</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Transend: URIs)</source>
-        <translation>Richiedi pagamenti (genera codici QR e Transend: URIs)</translation>
+        <source>Request payments (generates QR codes and transend: URIs)</source>
+        <translation>Richiedi pagamenti (genera codici QR e transend: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -753,8 +753,8 @@ MultiSend: %1</translation>
         <translation>Cerca</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (Transend.conf).</source>
-        <translation>Non tutte le transazioni verranno visualizzate. Per vedere tutte le transazioni è necessario aggiungere txindex=1 nel file di configurazione (Transend.conf)</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (transend.conf).</source>
+        <translation>Non tutte le transazioni verranno visualizzate. Per vedere tutte le transazioni è necessario aggiungere txindex=1 nel file di configurazione (transend.conf)</translation>
     </message>
 </context>
 <context>
@@ -1314,7 +1314,7 @@ MultiSend: %1</translation>
     <name>ZTSCControlDialog</name>
     </context>
 <context>
-    <name>Transend-core</name>
+    <name>transend-core</name>
     <message>
         <source>Error</source>
         <translation>Errore</translation>

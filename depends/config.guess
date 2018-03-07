@@ -370,13 +370,13 @@ case "${UNAME_MACHINE}:${UNAME_SYSTEM}:${UNAME_RELEASE}:${UNAME_VERSION}" in
 	    sparc) echo sparc-icl-nx7; exit ;;
 	esac ;;
     s390x:SunOS:*:*)
-	echo ${UNAME_MACHINE}-ibm-Transend2`echo ${UNAME_RELEASE}|sed -e 's/[^.]*//'`
+	echo ${UNAME_MACHINE}-ibm-solaris2`echo ${UNAME_RELEASE}|sed -e 's/[^.]*//'`
 	exit ;;
     sun4H:SunOS:5.*:*)
-	echo sparc-hal-Transend2`echo ${UNAME_RELEASE}|sed -e 's/[^.]*//'`
+	echo sparc-hal-solaris2`echo ${UNAME_RELEASE}|sed -e 's/[^.]*//'`
 	exit ;;
     sun4*:SunOS:5.*:* | tadpole*:SunOS:5.*:*)
-	echo sparc-sun-Transend2`echo ${UNAME_RELEASE}|sed -e 's/[^.]*//'`
+	echo sparc-sun-solaris2`echo ${UNAME_RELEASE}|sed -e 's/[^.]*//'`
 	exit ;;
     i86pc:AuroraUX:5.*:* | i86xen:AuroraUX:5.*:*)
 	echo i386-pc-auroraux${UNAME_RELEASE}
@@ -395,13 +395,13 @@ case "${UNAME_MACHINE}:${UNAME_SYSTEM}:${UNAME_RELEASE}:${UNAME_VERSION}" in
 		SUN_ARCH=x86_64
 	    fi
 	fi
-	echo ${SUN_ARCH}-pc-Transend2`echo ${UNAME_RELEASE}|sed -e 's/[^.]*//'`
+	echo ${SUN_ARCH}-pc-solaris2`echo ${UNAME_RELEASE}|sed -e 's/[^.]*//'`
 	exit ;;
     sun4*:SunOS:6*:*)
 	# According to config.sub, this is the proper way to canonicalize
 	# SunOS6.  Hard to guess exactly what SunOS6 will be like, but
-	# it's likely to be more like Transend than SunOS4.
-	echo sparc-sun-Transend3`echo ${UNAME_RELEASE}|sed -e 's/[^.]*//'`
+	# it's likely to be more like Solaris than SunOS4.
+	echo sparc-sun-solaris3`echo ${UNAME_RELEASE}|sed -e 's/[^.]*//'`
 	exit ;;
     sun4*:SunOS:*:*)
 	case "`/usr/bin/arch -k`" in
@@ -895,7 +895,7 @@ EOF
 	echo powerpcle-unknown-cygwin
 	exit ;;
     prep*:SunOS:5.*:*)
-	echo powerpcle-unknown-Transend2`echo ${UNAME_RELEASE}|sed -e 's/[^.]*//'`
+	echo powerpcle-unknown-solaris2`echo ${UNAME_RELEASE}|sed -e 's/[^.]*//'`
 	exit ;;
     *:GNU:*:*)
 	# the GNU system

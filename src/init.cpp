@@ -7,7 +7,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/Transend-config.h"
+#include "config/transend-config.h"
 #endif
 
 #include "init.h"
@@ -181,7 +181,7 @@ void PrepareShutdown()
     /// for example if the data directory was found to be locked.
     /// Be sure that anything that writes files or flushes caches only does this if the respective
     /// module was initialized.
-    RenameThread("Transend-shutoff");
+    RenameThread("transend-shutoff");
     mempool.AddTransactionsUpdated(1);
     StopRPCThreads();
 #ifdef ENABLE_WALLET
@@ -320,7 +320,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-alerts", strprintf(_("Receive and display P2P network alerts (default: %u)"), DEFAULT_ALERTS));
     strUsage += HelpMessageOpt("-blocknotify=<cmd>", _("Execute command when the best block changes (%s in cmd is replaced by block hash)"));
     strUsage += HelpMessageOpt("-checkblocks=<n>", strprintf(_("How many blocks to check at startup (default: %u, 0 = all)"), 500));
-    strUsage += HelpMessageOpt("-conf=<file>", strprintf(_("Specify configuration file (default: %s)"), "Transend.conf"));
+    strUsage += HelpMessageOpt("-conf=<file>", strprintf(_("Specify configuration file (default: %s)"), "transend.conf"));
     if (mode == HMM_BITCOIND) {
 #if !defined(WIN32)
         strUsage += HelpMessageOpt("-daemon", _("Run in the background as a daemon and accept commands"));
@@ -333,7 +333,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-maxorphantx=<n>", strprintf(_("Keep at most <n> unconnectable transactions in memory (default: %u)"), DEFAULT_MAX_ORPHAN_TRANSACTIONS));
     strUsage += HelpMessageOpt("-par=<n>", strprintf(_("Set the number of script verification threads (%u to %d, 0 = auto, <0 = leave that many cores free, default: %d)"), -(int)boost::thread::hardware_concurrency(), MAX_SCRIPTCHECK_THREADS, DEFAULT_SCRIPTCHECK_THREADS));
 #ifndef WIN32
-    strUsage += HelpMessageOpt("-pid=<file>", strprintf(_("Specify pid file (default: %s)"), "Transendd.pid"));
+    strUsage += HelpMessageOpt("-pid=<file>", strprintf(_("Specify pid file (default: %s)"), "transendd.pid"));
 #endif
     strUsage += HelpMessageOpt("-reindex", _("Rebuild block chain index from current blk000??.dat files") + " " + _("on startup"));
     strUsage += HelpMessageOpt("-reindexaccumulators", _("Reindex the accumulator database") + " " + _("on startup"));
@@ -435,7 +435,7 @@ std::string HelpMessage(HelpMessageMode mode)
         strUsage += HelpMessageOpt("-stopafterblockimport", strprintf(_("Stop running after importing blocks from disk (default: %u)"), 0));
         strUsage += HelpMessageOpt("-sporkkey=<privkey>", _("Enable spork administration functionality with the appropriate private key."));
     }
-    string debugCategories = "addrman, alert, bench, coindb, db, lock, rand, rpc, selectcoins, tor, mempool, net, proxy, Transend, (Hodgepodge, swiftx, masternode, mnpayments, mnbudget, zero)"; // Don't translate these and qt below
+    string debugCategories = "addrman, alert, bench, coindb, db, lock, rand, rpc, selectcoins, tor, mempool, net, proxy, transend, (obfuscation, swiftx, masternode, mnpayments, mnbudget, zero)"; // Don't translate these and qt below
     if (mode == HMM_BITCOIN_QT)
         debugCategories += ", qt";
     strUsage += HelpMessageOpt("-debug=<category>", strprintf(_("Output debugging information (default: %u, supplying <category> is optional)"), 0) + ". " +
@@ -489,10 +489,10 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-enablezeromint=<n>", strprintf(_("Enable automatic Zerocoin minting (0-1, default: %u)"), 0));
     strUsage += HelpMessageOpt("-zeromintpercentage=<n>", strprintf(_("Percentage of automatically minted Zerocoin  (10-100, default: %u)"), 10));
     strUsage += HelpMessageOpt("-preferredDenom=<n>", strprintf(_("Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)"), 0));
-    strUsage += HelpMessageOpt("-backupzTSC=<n>", strprintf(_("Enable automatic wallet backups triggered after each zTSC minting (0-1, default: %u)"), 1));
+    strUsage += HelpMessageOpt("-backupzxlr=<n>", strprintf(_("Enable automatic wallet backups triggered after each zTSC minting (0-1, default: %u)"), 1));
 
-//    strUsage += "  -anonymizeTransendamount=<n>     " + strprintf(_("Keep N TSC anonymized (default: %u)"), 0) + "\n";
-//    strUsage += "  -liquidityprovider=<n>       " + strprintf(_("Provide liquidity to Hodgepodge by infrequently mixing coins on a continual basis (0-100, default: %u, 1=very frequent, high fees, 100=very infrequent, low fees)"), 0) + "\n";
+//    strUsage += "  -anonymizetransendamount=<n>     " + strprintf(_("Keep N TSC anonymized (default: %u)"), 0) + "\n";
+//    strUsage += "  -liquidityprovider=<n>       " + strprintf(_("Provide liquidity to Obfuscation by infrequently mixing coins on a continual basis (0-100, default: %u, 1=very frequent, high fees, 100=very infrequent, low fees)"), 0) + "\n";
 
     strUsage += HelpMessageGroup(_("SwiftX options:"));
     strUsage += HelpMessageOpt("-enableswifttx=<n>", strprintf(_("Enable SwiftX, show confirmations for locked transactions (bool, default: %s)"), "true"));
@@ -570,7 +570,7 @@ struct CImportingNow {
 
 void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
 {
-    RenameThread("Transend-loadblk");
+    RenameThread("transend-loadblk");
 
     // -reindex
     if (fReindex) {
@@ -645,7 +645,7 @@ bool InitSanityCheck(void)
 }
 
 
-/** Initialize Transend.
+/** Initialize transend.
  *  @pre Parameters should be parsed and config file should be read.
  */
 bool AppInit2(boost::thread_group& threadGroup)
@@ -1606,7 +1606,7 @@ bool AppInit2(boost::thread_group& threadGroup)
         }
         fVerifyingBlocks = false;
 
-        bool fEnableZTSCBackups = GetBoolArg("-backupzTSC", true);
+        bool fEnableZTSCBackups = GetBoolArg("-backupzxlr", true);
         pwalletMain->setZTSCAutoBackups(fEnableZTSCBackups);
     }  // (!fDisableWallet)
 #else  // ENABLE_WALLET
@@ -1634,7 +1634,7 @@ bool AppInit2(boost::thread_group& threadGroup)
             MilliSleep(10);
     }
 
-    // ********************************************************* Step 10: setup Hodgepodge
+    // ********************************************************* Step 10: setup ObfuScation
 	InitRPCMining();
     
 	uiInterface.InitMessage(_("Loading masternode cache..."));
@@ -1713,7 +1713,7 @@ bool AppInit2(boost::thread_group& threadGroup)
             CKey key;
             CPubKey pubkey;
 
-            if (!HodgepodgeSigner.SetKey(strMasterNodePrivKey, errorMessage, key, pubkey)) {
+            if (!obfuScationSigner.SetKey(strMasterNodePrivKey, errorMessage, key, pubkey)) {
                 return InitError(_("Invalid masternodeprivkey. Please see documenation."));
             }
 
@@ -1757,12 +1757,12 @@ bool AppInit2(boost::thread_group& threadGroup)
 
 //    nLiquidityProvider = GetArg("-liquidityprovider", 0); //0-100
 //    if (nLiquidityProvider != 0) {
-//        HodgepodgePool.SetMinBlockSpacing(std::min(nLiquidityProvider, 100) * 15);
+//        obfuScationPool.SetMinBlockSpacing(std::min(nLiquidityProvider, 100) * 15);
 //        fEnableZeromint = true;
 //        nZeromintPercentage = 99999;
 //    }
 //
-//    nAnonymizeTransendAmount = GetArg("-anonymizeTransendamount", 0);
+//    nAnonymizeTransendAmount = GetArg("-anonymizetransendamount", 0);
 //    if (nAnonymizeTransendAmount > 999999) nAnonymizeTransendAmount = 999999;
 //    if (nAnonymizeTransendAmount < 2) nAnonymizeTransendAmount = 2;
 
@@ -1770,7 +1770,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     nSwiftTXDepth = GetArg("-swifttxdepth", nSwiftTXDepth);
     nSwiftTXDepth = std::min(std::max(nSwiftTXDepth, 0), 60);
 
-    //lite mode disables all Masternode and Hodgepodge related functionality
+    //lite mode disables all Masternode and Obfuscation related functionality
     fLiteMode = GetBoolArg("-litemode", false);
     if (fMasterNode && fLiteMode) {
         return InitError("You can not start a masternode in litemode");
@@ -1783,27 +1783,27 @@ bool AppInit2(boost::thread_group& threadGroup)
 
     /* Denominations
 
-       A note about convertability. Within Hodgepodge pools, each denomination
+       A note about convertability. Within Obfuscation pools, each denomination
        is convertable to another.
 
        For example:
        1TSC+1000 == (.1TSC+100)*10
        10TSC+10000 == (1TSC+1000)*10
     */
-    HodgepodgeDenominations.push_back((10000 * COIN) + 10000000);
-    HodgepodgeDenominations.push_back((1000 * COIN) + 1000000);
-    HodgepodgeDenominations.push_back((100 * COIN) + 100000);
-    HodgepodgeDenominations.push_back((10 * COIN) + 10000);
-    HodgepodgeDenominations.push_back((1 * COIN) + 1000);
-    HodgepodgeDenominations.push_back((.1 * COIN) + 100);
+    obfuScationDenominations.push_back((10000 * COIN) + 10000000);
+    obfuScationDenominations.push_back((1000 * COIN) + 1000000);
+    obfuScationDenominations.push_back((100 * COIN) + 100000);
+    obfuScationDenominations.push_back((10 * COIN) + 10000);
+    obfuScationDenominations.push_back((1 * COIN) + 1000);
+    obfuScationDenominations.push_back((.1 * COIN) + 100);
     /* Disabled till we need them
-    HodgepodgeDenominations.push_back( (.01      * COIN)+10 );
-    HodgepodgeDenominations.push_back( (.001     * COIN)+1 );
+    obfuScationDenominations.push_back( (.01      * COIN)+10 );
+    obfuScationDenominations.push_back( (.001     * COIN)+1 );
     */
 
-    HodgepodgePool.InitCollateralAddress();
+    obfuScationPool.InitCollateralAddress();
 
-    threadGroup.create_thread(boost::bind(&ThreadCheckHodgepodgePool));
+    threadGroup.create_thread(boost::bind(&ThreadCheckObfuScationPool));
 
     // ********************************************************* Step 11: start node
 

@@ -42,11 +42,11 @@ QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
     case TSC:
-        return QString("Transend");
+        return QString("transend");
     case mTSC:
-        return QString("mTransend");
+        return QString("mtransend");
     case uTSC:
-        return QString::fromUtf8("uTransend");
+        return QString::fromUtf8("utransend");
     default:
         return QString("???");
     }

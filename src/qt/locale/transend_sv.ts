@@ -591,8 +591,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Skicka mynt till en Transend adress</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Transend: URIs)</source>
-        <translation>Begär betalning (genererar QR kod och Transend: URls)</translation>
+        <source>Request payments (generates QR codes and transend: URIs)</source>
+        <translation>Begär betalning (genererar QR kod och transend: URls)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -1419,7 +1419,7 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
     <name>ZTSCControlDialog</name>
     </context>
 <context>
-    <name>Transend-core</name>
+    <name>transend-core</name>
     <message>
         <source>Error</source>
         <translation>Fel</translation>

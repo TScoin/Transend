@@ -13,8 +13,8 @@
 #include "guiconstants.h"
 #include "guiutil.h"
 #include "init.h"
-#include "Hodgepodge.h"
-#include "Hodgepodgeconfig.h"
+#include "obfuscation.h"
+#include "obfuscationconfig.h"
 #include "optionsmodel.h"
 #include "transactionfilterproxy.h"
 #include "transactiontablemodel.h"
@@ -232,10 +232,10 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     int nZeromintPercentage = GetArg("-zeromintpercentage", 10);
     if (fEnableZeromint) {
         automintHelp += tr("AutoMint is currently enabled and set to ") + QString::number(nZeromintPercentage) + "%.\n";
-        automintHelp += tr("To disable AutoMint add 'enablezeromint=0' in Transend.conf.");
+        automintHelp += tr("To disable AutoMint add 'enablezeromint=0' in transend.conf.");
     }
     else {
-        automintHelp += tr("AutoMint is currently disabled.\nTo enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in Transend.conf");
+        automintHelp += tr("AutoMint is currently disabled.\nTo enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in transend.conf");
     }
     ui->labelzTSCPercent->setToolTip(automintHelp);
 

@@ -473,7 +473,7 @@ void BlockExplorer::showEvent(QShowEvent*)
         updateNavButtons();
 
         if (!GetBoolArg("-txindex", false)) {
-            QString Warning = tr("Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (Transend.conf).");
+            QString Warning = tr("Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (transend.conf).");
             QMessageBox::warning(this, "Transend Core Blockchain Explorer", Warning, QMessageBox::Ok);
         }
     }

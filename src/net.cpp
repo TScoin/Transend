@@ -7,7 +7,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/Transend-config.h"
+#include "config/transend-config.h"
 #endif
 
 #include "net.h"
@@ -16,7 +16,7 @@
 #include "chainparams.h"
 #include "clientversion.h"
 #include "miner.h"
-#include "Hodgepodge.h"
+#include "obfuscation.h"
 #include "primitives/transaction.h"
 #include "ui_interface.h"
 #include "wallet.h"
@@ -386,18 +386,18 @@ CNode* FindNode(const CService& addr)
     return NULL;
 }
 
-CNode* ConnectNode(CAddress addrConnect, const char* pszDest, bool HodgepodgeMaster)
+CNode* ConnectNode(CAddress addrConnect, const char* pszDest, bool obfuScationMaster)
 {
     if (pszDest == NULL) {
         // we clean masternode connections in CMasternodeMan::ProcessMasternodeConnections()
         // so should be safe to skip this and connect to local Hot MN on CActiveMasternode::ManageStatus()
-        if (IsLocal(addrConnect) && !HodgepodgeMaster)
+        if (IsLocal(addrConnect) && !obfuScationMaster)
             return NULL;
 
         // Look for an existing connection
         CNode* pnode = FindNode((CService)addrConnect);
         if (pnode) {
-            pnode->fHodgepodgeMaster = HodgepodgeMaster;
+            pnode->fObfuScationMaster = obfuScationMaster;
 
             pnode->AddRef();
             return pnode;
@@ -432,7 +432,7 @@ CNode* ConnectNode(CAddress addrConnect, const char* pszDest, bool HodgepodgeMas
         }
 
         pnode->nTimeConnected = GetTime();
-        if (HodgepodgeMaster) pnode->fHodgepodgeMaster = true;
+        if (obfuScationMaster) pnode->fObfuScationMaster = true;
 
         return pnode;
     } else if (!proxyConnectionFailed) {
@@ -1939,7 +1939,7 @@ CNode::CNode(SOCKET hSocketIn, CAddress addrIn, std::string addrNameIn, bool fIn
     nPingUsecStart = 0;
     nPingUsecTime = 0;
     fPingQueued = false;
-    fHodgepodgeMaster = false;
+    fObfuScationMaster = false;
 
     {
         LOCK(cs_nLastNodeId);

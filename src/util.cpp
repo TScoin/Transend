@@ -7,7 +7,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/Transend-config.h"
+#include "config/transend-config.h"
 #endif
 
 #include "util.h"
@@ -126,8 +126,8 @@ int nLiquidityProvider = 0;
 /** Spork enforcement enabled time */
 int64_t enforceMasternodePaymentsTime = 4085657524;
 bool fSucessfullyLoaded = false;
-/** All denominations used by Hodgepodge */
-std::vector<int64_t> HodgepodgeDenominations;
+/** All denominations used by obfuscation */
+std::vector<int64_t> obfuScationDenominations;
 string strBudgetMode = "";
 
 map<string, string> mapArgs;
@@ -238,9 +238,9 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "Transend" is a composite category enabling all Transend-related debug output
-            if (ptrCategory->count(string("Transend"))) {
-                ptrCategory->insert(string("Hodgepodge"));
+            // "transend" is a composite category enabling all Transend-related debug output
+            if (ptrCategory->count(string("transend"))) {
+                ptrCategory->insert(string("obfuscation"));
                 ptrCategory->insert(string("swiftx"));
                 ptrCategory->insert(string("masternode"));
                 ptrCategory->insert(string("mnpayments"));
@@ -404,7 +404,7 @@ static std::string FormatException(std::exception* pex, const char* pszThread)
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "Transend";
+    const char* pszModule = "transend";
 #endif
     if (pex)
         return strprintf(
@@ -428,7 +428,7 @@ boost::filesystem::path GetDefaultDataDir()
 // Windows < Vista: C:\Documents and Settings\Username\Application Data\Transend
 // Windows >= Vista: C:\Users\Username\AppData\Roaming\Transend
 // Mac: ~/Library/Application Support/Transend
-// Unix: ~/.Transend
+// Unix: ~/.transend
 #ifdef WIN32
     // Windows
     return GetSpecialFolderPath(CSIDL_APPDATA) / "Transend";
@@ -446,7 +446,7 @@ boost::filesystem::path GetDefaultDataDir()
     return pathRet / "Transend";
 #else
     // Unix
-    return pathRet / ".Transend";
+    return pathRet / ".transend";
 #endif
 #endif
 }
@@ -493,7 +493,7 @@ void ClearDatadirCache()
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "Transend.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "transend.conf"));
     if (!pathConfigFile.is_complete())
         pathConfigFile = GetDataDir(false) / pathConfigFile;
 
@@ -512,7 +512,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 {
     boost::filesystem::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good()) {
-        // Create empty Transend.conf if it does not exist
+        // Create empty transend.conf if it does not exist
         FILE* configFile = fopen(GetConfigFile().string().c_str(), "a");
         if (configFile != NULL)
             fclose(configFile);
@@ -523,7 +523,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
     setOptions.insert("*");
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it) {
-        // Don't overwrite existing settings so command line settings override Transend.conf
+        // Don't overwrite existing settings so command line settings override transend.conf
         string strKey = string("-") + it->string_key;
         string strValue = it->value[0];
         InterpretNegativeSetting(strKey, strValue);
@@ -538,7 +538,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 #ifndef WIN32
 boost::filesystem::path GetPidFile()
 {
-    boost::filesystem::path pathPidFile(GetArg("-pid", "Transendd.pid"));
+    boost::filesystem::path pathPidFile(GetArg("-pid", "transendd.pid"));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }

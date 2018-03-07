@@ -8,7 +8,7 @@
 #include "transactionrecord.h"
 
 #include "base58.h"
-#include "Hodgepodge.h"
+#include "obfuscation.h"
 #include "swifttx.h"
 #include "timedata.h"
 #include "wallet.h"
@@ -217,7 +217,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
 
                     if (wallet->IsCollateralAmount(txout.nValue)) sub.type = TransactionRecord::HodgepodgeMakeCollaterals;
                     if (wallet->IsDenominatedAmount(txout.nValue)) sub.type = TransactionRecord::HodgepodgeCreateDenominations;
-                    if (nDebit - wtx.GetValueOut() == Hodgepodge_COLLATERAL) sub.type = TransactionRecord::HodgepodgeCollateralPayment;
+                    if (nDebit - wtx.GetValueOut() == OBFUSCATION_COLLATERAL) sub.type = TransactionRecord::HodgepodgeCollateralPayment;
                 }
             }
 

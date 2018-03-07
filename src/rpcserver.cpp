@@ -320,35 +320,35 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
         /* Transend features */
-        {"Transend", "masternode", &masternode, true, true, false},
-        {"Transend", "listmasternodes", &listmasternodes, true, true, false},
-        {"Transend", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"Transend", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"Transend", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"Transend", "masternodedebug", &masternodedebug, true, true, false},
-        {"Transend", "startmasternode", &startmasternode, true, true, false},
-        {"Transend", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"Transend", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"Transend", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"Transend", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"Transend", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"Transend", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"Transend", "mnbudget", &mnbudget, true, true, false},
-        {"Transend", "preparebudget", &preparebudget, true, true, false},
-        {"Transend", "submitbudget", &submitbudget, true, true, false},
-        {"Transend", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"Transend", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"Transend", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"Transend", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"Transend", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"Transend", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"Transend", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"Transend", "checkbudgets", &checkbudgets, true, true, false},
-        {"Transend", "mnsync", &mnsync, true, true, false},
-        {"Transend", "spork", &spork, true, true, false},
-        {"Transend", "getpoolinfo", &getpoolinfo, true, true, false},
+        {"transend", "masternode", &masternode, true, true, false},
+        {"transend", "listmasternodes", &listmasternodes, true, true, false},
+        {"transend", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"transend", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"transend", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"transend", "masternodedebug", &masternodedebug, true, true, false},
+        {"transend", "startmasternode", &startmasternode, true, true, false},
+        {"transend", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"transend", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"transend", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"transend", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"transend", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"transend", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"transend", "mnbudget", &mnbudget, true, true, false},
+        {"transend", "preparebudget", &preparebudget, true, true, false},
+        {"transend", "submitbudget", &submitbudget, true, true, false},
+        {"transend", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"transend", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"transend", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"transend", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"transend", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"transend", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"transend", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"transend", "checkbudgets", &checkbudgets, true, true, false},
+        {"transend", "mnsync", &mnsync, true, true, false},
+        {"transend", "spork", &spork, true, true, false},
+        {"transend", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"Transend", "Hodgepodge", &Hodgepodge, false, false, true}, /* not threadSafe because of SendMoney */
+        {"transend", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -627,10 +627,10 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use Transendd, or the -server option to Transend-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use transendd, or the -server option to transend-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
-                                               "rpcuser=Transendrpc\n"
+                                               "rpcuser=transendrpc\n"
                                                "rpcpassword=%s\n"
                                                "(you do not need to remember this password)\n"
                                                "The username and password MUST NOT be the same.\n"
@@ -1087,7 +1087,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> Transend-cli " + methodname + " " + args + "\n";
+    return "> transend-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

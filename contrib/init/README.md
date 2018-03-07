@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: Transendd.service
-Upstart: Transendd.conf
-OpenRC:  Transendd.openrc
-         Transendd.openrcconf
-CentOS:  Transendd.init
+SystemD: solarisd.service
+Upstart: solarisd.conf
+OpenRC:  solarisd.openrc
+         solarisd.openrcconf
+CentOS:  solarisd.init
 
 have been made available to assist packagers in creating node packages here.
 
