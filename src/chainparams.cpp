@@ -108,8 +108,8 @@ public:
         nModifierUpdateBlock = 1;
 		
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
-        nZerocoinStartTime = 1523653200; // April 13, 2018 21:00:00 UTC
-		nZerocoinStartHeight = 262596;
+        nZerocoinStartTime = 1523145600; // April 8, 2018 00:00:00 GMT
+		nZerocoinStartHeight = 16969;
 		
 		const char* pszTimestamp = "NY Times 2018/02/09 China Suffers as the World Follows Wall Street's Slump";
 		
@@ -134,6 +134,11 @@ public:
 		
 	vSeeds.push_back(CDNSSeedData("seed1.transendcoin.com", "seed1.transendcoin.com"));
         vSeeds.push_back(CDNSSeedData("seed2.transendcoin.com", "seed2.transendcoin.com"));
+        vSeeds.push_back(CDNSSeedData("seed3.transendcoin.com", "seed3.transendcoin.com"));
+        vSeeds.push_back(CDNSSeedData("seed4.transendcoin.com", "seed4.transendcoin.com"));
+        vSeeds.push_back(CDNSSeedData("seed5.transendcoin.com", "seed5.transendcoin.com"));
+        vSeeds.push_back(CDNSSeedData("seed6.transendcoin.com", "seed6.transendcoin.com"));
+        vSeeds.push_back(CDNSSeedData("seed7.transendcoin.com", "seed7.transendcoin.com"));
         		
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 65);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
@@ -155,8 +160,8 @@ public:
         nPoolMaxTransactions = 3;
         strSporkKey = "045da9271f5d9df405d9e83c7c7e62e9c831cc85c51ffaa6b515c4f9c845dec4bf256460003f26ba9d394a17cb57e6759fe231eca75b801c20bccd19cbe4b7942d";
         
-        strObfuscationPoolDummyAddress = "Sg3aLcSeLqbpEsVgoXtDFrpDYDfAsf1qxv";
-        nStartMasternodePayments = 1520866858; //Mon, 12 Mar 2018 15:00:00 GMT
+        strObfuscationPoolDummyAddress = "TTNdqxPJtiiAdu5xGfm5paDVpruBfuJvcY";
+        nStartMasternodePayments = 1521073200; //Thu, 15 Mar 2018 00:20:00 GMT
 
         /** Zerocoin */
         zerocoinModulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"

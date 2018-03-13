@@ -1,5 +1,5 @@
 crypto/crypto_libbitcoin_crypto_a-sph_sha2big.o: crypto/sph_sha2big.c \
- /usr/lib/gcc/x86_64-w64-mingw32/4.8/include/stddef.h \
+ /usr/lib/gcc/i686-w64-mingw32/4.8/include/stddef.h \
  /usr/share/mingw-w64/include/stddef.h \
  /usr/share/mingw-w64/include/crtdefs.h \
  /usr/share/mingw-w64/include/_mingw.h \
@@ -11,11 +11,11 @@ crypto/crypto_libbitcoin_crypto_a-sph_sha2big.o: crypto/sph_sha2big.c \
  /usr/share/mingw-w64/include/string.h \
  /usr/share/mingw-w64/include/sec_api/string_s.h crypto/sph_sha2.h \
  crypto/sph_types.h \
- /usr/lib/gcc/x86_64-w64-mingw32/4.8/include-fixed/limits.h \
- /usr/lib/gcc/x86_64-w64-mingw32/4.8/include-fixed/syslimits.h \
+ /usr/lib/gcc/i686-w64-mingw32/4.8/include-fixed/limits.h \
+ /usr/lib/gcc/i686-w64-mingw32/4.8/include-fixed/syslimits.h \
  /usr/share/mingw-w64/include/limits.h crypto/sph_md_helper.c
 
-/usr/lib/gcc/x86_64-w64-mingw32/4.8/include/stddef.h:
+/usr/lib/gcc/i686-w64-mingw32/4.8/include/stddef.h:
 
 /usr/share/mingw-w64/include/stddef.h:
 
@@ -41,9 +41,9 @@ crypto/sph_sha2.h:
 
 crypto/sph_types.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/4.8/include-fixed/limits.h:
+/usr/lib/gcc/i686-w64-mingw32/4.8/include-fixed/limits.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/4.8/include-fixed/syslimits.h:
+/usr/lib/gcc/i686-w64-mingw32/4.8/include-fixed/syslimits.h:
 
 /usr/share/mingw-w64/include/limits.h:
 

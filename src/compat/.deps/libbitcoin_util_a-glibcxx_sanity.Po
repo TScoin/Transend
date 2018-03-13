@@ -1,8 +1,8 @@
 compat/libbitcoin_util_a-glibcxx_sanity.o: compat/glibcxx_sanity.cpp \
  /usr/include/c++/4.8/list /usr/include/c++/4.8/bits/stl_algobase.h \
- /usr/include/c++/4.8/x86_64-w64-mingw32/bits/c++config.h \
- /usr/include/c++/4.8/x86_64-w64-mingw32/bits/os_defines.h \
- /usr/include/c++/4.8/x86_64-w64-mingw32/bits/cpu_defines.h \
+ /usr/include/c++/4.8/i686-w64-mingw32/bits/c++config.h \
+ /usr/include/c++/4.8/i686-w64-mingw32/bits/os_defines.h \
+ /usr/include/c++/4.8/i686-w64-mingw32/bits/cpu_defines.h \
  /usr/include/c++/4.8/bits/functexcept.h \
  /usr/include/c++/4.8/bits/exception_defines.h \
  /usr/include/c++/4.8/bits/cpp_type_traits.h \
@@ -16,7 +16,7 @@ compat/libbitcoin_util_a-glibcxx_sanity.o: compat/glibcxx_sanity.cpp \
  /usr/include/c++/4.8/debug/debug.h \
  /usr/include/c++/4.8/bits/stl_iterator.h \
  /usr/include/c++/4.8/bits/allocator.h \
- /usr/include/c++/4.8/x86_64-w64-mingw32/bits/c++allocator.h \
+ /usr/include/c++/4.8/i686-w64-mingw32/bits/c++allocator.h \
  /usr/include/c++/4.8/ext/new_allocator.h /usr/include/c++/4.8/new \
  /usr/include/c++/4.8/exception \
  /usr/include/c++/4.8/bits/atomic_lockfree_defines.h \
@@ -27,7 +27,7 @@ compat/libbitcoin_util_a-glibcxx_sanity.o: compat/glibcxx_sanity.cpp \
  /usr/include/c++/4.8/bits/stl_list.h \
  /usr/include/c++/4.8/initializer_list /usr/include/c++/4.8/bits/list.tcc \
  /usr/include/c++/4.8/locale /usr/include/c++/4.8/bits/localefwd.h \
- /usr/include/c++/4.8/x86_64-w64-mingw32/bits/c++locale.h \
+ /usr/include/c++/4.8/i686-w64-mingw32/bits/c++locale.h \
  /usr/include/c++/4.8/clocale /usr/share/mingw-w64/include/locale.h \
  /usr/share/mingw-w64/include/crtdefs.h \
  /usr/share/mingw-w64/include/_mingw.h \
@@ -39,7 +39,7 @@ compat/libbitcoin_util_a-glibcxx_sanity.o: compat/glibcxx_sanity.cpp \
  /usr/share/mingw-w64/include/stdio.h \
  /usr/share/mingw-w64/include/_mingw_print_push.h \
  /usr/share/mingw-w64/include/_mingw_off_t.h \
- /usr/x86_64-w64-mingw32/include/swprintf.inl \
+ /usr/i686-w64-mingw32/include/swprintf.inl \
  /usr/share/mingw-w64/include/sec_api/stdio_s.h \
  /usr/share/mingw-w64/include/_mingw_print_pop.h \
  /usr/include/c++/4.8/iosfwd /usr/include/c++/4.8/bits/stringfwd.h \
@@ -50,9 +50,9 @@ compat/libbitcoin_util_a-glibcxx_sanity.o: compat/glibcxx_sanity.cpp \
  /usr/include/c++/4.8/cctype /usr/share/mingw-w64/include/ctype.h \
  /usr/include/c++/4.8/bits/locale_classes.h /usr/include/c++/4.8/string \
  /usr/include/c++/4.8/bits/char_traits.h /usr/include/c++/4.8/cstdint \
- /usr/lib/gcc/x86_64-w64-mingw32/4.8/include/stdint.h \
+ /usr/lib/gcc/i686-w64-mingw32/4.8/include/stdint.h \
  /usr/share/mingw-w64/include/stdint.h \
- /usr/lib/gcc/x86_64-w64-mingw32/4.8/include/stddef.h \
+ /usr/lib/gcc/i686-w64-mingw32/4.8/include/stddef.h \
  /usr/share/mingw-w64/include/stddef.h \
  /usr/include/c++/4.8/bits/ostream_insert.h \
  /usr/include/c++/4.8/bits/cxxabi_forced.h \
@@ -60,14 +60,14 @@ compat/libbitcoin_util_a-glibcxx_sanity.o: compat/glibcxx_sanity.cpp \
  /usr/include/c++/4.8/backward/binders.h \
  /usr/include/c++/4.8/bits/basic_string.h \
  /usr/include/c++/4.8/ext/atomicity.h \
- /usr/include/c++/4.8/x86_64-w64-mingw32/bits/gthr.h \
- /usr/include/c++/4.8/x86_64-w64-mingw32/bits/gthr-default.h \
+ /usr/include/c++/4.8/i686-w64-mingw32/bits/gthr.h \
+ /usr/include/c++/4.8/i686-w64-mingw32/bits/gthr-default.h \
  /usr/share/mingw-w64/include/pthread.h \
  /usr/share/mingw-w64/include/errno.h \
  /usr/share/mingw-w64/include/sys/types.h \
  /usr/share/mingw-w64/include/process.h \
- /usr/lib/gcc/x86_64-w64-mingw32/4.8/include-fixed/limits.h \
- /usr/lib/gcc/x86_64-w64-mingw32/4.8/include-fixed/syslimits.h \
+ /usr/lib/gcc/i686-w64-mingw32/4.8/include-fixed/limits.h \
+ /usr/lib/gcc/i686-w64-mingw32/4.8/include-fixed/syslimits.h \
  /usr/share/mingw-w64/include/limits.h \
  /usr/share/mingw-w64/include/signal.h \
  /usr/share/mingw-w64/include/pthread_signal.h \
@@ -75,7 +75,7 @@ compat/libbitcoin_util_a-glibcxx_sanity.o: compat/glibcxx_sanity.cpp \
  /usr/share/mingw-w64/include/sec_api/sys/timeb_s.h \
  /usr/share/mingw-w64/include/pthread_compat.h \
  /usr/share/mingw-w64/include/pthread_unistd.h \
- /usr/include/c++/4.8/x86_64-w64-mingw32/bits/atomic_word.h \
+ /usr/include/c++/4.8/i686-w64-mingw32/bits/atomic_word.h \
  /usr/include/c++/4.8/ext/string_conversions.h \
  /usr/include/c++/4.8/cstdlib /usr/share/mingw-w64/include/stdlib.h \
  /usr/share/mingw-w64/include/sec_api/stdlib_s.h \
@@ -86,19 +86,19 @@ compat/libbitcoin_util_a-glibcxx_sanity.o: compat/glibcxx_sanity.cpp \
  /usr/include/c++/4.8/bits/locale_classes.tcc \
  /usr/include/c++/4.8/bits/locale_facets.h /usr/include/c++/4.8/cwctype \
  /usr/share/mingw-w64/include/wctype.h \
- /usr/include/c++/4.8/x86_64-w64-mingw32/bits/ctype_base.h \
+ /usr/include/c++/4.8/i686-w64-mingw32/bits/ctype_base.h \
  /usr/include/c++/4.8/bits/ios_base.h /usr/include/c++/4.8/streambuf \
  /usr/include/c++/4.8/bits/streambuf.tcc \
  /usr/include/c++/4.8/bits/streambuf_iterator.h \
- /usr/include/c++/4.8/x86_64-w64-mingw32/bits/ctype_inline.h \
+ /usr/include/c++/4.8/i686-w64-mingw32/bits/ctype_inline.h \
  /usr/include/c++/4.8/bits/locale_facets.tcc \
  /usr/include/c++/4.8/bits/locale_facets_nonio.h \
  /usr/include/c++/4.8/ctime /usr/share/mingw-w64/include/time.h \
  /usr/share/mingw-w64/include/_timeval.h \
  /usr/share/mingw-w64/include/sec_api/time_s.h \
  /usr/share/mingw-w64/include/pthread_time.h \
- /usr/include/c++/4.8/x86_64-w64-mingw32/bits/time_members.h \
- /usr/include/c++/4.8/x86_64-w64-mingw32/bits/messages_members.h \
+ /usr/include/c++/4.8/i686-w64-mingw32/bits/time_members.h \
+ /usr/include/c++/4.8/i686-w64-mingw32/bits/messages_members.h \
  /usr/include/c++/4.8/bits/codecvt.h \
  /usr/include/c++/4.8/bits/locale_facets_nonio.tcc \
  /usr/include/c++/4.8/stdexcept
@@ -107,11 +107,11 @@ compat/libbitcoin_util_a-glibcxx_sanity.o: compat/glibcxx_sanity.cpp \
 
 /usr/include/c++/4.8/bits/stl_algobase.h:
 
-/usr/include/c++/4.8/x86_64-w64-mingw32/bits/c++config.h:
+/usr/include/c++/4.8/i686-w64-mingw32/bits/c++config.h:
 
-/usr/include/c++/4.8/x86_64-w64-mingw32/bits/os_defines.h:
+/usr/include/c++/4.8/i686-w64-mingw32/bits/os_defines.h:
 
-/usr/include/c++/4.8/x86_64-w64-mingw32/bits/cpu_defines.h:
+/usr/include/c++/4.8/i686-w64-mingw32/bits/cpu_defines.h:
 
 /usr/include/c++/4.8/bits/functexcept.h:
 
@@ -141,7 +141,7 @@ compat/libbitcoin_util_a-glibcxx_sanity.o: compat/glibcxx_sanity.cpp \
 
 /usr/include/c++/4.8/bits/allocator.h:
 
-/usr/include/c++/4.8/x86_64-w64-mingw32/bits/c++allocator.h:
+/usr/include/c++/4.8/i686-w64-mingw32/bits/c++allocator.h:
 
 /usr/include/c++/4.8/ext/new_allocator.h:
 
@@ -169,7 +169,7 @@ compat/libbitcoin_util_a-glibcxx_sanity.o: compat/glibcxx_sanity.cpp \
 
 /usr/include/c++/4.8/bits/localefwd.h:
 
-/usr/include/c++/4.8/x86_64-w64-mingw32/bits/c++locale.h:
+/usr/include/c++/4.8/i686-w64-mingw32/bits/c++locale.h:
 
 /usr/include/c++/4.8/clocale:
 
@@ -195,7 +195,7 @@ compat/libbitcoin_util_a-glibcxx_sanity.o: compat/glibcxx_sanity.cpp \
 
 /usr/share/mingw-w64/include/_mingw_off_t.h:
 
-/usr/x86_64-w64-mingw32/include/swprintf.inl:
+/usr/i686-w64-mingw32/include/swprintf.inl:
 
 /usr/share/mingw-w64/include/sec_api/stdio_s.h:
 
@@ -227,11 +227,11 @@ compat/libbitcoin_util_a-glibcxx_sanity.o: compat/glibcxx_sanity.cpp \
 
 /usr/include/c++/4.8/cstdint:
 
-/usr/lib/gcc/x86_64-w64-mingw32/4.8/include/stdint.h:
+/usr/lib/gcc/i686-w64-mingw32/4.8/include/stdint.h:
 
 /usr/share/mingw-w64/include/stdint.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/4.8/include/stddef.h:
+/usr/lib/gcc/i686-w64-mingw32/4.8/include/stddef.h:
 
 /usr/share/mingw-w64/include/stddef.h:
 
@@ -247,9 +247,9 @@ compat/libbitcoin_util_a-glibcxx_sanity.o: compat/glibcxx_sanity.cpp \
 
 /usr/include/c++/4.8/ext/atomicity.h:
 
-/usr/include/c++/4.8/x86_64-w64-mingw32/bits/gthr.h:
+/usr/include/c++/4.8/i686-w64-mingw32/bits/gthr.h:
 
-/usr/include/c++/4.8/x86_64-w64-mingw32/bits/gthr-default.h:
+/usr/include/c++/4.8/i686-w64-mingw32/bits/gthr-default.h:
 
 /usr/share/mingw-w64/include/pthread.h:
 
@@ -259,9 +259,9 @@ compat/libbitcoin_util_a-glibcxx_sanity.o: compat/glibcxx_sanity.cpp \
 
 /usr/share/mingw-w64/include/process.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/4.8/include-fixed/limits.h:
+/usr/lib/gcc/i686-w64-mingw32/4.8/include-fixed/limits.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/4.8/include-fixed/syslimits.h:
+/usr/lib/gcc/i686-w64-mingw32/4.8/include-fixed/syslimits.h:
 
 /usr/share/mingw-w64/include/limits.h:
 
@@ -277,7 +277,7 @@ compat/libbitcoin_util_a-glibcxx_sanity.o: compat/glibcxx_sanity.cpp \
 
 /usr/share/mingw-w64/include/pthread_unistd.h:
 
-/usr/include/c++/4.8/x86_64-w64-mingw32/bits/atomic_word.h:
+/usr/include/c++/4.8/i686-w64-mingw32/bits/atomic_word.h:
 
 /usr/include/c++/4.8/ext/string_conversions.h:
 
@@ -307,7 +307,7 @@ compat/libbitcoin_util_a-glibcxx_sanity.o: compat/glibcxx_sanity.cpp \
 
 /usr/share/mingw-w64/include/wctype.h:
 
-/usr/include/c++/4.8/x86_64-w64-mingw32/bits/ctype_base.h:
+/usr/include/c++/4.8/i686-w64-mingw32/bits/ctype_base.h:
 
 /usr/include/c++/4.8/bits/ios_base.h:
 
@@ -317,7 +317,7 @@ compat/libbitcoin_util_a-glibcxx_sanity.o: compat/glibcxx_sanity.cpp \
 
 /usr/include/c++/4.8/bits/streambuf_iterator.h:
 
-/usr/include/c++/4.8/x86_64-w64-mingw32/bits/ctype_inline.h:
+/usr/include/c++/4.8/i686-w64-mingw32/bits/ctype_inline.h:
 
 /usr/include/c++/4.8/bits/locale_facets.tcc:
 
@@ -333,9 +333,9 @@ compat/libbitcoin_util_a-glibcxx_sanity.o: compat/glibcxx_sanity.cpp \
 
 /usr/share/mingw-w64/include/pthread_time.h:
 
-/usr/include/c++/4.8/x86_64-w64-mingw32/bits/time_members.h:
+/usr/include/c++/4.8/i686-w64-mingw32/bits/time_members.h:
 
-/usr/include/c++/4.8/x86_64-w64-mingw32/bits/messages_members.h:
+/usr/include/c++/4.8/i686-w64-mingw32/bits/messages_members.h:
 
 /usr/include/c++/4.8/bits/codecvt.h:
 

@@ -3,7 +3,7 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-BUILDDIR="/root/work_test/tempo/Solaris"
+BUILDDIR="/root/work_on_build/current"
 EXEEXT=".exe"
 
 # These will turn into comments if they were disabled when configuring.

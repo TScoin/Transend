@@ -1,7 +1,7 @@
 crypto/crypto_libbitcoin_crypto_a-aes_helper.o: crypto/aes_helper.c \
  crypto/sph_types.h \
- /usr/lib/gcc/x86_64-w64-mingw32/4.8/include-fixed/limits.h \
- /usr/lib/gcc/x86_64-w64-mingw32/4.8/include-fixed/syslimits.h \
+ /usr/lib/gcc/i686-w64-mingw32/4.8/include-fixed/limits.h \
+ /usr/lib/gcc/i686-w64-mingw32/4.8/include-fixed/syslimits.h \
  /usr/share/mingw-w64/include/limits.h \
  /usr/share/mingw-w64/include/crtdefs.h \
  /usr/share/mingw-w64/include/_mingw.h \
@@ -13,9 +13,9 @@ crypto/crypto_libbitcoin_crypto_a-aes_helper.o: crypto/aes_helper.c \
 
 crypto/sph_types.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/4.8/include-fixed/limits.h:
+/usr/lib/gcc/i686-w64-mingw32/4.8/include-fixed/limits.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/4.8/include-fixed/syslimits.h:
+/usr/lib/gcc/i686-w64-mingw32/4.8/include-fixed/syslimits.h:
 
 /usr/share/mingw-w64/include/limits.h:
 

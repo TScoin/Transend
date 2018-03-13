@@ -1,8 +1,8 @@
 compat/libbitcoin_util_a-strnlen.o: compat/strnlen.cpp \
  config/transend-config.h /usr/include/c++/4.8/cstring \
- /usr/include/c++/4.8/x86_64-w64-mingw32/bits/c++config.h \
- /usr/include/c++/4.8/x86_64-w64-mingw32/bits/os_defines.h \
- /usr/include/c++/4.8/x86_64-w64-mingw32/bits/cpu_defines.h \
+ /usr/include/c++/4.8/i686-w64-mingw32/bits/c++config.h \
+ /usr/include/c++/4.8/i686-w64-mingw32/bits/os_defines.h \
+ /usr/include/c++/4.8/i686-w64-mingw32/bits/cpu_defines.h \
  /usr/share/mingw-w64/include/string.h \
  /usr/share/mingw-w64/include/crtdefs.h \
  /usr/share/mingw-w64/include/_mingw.h \
@@ -17,11 +17,11 @@ config/transend-config.h:
 
 /usr/include/c++/4.8/cstring:
 
-/usr/include/c++/4.8/x86_64-w64-mingw32/bits/c++config.h:
+/usr/include/c++/4.8/i686-w64-mingw32/bits/c++config.h:
 
-/usr/include/c++/4.8/x86_64-w64-mingw32/bits/os_defines.h:
+/usr/include/c++/4.8/i686-w64-mingw32/bits/os_defines.h:
 
-/usr/include/c++/4.8/x86_64-w64-mingw32/bits/cpu_defines.h:
+/usr/include/c++/4.8/i686-w64-mingw32/bits/cpu_defines.h:
 
 /usr/share/mingw-w64/include/string.h:
 
