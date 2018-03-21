@@ -130,35 +130,35 @@ qt/qt_libbitcoinqt_a-moc_transactiontablemodel.o: \
  /usr/share/mingw-w64/include/string.h \
  /usr/share/mingw-w64/include/sec_api/string_s.h \
  libzerocoin/Denominations.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/QAbstractListModel \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qabstractitemmodel.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qvariant.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qatomic.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qglobal.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/QAbstractListModel \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qabstractitemmodel.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qvariant.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qatomic.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qglobal.h \
  /usr/include/c++/4.8/cstddef \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qconfig.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qfeatures.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qsystemdetection.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qprocessordetection.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qcompilerdetection.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qtypeinfo.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qtypetraits.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qisenum.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qsysinfo.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qlogging.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qflags.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qbasicatomic.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qatomic_cxx11.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qgenericatomic.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qconfig.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qfeatures.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qsystemdetection.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qprocessordetection.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qcompilerdetection.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qtypeinfo.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qtypetraits.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qisenum.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qsysinfo.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qlogging.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qflags.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qbasicatomic.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qatomic_cxx11.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qgenericatomic.h \
  /usr/include/c++/4.8/atomic /usr/include/c++/4.8/bits/atomic_base.h \
  /usr/lib/gcc/i686-w64-mingw32/4.8/include/stdbool.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qglobalstatic.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qnumeric.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qversiontagging.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qbytearray.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qrefcount.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qnamespace.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qarraydata.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qglobalstatic.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qnumeric.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qversiontagging.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qbytearray.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qrefcount.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qnamespace.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qarraydata.h \
  /usr/lib/gcc/i686-w64-mingw32/4.8/include/stdarg.h \
  /usr/share/mingw-w64/include/stdarg.h \
  /usr/share/mingw-w64/include/_mingw_stdarg.h \
@@ -166,35 +166,35 @@ qt/qt_libbitcoinqt_a-moc_transactiontablemodel.o: \
  /usr/include/c++/4.8/bits/ostream.tcc /usr/include/c++/4.8/istream \
  /usr/include/c++/4.8/bits/istream.tcc \
  /usr/include/c++/4.8/bits/stream_iterator.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qlist.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qalgorithms.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qiterator.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qhashfunctions.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qchar.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qpair.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qlist.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qalgorithms.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qiterator.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qhashfunctions.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qchar.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qpair.h \
  /usr/include/c++/4.8/list /usr/include/c++/4.8/bits/stl_list.h \
  /usr/include/c++/4.8/bits/list.tcc \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qbytearraylist.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qstringlist.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qregexp.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qstring.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qstringmatcher.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qmetatype.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qvarlengtharray.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qcontainerfwd.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qobjectdefs.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qobjectdefs_impl.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qmap.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qhash.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qobject.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qscopedpointer.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qobject_impl.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qvector.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/QString \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qstring.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/QAbstractTableModel \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/QStringList \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qstringlist.h
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qbytearraylist.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qstringlist.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qregexp.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qstring.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qstringmatcher.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qmetatype.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qvarlengtharray.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qcontainerfwd.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qobjectdefs.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qobjectdefs_impl.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qmap.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qhash.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qobject.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qscopedpointer.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qobject_impl.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qvector.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/QString \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qstring.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/QAbstractTableModel \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/QStringList \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qstringlist.h
 
 qt/transactiontablemodel.h:
 
@@ -512,45 +512,45 @@ serialize.h:
 
 libzerocoin/Denominations.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/QAbstractListModel:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/QAbstractListModel:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qabstractitemmodel.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qabstractitemmodel.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qvariant.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qvariant.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qatomic.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qatomic.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qglobal.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qglobal.h:
 
 /usr/include/c++/4.8/cstddef:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qconfig.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qconfig.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qfeatures.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qfeatures.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qsystemdetection.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qsystemdetection.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qprocessordetection.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qprocessordetection.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qcompilerdetection.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qcompilerdetection.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qtypeinfo.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qtypeinfo.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qtypetraits.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qtypetraits.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qisenum.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qisenum.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qsysinfo.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qsysinfo.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qlogging.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qlogging.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qflags.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qflags.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qbasicatomic.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qbasicatomic.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qatomic_cxx11.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qatomic_cxx11.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qgenericatomic.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qgenericatomic.h:
 
 /usr/include/c++/4.8/atomic:
 
@@ -558,19 +558,19 @@ libzerocoin/Denominations.h:
 
 /usr/lib/gcc/i686-w64-mingw32/4.8/include/stdbool.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qglobalstatic.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qglobalstatic.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qnumeric.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qnumeric.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qversiontagging.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qversiontagging.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qbytearray.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qbytearray.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qrefcount.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qrefcount.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qnamespace.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qnamespace.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qarraydata.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qarraydata.h:
 
 /usr/lib/gcc/i686-w64-mingw32/4.8/include/stdarg.h:
 
@@ -590,17 +590,17 @@ libzerocoin/Denominations.h:
 
 /usr/include/c++/4.8/bits/stream_iterator.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qlist.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qlist.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qalgorithms.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qalgorithms.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qiterator.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qiterator.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qhashfunctions.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qhashfunctions.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qchar.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qchar.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qpair.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qpair.h:
 
 /usr/include/c++/4.8/list:
 
@@ -608,44 +608,44 @@ libzerocoin/Denominations.h:
 
 /usr/include/c++/4.8/bits/list.tcc:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qbytearraylist.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qbytearraylist.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qstringlist.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qstringlist.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qregexp.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qregexp.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qstring.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qstring.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qstringmatcher.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qstringmatcher.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qmetatype.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qmetatype.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qvarlengtharray.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qvarlengtharray.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qcontainerfwd.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qcontainerfwd.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qobjectdefs.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qobjectdefs.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qobjectdefs_impl.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qobjectdefs_impl.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qmap.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qmap.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qhash.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qhash.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qobject.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qobject.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qscopedpointer.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qscopedpointer.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qobject_impl.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qobject_impl.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qvector.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qvector.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/QString:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/QString:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qstring.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qstring.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/QAbstractTableModel:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/QAbstractTableModel:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/QStringList:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/QStringList:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/QtCore/qstringlist.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/QtCore/qstringlist.h:

@@ -150,9 +150,9 @@ libbitcoin_common_a-hash.o: hash.cpp hash.h crypto/ripemd160.h \
  /usr/include/c++/4.8/i686-w64-mingw32/bits/messages_members.h \
  /usr/include/c++/4.8/bits/codecvt.h \
  /usr/include/c++/4.8/bits/locale_facets_nonio.tcc \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/sha.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/sha.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h \
  /usr/include/c++/4.8/sstream /usr/include/c++/4.8/bits/sstream.tcc \
  crypto/hmac_sha512.h crypto/sha512.h crypto/scrypt.h crypto/common.h \
  pubkey.h
@@ -553,11 +553,11 @@ crypto/sph_haval.h:
 
 /usr/include/c++/4.8/bits/locale_facets_nonio.tcc:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/sha.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/sha.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h:
 
 /usr/include/c++/4.8/sstream:
 

@@ -129,15 +129,15 @@ primitives/libbitcoin_common_a-zerocoin.o: primitives/zerocoin.cpp \
  /usr/share/mingw-w64/include/string.h \
  /usr/share/mingw-w64/include/sec_api/string_s.h \
  libzerocoin/Denominations.h libzerocoin/bignum.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/bn.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/ossl_typ.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/crypto.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/stack.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/safestack.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/opensslv.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/symhacks.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/bn.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/ossl_typ.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/crypto.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/stack.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/safestack.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/opensslv.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/symhacks.h \
  serialize.h uint256.h /usr/include/c++/4.8/cstring version.h \
  libzerocoin/Denominations.h
 
@@ -457,23 +457,23 @@ libzerocoin/Denominations.h:
 
 libzerocoin/bignum.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/bn.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/bn.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/ossl_typ.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/ossl_typ.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/crypto.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/crypto.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/stack.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/stack.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/safestack.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/safestack.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/opensslv.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/opensslv.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/symhacks.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/symhacks.h:
 
 serialize.h:
 

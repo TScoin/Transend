@@ -93,15 +93,15 @@ libzerocoin/Commitment.o: libzerocoin/Commitment.cpp \
  /usr/include/c++/4.8/bits/stl_vector.h \
  /usr/include/c++/4.8/bits/stl_bvector.h \
  /usr/include/c++/4.8/bits/vector.tcc \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/bn.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/ossl_typ.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/crypto.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/stack.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/safestack.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/opensslv.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/symhacks.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/bn.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/ossl_typ.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/crypto.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/stack.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/safestack.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/opensslv.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/symhacks.h \
  serialize.h /usr/include/c++/4.8/algorithm /usr/include/c++/4.8/utility \
  /usr/include/c++/4.8/bits/stl_relops.h \
  /usr/include/c++/4.8/bits/stl_algo.h \
@@ -160,7 +160,7 @@ libzerocoin/Commitment.o: libzerocoin/Commitment.cpp \
  /usr/include/c++/4.8/i686-w64-mingw32/bits/messages_members.h \
  /usr/include/c++/4.8/bits/codecvt.h \
  /usr/include/c++/4.8/bits/locale_facets_nonio.tcc \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/sha.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/sha.h \
  /usr/include/c++/4.8/sstream /usr/include/c++/4.8/bits/sstream.tcc
 
 /usr/share/mingw-w64/include/stdlib.h:
@@ -375,23 +375,23 @@ libzerocoin/bignum.h:
 
 /usr/include/c++/4.8/bits/vector.tcc:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/bn.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/bn.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/ossl_typ.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/ossl_typ.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/crypto.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/crypto.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/stack.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/stack.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/safestack.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/safestack.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/opensslv.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/opensslv.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/symhacks.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/symhacks.h:
 
 serialize.h:
 
@@ -591,7 +591,7 @@ crypto/sph_haval.h:
 
 /usr/include/c++/4.8/bits/locale_facets_nonio.tcc:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/sha.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/sha.h:
 
 /usr/include/c++/4.8/sstream:
 

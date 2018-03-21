@@ -152,9 +152,9 @@ script/libbitcoin_common_a-interpreter.o: script/interpreter.cpp \
  /usr/include/c++/4.8/i686-w64-mingw32/bits/messages_members.h \
  /usr/include/c++/4.8/bits/codecvt.h \
  /usr/include/c++/4.8/bits/locale_facets_nonio.tcc \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/sha.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h \
- /root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/sha.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h \
+ /root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h \
  /usr/include/c++/4.8/sstream /usr/include/c++/4.8/bits/sstream.tcc \
  serialize.h uint256.h /usr/include/c++/4.8/list \
  /usr/include/c++/4.8/bits/stl_list.h /usr/include/c++/4.8/bits/list.tcc \
@@ -570,11 +570,11 @@ crypto/sph_haval.h:
 
 /usr/include/c++/4.8/bits/locale_facets_nonio.tcc:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/sha.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/sha.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h:
 
-/root/work_on_build/current/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h:
+/root/work_on_build/1.0.3/Transend/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h:
 
 /usr/include/c++/4.8/sstream:
 
