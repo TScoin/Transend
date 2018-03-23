@@ -1,4 +1,4 @@
-Name "Solaris Core (32-bit)"
+Name "Solaris Core (64-bit)"
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
@@ -10,25 +10,25 @@ SetCompressor /SOLID lzma
 !define URL https://www.transend.org
 
 # MUI Symbol Definitions
-!define MUI_ICON "/root/work_on_build/1.0.3/Transend/share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/root/work_on_build/1.0.3/Transend/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/root/current/temporo/Transend/share/pixmaps/bitcoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/root/current/temporo/Transend/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/root/work_on_build/1.0.3/Transend/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/root/current/temporo/Transend/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
 !define MUI_STARTMENUPAGE_DEFAULTFOLDER "Solaris Core"
-!define MUI_FINISHPAGE_RUN $INSTDIR\transend-qt.exe
+!define MUI_FINISHPAGE_RUN $INSTDIR\solaris-qt.exe
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/root/work_on_build/1.0.3/Transend/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/root/current/temporo/Transend/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
 !include Sections.nsh
 !include MUI2.nsh
-!if "32" == "64"
+!if "64" == "64"
 !include x64.nsh
 !endif
 
@@ -48,8 +48,8 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /root/work_on_build/1.0.3/Transend/transend-${VERSION}-win32-setup.exe
-!if "32" == "64"
+OutFile /root/current/temporo/Transend/solaris-${VERSION}-win64-setup.exe
+!if "64" == "64"
 InstallDir $PROGRAMFILES64\Transend
 !else
 InstallDir $PROGRAMFILES\Transend
@@ -58,7 +58,7 @@ CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
-VIProductVersion ${VERSION}.0
+VIProductVersion ${VERSION}.1
 VIAddVersionKey ProductName "Solaris Core"
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
@@ -73,14 +73,14 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /root/work_on_build/1.0.3/Transend/release/transend-qt.exe
-    File /oname=COPYING.txt /root/work_on_build/1.0.3/Transend/COPYING
-    File /oname=readme.txt /root/work_on_build/1.0.3/Transend/doc/README_windows.txt
+    File /root/current/temporo/Transend/release/solaris-qt.exe
+    File /oname=COPYING.txt /root/current/temporo/Transend/COPYING
+    File /oname=readme.txt /root/current/temporo/Transend/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /root/work_on_build/1.0.3/Transend/release/transendd.exe
-    File /root/work_on_build/1.0.3/Transend/release/transend-cli.exe
+    File /root/current/temporo/Transend/release/solarisd.exe
+    File /root/current/temporo/Transend/release/solaris-cli.exe
     SetOutPath $INSTDIR\doc
-    File /r /root/work_on_build/1.0.3/Transend/doc\*.*
+    File /r /root/current/temporo/Transend/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 SectionEnd
@@ -91,8 +91,8 @@ Section -post SEC0001
     WriteUninstaller $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\transend-qt.exe
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Solaris Core (testnet, 32-bit).lnk" "$INSTDIR\transend-qt.exe" "-testnet" "$INSTDIR\transend-qt.exe" 1
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\solaris-qt.exe
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Solaris Core (testnet, 64-bit).lnk" "$INSTDIR\solaris-qt.exe" "-testnet" "$INSTDIR\solaris-qt.exe" 1
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
@@ -103,10 +103,10 @@ Section -post SEC0001
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" UninstallString $INSTDIR\uninstall.exe
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
-    WriteRegStr HKCR "transend" "URL Protocol" ""
-    WriteRegStr HKCR "transend" "" "URL:Transend"
-    WriteRegStr HKCR "transend\DefaultIcon" "" $INSTDIR\transend-qt.exe
-    WriteRegStr HKCR "transend\shell\open\command" "" '"$INSTDIR\transend-qt.exe" "%1"'
+    WriteRegStr HKCR "solaris" "URL Protocol" ""
+    WriteRegStr HKCR "solaris" "" "URL:Transend"
+    WriteRegStr HKCR "solaris\DefaultIcon" "" $INSTDIR\solaris-qt.exe
+    WriteRegStr HKCR "solaris\shell\open\command" "" '"$INSTDIR\solaris-qt.exe" "%1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -124,7 +124,7 @@ done${UNSECTION_ID}:
 
 # Uninstaller sections
 Section /o -un.Main UNSEC0000
-    Delete /REBOOTOK $INSTDIR\transend-qt.exe
+    Delete /REBOOTOK $INSTDIR\solaris-qt.exe
     Delete /REBOOTOK $INSTDIR\COPYING.txt
     Delete /REBOOTOK $INSTDIR\readme.txt
     RMDir /r /REBOOTOK $INSTDIR\daemon
@@ -136,7 +136,7 @@ Section -un.post UNSEC0001
     DeleteRegKey HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Solaris Core (testnet, 32-bit).lnk"
+    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Solaris Core (testnet, 64-bit).lnk"
     Delete /REBOOTOK "$SMSTARTUP\Transend.lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log
@@ -145,7 +145,7 @@ Section -un.post UNSEC0001
     DeleteRegValue HKCU "${REGKEY}" Path
     DeleteRegKey /IfEmpty HKCU "${REGKEY}\Components"
     DeleteRegKey /IfEmpty HKCU "${REGKEY}"
-    DeleteRegKey HKCR "transend"
+    DeleteRegKey HKCR "solaris"
     RmDir /REBOOTOK $SMPROGRAMS\$StartMenuGroup
     RmDir /REBOOTOK $INSTDIR
     Push $R0
@@ -158,7 +158,7 @@ SectionEnd
 # Installer functions
 Function .onInit
     InitPluginsDir
-!if "32" == "64"
+!if "64" == "64"
     ${If} ${RunningX64}
       ; disable registry redirection (enable access to 64-bit portion of registry)
       SetRegView 64

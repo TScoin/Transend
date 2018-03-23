@@ -3,19 +3,19 @@ AC_PREREQ([2.60])
 define(_CLIENT_VERSION_MAJOR, 1)
 define(_CLIENT_VERSION_MINOR, 0)
 define(_CLIENT_VERSION_REVISION, 3)
-define(_CLIENT_VERSION_BUILD, 0)
+define(_CLIENT_VERSION_BUILD, 1)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2018)
-AC_INIT([Solaris Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[www.transendcoin.com],[transend])
+AC_INIT([Solaris Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[www.solaris.org],[solaris])
 AC_CONFIG_SRCDIR([src/main.cpp])
 AC_CONFIG_HEADERS([src/config/transend-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=transendd
-BITCOIN_GUI_NAME=transend-qt
-BITCOIN_CLI_NAME=transend-cli
-BITCOIN_TX_NAME=transend-tx
+BITCOIN_DAEMON_NAME=solarisd
+BITCOIN_GUI_NAME=solaris-qt
+BITCOIN_CLI_NAME=solaris-cli
+BITCOIN_TX_NAME=solaris-tx
 
 AC_CANONICAL_HOST
 

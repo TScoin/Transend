@@ -9,9 +9,9 @@ crypto/crypto_libbitcoin_crypto_a-sha2.o: crypto/sha2.c \
  /usr/share/mingw-w64/include/sdks/_mingw_ddk.h \
  /usr/share/mingw-w64/include/sec_api/string_s.h \
  /usr/share/mingw-w64/include/inttypes.h \
- /usr/lib/gcc/i686-w64-mingw32/4.8/include/stdint.h \
+ /usr/lib/gcc/x86_64-w64-mingw32/4.8/include/stdint.h \
  /usr/share/mingw-w64/include/stdint.h \
- /usr/lib/gcc/i686-w64-mingw32/4.8/include/stddef.h \
+ /usr/lib/gcc/x86_64-w64-mingw32/4.8/include/stddef.h \
  /usr/share/mingw-w64/include/stddef.h \
  /usr/share/mingw-w64/include/_mingw_print_push.h \
  /usr/share/mingw-w64/include/_mingw_print_pop.h
@@ -36,11 +36,11 @@ crypto/crypto_libbitcoin_crypto_a-sha2.o: crypto/sha2.c \
 
 /usr/share/mingw-w64/include/inttypes.h:
 
-/usr/lib/gcc/i686-w64-mingw32/4.8/include/stdint.h:
+/usr/lib/gcc/x86_64-w64-mingw32/4.8/include/stdint.h:
 
 /usr/share/mingw-w64/include/stdint.h:
 
-/usr/lib/gcc/i686-w64-mingw32/4.8/include/stddef.h:
+/usr/lib/gcc/x86_64-w64-mingw32/4.8/include/stddef.h:
 
 /usr/share/mingw-w64/include/stddef.h:
 

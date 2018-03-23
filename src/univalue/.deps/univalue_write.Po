@@ -10,16 +10,16 @@ univalue/univalue_write.o: univalue/univalue_write.cpp \
  /usr/share/mingw-w64/include/stdio.h \
  /usr/share/mingw-w64/include/_mingw_print_push.h \
  /usr/share/mingw-w64/include/_mingw_off_t.h \
- /usr/i686-w64-mingw32/include/swprintf.inl \
+ /usr/x86_64-w64-mingw32/include/swprintf.inl \
  /usr/share/mingw-w64/include/sec_api/stdio_s.h \
  /usr/share/mingw-w64/include/_mingw_print_pop.h univalue/univalue.h \
- /usr/lib/gcc/i686-w64-mingw32/4.8/include/stdint.h \
+ /usr/lib/gcc/x86_64-w64-mingw32/4.8/include/stdint.h \
  /usr/share/mingw-w64/include/stdint.h \
- /usr/lib/gcc/i686-w64-mingw32/4.8/include/stddef.h \
+ /usr/lib/gcc/x86_64-w64-mingw32/4.8/include/stddef.h \
  /usr/share/mingw-w64/include/stddef.h /usr/include/c++/4.8/string \
- /usr/include/c++/4.8/i686-w64-mingw32/bits/c++config.h \
- /usr/include/c++/4.8/i686-w64-mingw32/bits/os_defines.h \
- /usr/include/c++/4.8/i686-w64-mingw32/bits/cpu_defines.h \
+ /usr/include/c++/4.8/x86_64-w64-mingw32/bits/c++config.h \
+ /usr/include/c++/4.8/x86_64-w64-mingw32/bits/os_defines.h \
+ /usr/include/c++/4.8/x86_64-w64-mingw32/bits/cpu_defines.h \
  /usr/include/c++/4.8/bits/stringfwd.h \
  /usr/include/c++/4.8/bits/memoryfwd.h \
  /usr/include/c++/4.8/bits/char_traits.h \
@@ -41,14 +41,14 @@ univalue/univalue_write.o: univalue/univalue_write.cpp \
  /usr/share/mingw-w64/include/_mingw_stat64.h \
  /usr/share/mingw-w64/include/sec_api/wchar_s.h \
  /usr/include/c++/4.8/cstdint /usr/include/c++/4.8/bits/allocator.h \
- /usr/include/c++/4.8/i686-w64-mingw32/bits/c++allocator.h \
+ /usr/include/c++/4.8/x86_64-w64-mingw32/bits/c++allocator.h \
  /usr/include/c++/4.8/ext/new_allocator.h /usr/include/c++/4.8/new \
  /usr/include/c++/4.8/exception \
  /usr/include/c++/4.8/bits/atomic_lockfree_defines.h \
  /usr/include/c++/4.8/bits/exception_ptr.h \
  /usr/include/c++/4.8/bits/nested_exception.h \
  /usr/include/c++/4.8/bits/localefwd.h \
- /usr/include/c++/4.8/i686-w64-mingw32/bits/c++locale.h \
+ /usr/include/c++/4.8/x86_64-w64-mingw32/bits/c++locale.h \
  /usr/include/c++/4.8/clocale /usr/share/mingw-w64/include/locale.h \
  /usr/include/c++/4.8/iosfwd /usr/include/c++/4.8/cctype \
  /usr/include/c++/4.8/bits/ostream_insert.h \
@@ -58,14 +58,14 @@ univalue/univalue_write.o: univalue/univalue_write.cpp \
  /usr/include/c++/4.8/bits/range_access.h \
  /usr/include/c++/4.8/bits/basic_string.h \
  /usr/include/c++/4.8/ext/atomicity.h \
- /usr/include/c++/4.8/i686-w64-mingw32/bits/gthr.h \
- /usr/include/c++/4.8/i686-w64-mingw32/bits/gthr-default.h \
+ /usr/include/c++/4.8/x86_64-w64-mingw32/bits/gthr.h \
+ /usr/include/c++/4.8/x86_64-w64-mingw32/bits/gthr-default.h \
  /usr/share/mingw-w64/include/pthread.h \
  /usr/share/mingw-w64/include/errno.h \
  /usr/share/mingw-w64/include/sys/types.h \
  /usr/share/mingw-w64/include/process.h \
- /usr/lib/gcc/i686-w64-mingw32/4.8/include-fixed/limits.h \
- /usr/lib/gcc/i686-w64-mingw32/4.8/include-fixed/syslimits.h \
+ /usr/lib/gcc/x86_64-w64-mingw32/4.8/include-fixed/limits.h \
+ /usr/lib/gcc/x86_64-w64-mingw32/4.8/include-fixed/syslimits.h \
  /usr/share/mingw-w64/include/limits.h \
  /usr/share/mingw-w64/include/signal.h \
  /usr/share/mingw-w64/include/pthread_signal.h \
@@ -73,7 +73,7 @@ univalue/univalue_write.o: univalue/univalue_write.cpp \
  /usr/share/mingw-w64/include/sec_api/sys/timeb_s.h \
  /usr/share/mingw-w64/include/pthread_compat.h \
  /usr/share/mingw-w64/include/pthread_unistd.h \
- /usr/include/c++/4.8/i686-w64-mingw32/bits/atomic_word.h \
+ /usr/include/c++/4.8/x86_64-w64-mingw32/bits/atomic_word.h \
  /usr/include/c++/4.8/initializer_list \
  /usr/include/c++/4.8/ext/string_conversions.h \
  /usr/include/c++/4.8/cstdlib /usr/share/mingw-w64/include/stdlib.h \
@@ -120,7 +120,7 @@ univalue/univalue_write.o: univalue/univalue_write.cpp \
 
 /usr/share/mingw-w64/include/_mingw_off_t.h:
 
-/usr/i686-w64-mingw32/include/swprintf.inl:
+/usr/x86_64-w64-mingw32/include/swprintf.inl:
 
 /usr/share/mingw-w64/include/sec_api/stdio_s.h:
 
@@ -128,21 +128,21 @@ univalue/univalue_write.o: univalue/univalue_write.cpp \
 
 univalue/univalue.h:
 
-/usr/lib/gcc/i686-w64-mingw32/4.8/include/stdint.h:
+/usr/lib/gcc/x86_64-w64-mingw32/4.8/include/stdint.h:
 
 /usr/share/mingw-w64/include/stdint.h:
 
-/usr/lib/gcc/i686-w64-mingw32/4.8/include/stddef.h:
+/usr/lib/gcc/x86_64-w64-mingw32/4.8/include/stddef.h:
 
 /usr/share/mingw-w64/include/stddef.h:
 
 /usr/include/c++/4.8/string:
 
-/usr/include/c++/4.8/i686-w64-mingw32/bits/c++config.h:
+/usr/include/c++/4.8/x86_64-w64-mingw32/bits/c++config.h:
 
-/usr/include/c++/4.8/i686-w64-mingw32/bits/os_defines.h:
+/usr/include/c++/4.8/x86_64-w64-mingw32/bits/os_defines.h:
 
-/usr/include/c++/4.8/i686-w64-mingw32/bits/cpu_defines.h:
+/usr/include/c++/4.8/x86_64-w64-mingw32/bits/cpu_defines.h:
 
 /usr/include/c++/4.8/bits/stringfwd.h:
 
@@ -192,7 +192,7 @@ univalue/univalue.h:
 
 /usr/include/c++/4.8/bits/allocator.h:
 
-/usr/include/c++/4.8/i686-w64-mingw32/bits/c++allocator.h:
+/usr/include/c++/4.8/x86_64-w64-mingw32/bits/c++allocator.h:
 
 /usr/include/c++/4.8/ext/new_allocator.h:
 
@@ -208,7 +208,7 @@ univalue/univalue.h:
 
 /usr/include/c++/4.8/bits/localefwd.h:
 
-/usr/include/c++/4.8/i686-w64-mingw32/bits/c++locale.h:
+/usr/include/c++/4.8/x86_64-w64-mingw32/bits/c++locale.h:
 
 /usr/include/c++/4.8/clocale:
 
@@ -232,9 +232,9 @@ univalue/univalue.h:
 
 /usr/include/c++/4.8/ext/atomicity.h:
 
-/usr/include/c++/4.8/i686-w64-mingw32/bits/gthr.h:
+/usr/include/c++/4.8/x86_64-w64-mingw32/bits/gthr.h:
 
-/usr/include/c++/4.8/i686-w64-mingw32/bits/gthr-default.h:
+/usr/include/c++/4.8/x86_64-w64-mingw32/bits/gthr-default.h:
 
 /usr/share/mingw-w64/include/pthread.h:
 
@@ -244,9 +244,9 @@ univalue/univalue.h:
 
 /usr/share/mingw-w64/include/process.h:
 
-/usr/lib/gcc/i686-w64-mingw32/4.8/include-fixed/limits.h:
+/usr/lib/gcc/x86_64-w64-mingw32/4.8/include-fixed/limits.h:
 
-/usr/lib/gcc/i686-w64-mingw32/4.8/include-fixed/syslimits.h:
+/usr/lib/gcc/x86_64-w64-mingw32/4.8/include-fixed/syslimits.h:
 
 /usr/share/mingw-w64/include/limits.h:
 
@@ -262,7 +262,7 @@ univalue/univalue.h:
 
 /usr/share/mingw-w64/include/pthread_unistd.h:
 
-/usr/include/c++/4.8/i686-w64-mingw32/bits/atomic_word.h:
+/usr/include/c++/4.8/x86_64-w64-mingw32/bits/atomic_word.h:
 
 /usr/include/c++/4.8/initializer_list:
 

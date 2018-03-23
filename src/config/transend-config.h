@@ -9,7 +9,7 @@
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
 
 /* Version Build */
-#define CLIENT_VERSION_BUILD 0
+#define CLIENT_VERSION_BUILD 1
 
 /* Version is release */
 #define CLIENT_VERSION_IS_RELEASE true
@@ -121,7 +121,7 @@
 /* #undef HAVE_GETADDRINFO_A */
 
 /* Define this symbol if you have inet_pton */
-/* #undef HAVE_INET_PTON */
+#define HAVE_INET_PTON 1
 
 /* Define to 1 if you have the <inttypes.h> header file. */
 #define HAVE_INTTYPES_H 1
@@ -269,7 +269,7 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "www.transendcoin.com"
+#define PACKAGE_BUGREPORT "www.solaris.org"
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "Solaris Core"
@@ -278,7 +278,7 @@
 #define PACKAGE_STRING "Solaris Core 1.0.3"
 
 /* Define to the one symbol short name of this package. */
-#define PACKAGE_TARNAME "transend"
+#define PACKAGE_TARNAME "solaris"
 
 /* Define to the home page for this package. */
 #define PACKAGE_URL ""

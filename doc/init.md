@@ -1,60 +1,60 @@
-Sample init scripts and service configuration for solarisd
+Sample init scripts and service configuration for transendd
 ==========================================================
 
 Sample scripts and configuration files for systemd, Upstart and OpenRC
 can be found in the contrib/init folder.
 
-    contrib/init/solarisd.service:    systemd service unit configuration
-    contrib/init/solarisd.openrc:     OpenRC compatible SysV style init script
-    contrib/init/solarisd.openrcconf: OpenRC conf.d file
-    contrib/init/solarisd.conf:       Upstart service configuration file
-    contrib/init/solarisd.init:       CentOS compatible SysV style init script
+    contrib/init/transendd.service:    systemd service unit configuration
+    contrib/init/transendd.openrc:     OpenRC compatible SysV style init script
+    contrib/init/transendd.openrcconf: OpenRC conf.d file
+    contrib/init/transendd.conf:       Upstart service configuration file
+    contrib/init/transendd.init:       CentOS compatible SysV style init script
 
 1. Service User
 ---------------------------------
 
-All three startup configurations assume the existence of a "solaris" user
+All three startup configurations assume the existence of a "transend" user
 and group.  They must be created before attempting to use these scripts.
 
 2. Configuration
 ---------------------------------
 
-At a bare minimum, solarisd requires that the rpcpassword setting be set
+At a bare minimum, transendd requires that the rpcpassword setting be set
 when running as a daemon.  If the configuration file does not exist or this
-setting is not set, solarisd will shutdown promptly after startup.
+setting is not set, transendd will shutdown promptly after startup.
 
 This password does not have to be remembered or typed as it is mostly used
-as a fixed token that solarisd and client programs read from the configuration
+as a fixed token that transendd and client programs read from the configuration
 file, however it is recommended that a strong and secure password be used
 as this password is security critical to securing the wallet should the
 wallet be enabled.
 
-If solarisd is run with "-daemon" flag, and no rpcpassword is set, it will
+If transendd is run with "-daemon" flag, and no rpcpassword is set, it will
 print a randomly generated suitable password to stderr.  You can also
 generate one from the shell yourself like this:
 
 bash -c 'tr -dc a-zA-Z0-9 < /dev/urandom | head -c32 && echo'
 
-Once you have a password in hand, set rpcpassword= in /etc/solaris/solaris.conf
+Once you have a password in hand, set rpcpassword= in /etc/transend/transend.conf
 
 For an example configuration file that describes the configuration settings,
-see contrib/debian/examples/solaris.conf.
+see contrib/debian/examples/transend.conf.
 
 3. Paths
 ---------------------------------
 
 All three configurations assume several paths that might need to be adjusted.
 
-Binary:              /usr/bin/solarisd
-Configuration file:  /etc/solaris/solaris.conf
-Data directory:      /var/lib/solarisd
-PID file:            /var/run/solarisd/solarisd.pid (OpenRC and Upstart)
-                     /var/lib/solarisd/solarisd.pid (systemd)
+Binary:              /usr/bin/transendd
+Configuration file:  /etc/transend/transend.conf
+Data directory:      /var/lib/transendd
+PID file:            /var/run/transendd/transendd.pid (OpenRC and Upstart)
+                     /var/lib/transendd/transendd.pid (systemd)
 
 The configuration file, PID directory (if applicable) and data directory
-should all be owned by the solaris user and group.  It is advised for security
+should all be owned by the transend user and group.  It is advised for security
 reasons to make the configuration file and data directory only readable by the
-solaris user and group.  Access to solaris-cli and other solarisd rpc clients
+transend user and group.  Access to transend-cli and other transendd rpc clients
 can then be controlled by group membership.
 
 4. Installing Service Configuration
@@ -66,19 +66,19 @@ Installing this .service file consists on just copying it to
 /usr/lib/systemd/system directory, followed by the command
 "systemctl daemon-reload" in order to update running systemd configuration.
 
-To test, run "systemctl start solarisd" and to enable for system startup run
-"systemctl enable solarisd"
+To test, run "systemctl start transendd" and to enable for system startup run
+"systemctl enable transendd"
 
 4b) OpenRC
 
-Rename solarisd.openrc to solarisd and drop it in /etc/init.d.  Double
+Rename transendd.openrc to transendd and drop it in /etc/init.d.  Double
 check ownership and permissions and make it executable.  Test it with
-"/etc/init.d/solarisd start" and configure it to run on startup with
-"rc-update add solarisd"
+"/etc/init.d/transendd start" and configure it to run on startup with
+"rc-update add transendd"
 
 4c) Upstart (for Debian/Ubuntu based distributions)
 
-Drop solarisd.conf in /etc/init.  Test by running "service solarisd start"
+Drop transendd.conf in /etc/init.  Test by running "service transendd start"
 it will automatically start on reboot.
 
 NOTE: This script is incompatible with CentOS 5 and Amazon Linux 2014 as they
@@ -86,11 +86,11 @@ use old versions of Upstart and do not supply the start-stop-daemon uitility.
 
 4d) CentOS
 
-Copy solarisd.init to /etc/init.d/solarisd. Test by running "service solarisd start".
+Copy transendd.init to /etc/init.d/transendd. Test by running "service transendd start".
 
-Using this script, you can adjust the path and flags to the solarisd program by
-setting the SolarisD and FLAGS environment variables in the file
-/etc/sysconfig/solarisd. You can also use the DAEMONOPTS environment variable here.
+Using this script, you can adjust the path and flags to the transendd program by
+setting the TransendD and FLAGS environment variables in the file
+/etc/sysconfig/transendd. You can also use the DAEMONOPTS environment variable here.
 
 5. Auto-respawn
 -----------------------------------

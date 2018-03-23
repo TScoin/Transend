@@ -1,6 +1,6 @@
 Mac OS X Build Instructions and Notes
 ====================================
-This guide will show you how to build solarisd (headless client) for OSX.
+This guide will show you how to build transendd (headless client) for OSX.
 
 Notes
 -----
@@ -40,14 +40,14 @@ Instructions: Homebrew
 
         brew install autoconf automake berkeley-db4 libtool boost miniupnpc openssl pkg-config protobuf qt5 libzmq
 
-### Building `solarisd`
+### Building `transendd`
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/Solaris-Project/Solaris.git
-        cd Solaris
+        git clone https://github.com/Transend-Project/Transend.git
+        cd Transend
 
-2.  Build solarisd:
+2.  Build transendd:
 
         ./autogen.sh
         ./configure --with-gui=qt5
@@ -57,7 +57,7 @@ Instructions: Homebrew
 
         make check
 
-4.  (Optional) You can also install solarisd to your path:
+4.  (Optional) You can also install transendd to your path:
 
         make install
 
@@ -69,7 +69,7 @@ Download Qt Creator from http://www.qt.io/download/. Download the "community edi
 1. Make sure you installed everything through homebrew mentioned above
 2. Do a proper ./configure --with-gui=qt5 --enable-debug
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "solaris-qt" as project name, enter src/qt as location
+4. Enter "transend-qt" as project name, enter src/qt as location
 5. Leave the file selection as it is
 6. Confirm the "summary page"
 7. In the "Projects" tab select "Manage Kits..."
@@ -79,11 +79,11 @@ Download Qt Creator from http://www.qt.io/download/. Download the "community edi
 
 Creating a release build
 ------------------------
-You can ignore this section if you are building `solarisd` for your own use.
+You can ignore this section if you are building `transendd` for your own use.
 
-solarisd/solaris-cli binaries are not included in the solaris-Qt.app bundle.
+transendd/transend-cli binaries are not included in the transend-Qt.app bundle.
 
-If you are building `solarisd` or `solaris-qt` for others, your build machine should be set up
+If you are building `transendd` or `transend-qt` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -92,30 +92,30 @@ All dependencies should be compiled with these flags:
  -arch x86_64
  -isysroot $(xcode-select --print-path)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
 
-Once dependencies are compiled, see release-process.md for how the Solaris-Qt.app
+Once dependencies are compiled, see release-process.md for how the Transend-Qt.app
 bundle is packaged and signed to create the .dmg disk image that is distributed.
 
 Running
 -------
 
-It's now available at `./solarisd`, provided that you are still in the `src`
+It's now available at `./transendd`, provided that you are still in the `src`
 directory. We have to first create the RPC configuration file, though.
 
-Run `./solarisd` to get the filename where it should be put, or just try these
+Run `./transendd` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=solarisrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Solaris/solaris.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/Solaris/solaris.conf"
+    echo -e "rpcuser=transendrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Transend/transend.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Transend/transend.conf"
 
 The next time you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours;
 you can monitor its process by looking at the debug.log file, like this:
 
-    tail -f $HOME/Library/Application\ Support/Solaris/debug.log
+    tail -f $HOME/Library/Application\ Support/Transend/debug.log
 
 Other commands:
 -------
 
-    ./solarisd -daemon # to start the solaris daemon.
-    ./solaris-cli --help  # for a list of command-line options.
-    ./solaris-cli help    # When the daemon is running, to get a list of RPC commands
+    ./transendd -daemon # to start the transend daemon.
+    ./transend-cli --help  # for a list of command-line options.
+    ./transend-cli help    # When the daemon is running, to get a list of RPC commands
