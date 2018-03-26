@@ -1,9 +1,9 @@
 libbitcoin_common_a-ecwrapper.o: ecwrapper.cpp ecwrapper.h \
  /usr/include/c++/4.8/cstddef \
- /usr/include/c++/4.8/x86_64-w64-mingw32/bits/c++config.h \
- /usr/include/c++/4.8/x86_64-w64-mingw32/bits/os_defines.h \
- /usr/include/c++/4.8/x86_64-w64-mingw32/bits/cpu_defines.h \
- /usr/lib/gcc/x86_64-w64-mingw32/4.8/include/stddef.h \
+ /usr/include/c++/4.8/i686-w64-mingw32/bits/c++config.h \
+ /usr/include/c++/4.8/i686-w64-mingw32/bits/os_defines.h \
+ /usr/include/c++/4.8/i686-w64-mingw32/bits/cpu_defines.h \
+ /usr/lib/gcc/i686-w64-mingw32/4.8/include/stddef.h \
  /usr/share/mingw-w64/include/stddef.h \
  /usr/share/mingw-w64/include/crtdefs.h \
  /usr/share/mingw-w64/include/_mingw.h \
@@ -26,7 +26,7 @@ libbitcoin_common_a-ecwrapper.o: ecwrapper.cpp ecwrapper.h \
  /usr/include/c++/4.8/debug/debug.h \
  /usr/include/c++/4.8/bits/stl_iterator.h \
  /usr/include/c++/4.8/bits/allocator.h \
- /usr/include/c++/4.8/x86_64-w64-mingw32/bits/c++allocator.h \
+ /usr/include/c++/4.8/i686-w64-mingw32/bits/c++allocator.h \
  /usr/include/c++/4.8/ext/new_allocator.h /usr/include/c++/4.8/new \
  /usr/include/c++/4.8/exception \
  /usr/include/c++/4.8/bits/atomic_lockfree_defines.h \
@@ -45,39 +45,39 @@ libbitcoin_common_a-ecwrapper.o: ecwrapper.cpp ecwrapper.h \
  /usr/include/c++/4.8/bits/hash_bytes.h \
  /usr/include/c++/4.8/bits/range_access.h \
  /usr/include/c++/4.8/bits/vector.tcc \
- /root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/ec.h \
- /root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/opensslconf.h \
- /root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/asn1.h \
+ /root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/ec.h \
+ /root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h \
+ /root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/asn1.h \
  /usr/share/mingw-w64/include/time.h \
  /usr/share/mingw-w64/include/_timeval.h \
  /usr/share/mingw-w64/include/sec_api/time_s.h \
  /usr/share/mingw-w64/include/sys/timeb.h \
  /usr/share/mingw-w64/include/sec_api/sys/timeb_s.h \
  /usr/share/mingw-w64/include/pthread_time.h \
- /root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/e_os2.h \
- /root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/bio.h \
+ /root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h \
+ /root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/bio.h \
  /usr/share/mingw-w64/include/stdio.h \
  /usr/share/mingw-w64/include/_mingw_print_push.h \
  /usr/share/mingw-w64/include/_mingw_off_t.h \
- /usr/x86_64-w64-mingw32/include/swprintf.inl \
+ /usr/i686-w64-mingw32/include/swprintf.inl \
  /usr/share/mingw-w64/include/sec_api/stdio_s.h \
  /usr/share/mingw-w64/include/_mingw_print_pop.h \
- /usr/lib/gcc/x86_64-w64-mingw32/4.8/include/stdarg.h \
+ /usr/lib/gcc/i686-w64-mingw32/4.8/include/stdarg.h \
  /usr/share/mingw-w64/include/stdarg.h \
  /usr/share/mingw-w64/include/_mingw_stdarg.h \
- /root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/crypto.h \
+ /root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/crypto.h \
  /usr/share/mingw-w64/include/stdlib.h \
- /usr/lib/gcc/x86_64-w64-mingw32/4.8/include-fixed/limits.h \
- /usr/lib/gcc/x86_64-w64-mingw32/4.8/include-fixed/syslimits.h \
+ /usr/lib/gcc/i686-w64-mingw32/4.8/include-fixed/limits.h \
+ /usr/lib/gcc/i686-w64-mingw32/4.8/include-fixed/syslimits.h \
  /usr/share/mingw-w64/include/limits.h \
  /usr/share/mingw-w64/include/sec_api/stdlib_s.h \
  /usr/share/mingw-w64/include/malloc.h \
- /root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/stack.h \
- /root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/safestack.h \
- /root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/opensslv.h \
- /root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/ossl_typ.h \
- /root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/symhacks.h \
- /root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/bn.h \
+ /root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/stack.h \
+ /root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/safestack.h \
+ /root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/opensslv.h \
+ /root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/ossl_typ.h \
+ /root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/symhacks.h \
+ /root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/bn.h \
  serialize.h /usr/include/c++/4.8/algorithm /usr/include/c++/4.8/utility \
  /usr/include/c++/4.8/bits/stl_relops.h \
  /usr/include/c++/4.8/bits/stl_algo.h /usr/include/c++/4.8/cstdlib \
@@ -93,10 +93,10 @@ libbitcoin_common_a-ecwrapper.o: ecwrapper.cpp ecwrapper.h \
  /usr/share/mingw-w64/include/_mingw_stat64.h \
  /usr/share/mingw-w64/include/sec_api/wchar_s.h \
  /usr/include/c++/4.8/cstdint \
- /usr/lib/gcc/x86_64-w64-mingw32/4.8/include/stdint.h \
+ /usr/lib/gcc/i686-w64-mingw32/4.8/include/stdint.h \
  /usr/share/mingw-w64/include/stdint.h \
  /usr/include/c++/4.8/bits/localefwd.h \
- /usr/include/c++/4.8/x86_64-w64-mingw32/bits/c++locale.h \
+ /usr/include/c++/4.8/i686-w64-mingw32/bits/c++locale.h \
  /usr/include/c++/4.8/clocale /usr/share/mingw-w64/include/locale.h \
  /usr/include/c++/4.8/iosfwd /usr/include/c++/4.8/cctype \
  /usr/share/mingw-w64/include/ctype.h \
@@ -106,8 +106,8 @@ libbitcoin_common_a-ecwrapper.o: ecwrapper.cpp ecwrapper.h \
  /usr/include/c++/4.8/backward/binders.h \
  /usr/include/c++/4.8/bits/basic_string.h \
  /usr/include/c++/4.8/ext/atomicity.h \
- /usr/include/c++/4.8/x86_64-w64-mingw32/bits/gthr.h \
- /usr/include/c++/4.8/x86_64-w64-mingw32/bits/gthr-default.h \
+ /usr/include/c++/4.8/i686-w64-mingw32/bits/gthr.h \
+ /usr/include/c++/4.8/i686-w64-mingw32/bits/gthr-default.h \
  /usr/share/mingw-w64/include/pthread.h \
  /usr/share/mingw-w64/include/errno.h \
  /usr/share/mingw-w64/include/sys/types.h \
@@ -116,20 +116,15 @@ libbitcoin_common_a-ecwrapper.o: ecwrapper.cpp ecwrapper.h \
  /usr/share/mingw-w64/include/pthread_signal.h \
  /usr/share/mingw-w64/include/pthread_compat.h \
  /usr/share/mingw-w64/include/pthread_unistd.h \
- /usr/include/c++/4.8/x86_64-w64-mingw32/bits/atomic_word.h \
+ /usr/include/c++/4.8/i686-w64-mingw32/bits/atomic_word.h \
  /usr/include/c++/4.8/ext/string_conversions.h \
  /usr/include/c++/4.8/cerrno /usr/include/c++/4.8/bits/basic_string.tcc \
  /usr/include/c++/4.8/limits /usr/include/c++/4.8/bits/random.h \
- /usr/include/c++/4.8/x86_64-w64-mingw32/bits/opt_random.h \
- /usr/lib/gcc/x86_64-w64-mingw32/4.8/include/x86intrin.h \
- /usr/lib/gcc/x86_64-w64-mingw32/4.8/include/ia32intrin.h \
- /usr/lib/gcc/x86_64-w64-mingw32/4.8/include/mmintrin.h \
- /usr/lib/gcc/x86_64-w64-mingw32/4.8/include/xmmintrin.h \
- /usr/lib/gcc/x86_64-w64-mingw32/4.8/include/mm_malloc.h \
- /usr/lib/gcc/x86_64-w64-mingw32/4.8/include/emmintrin.h \
- /usr/lib/gcc/x86_64-w64-mingw32/4.8/include/immintrin.h \
- /usr/lib/gcc/x86_64-w64-mingw32/4.8/include/fxsrintrin.h \
- /usr/lib/gcc/x86_64-w64-mingw32/4.8/include/adxintrin.h \
+ /usr/include/c++/4.8/i686-w64-mingw32/bits/opt_random.h \
+ /usr/lib/gcc/i686-w64-mingw32/4.8/include/x86intrin.h \
+ /usr/lib/gcc/i686-w64-mingw32/4.8/include/ia32intrin.h \
+ /usr/lib/gcc/i686-w64-mingw32/4.8/include/immintrin.h \
+ /usr/lib/gcc/i686-w64-mingw32/4.8/include/adxintrin.h \
  /usr/include/c++/4.8/bits/random.tcc /usr/include/c++/4.8/numeric \
  /usr/include/c++/4.8/bits/stl_numeric.h /usr/include/c++/4.8/functional \
  /usr/include/c++/4.8/typeinfo /usr/include/c++/4.8/tuple \
@@ -143,9 +138,9 @@ libbitcoin_common_a-ecwrapper.o: ecwrapper.cpp ecwrapper.h \
  /usr/include/c++/4.8/bits/basic_ios.h \
  /usr/include/c++/4.8/bits/locale_facets.h /usr/include/c++/4.8/cwctype \
  /usr/share/mingw-w64/include/wctype.h \
- /usr/include/c++/4.8/x86_64-w64-mingw32/bits/ctype_base.h \
+ /usr/include/c++/4.8/i686-w64-mingw32/bits/ctype_base.h \
  /usr/include/c++/4.8/bits/streambuf_iterator.h \
- /usr/include/c++/4.8/x86_64-w64-mingw32/bits/ctype_inline.h \
+ /usr/include/c++/4.8/i686-w64-mingw32/bits/ctype_inline.h \
  /usr/include/c++/4.8/bits/locale_facets.tcc \
  /usr/include/c++/4.8/bits/basic_ios.tcc /usr/include/c++/4.8/map \
  /usr/include/c++/4.8/bits/stl_tree.h /usr/include/c++/4.8/bits/stl_map.h \
@@ -155,20 +150,20 @@ libbitcoin_common_a-ecwrapper.o: ecwrapper.cpp ecwrapper.h \
  /usr/share/mingw-w64/include/string.h \
  /usr/share/mingw-w64/include/sec_api/string_s.h \
  libzerocoin/Denominations.h uint256.h /usr/include/c++/4.8/cstring \
- /root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/ecdsa.h \
- /root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/obj_mac.h
+ /root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/ecdsa.h \
+ /root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/obj_mac.h
 
 ecwrapper.h:
 
 /usr/include/c++/4.8/cstddef:
 
-/usr/include/c++/4.8/x86_64-w64-mingw32/bits/c++config.h:
+/usr/include/c++/4.8/i686-w64-mingw32/bits/c++config.h:
 
-/usr/include/c++/4.8/x86_64-w64-mingw32/bits/os_defines.h:
+/usr/include/c++/4.8/i686-w64-mingw32/bits/os_defines.h:
 
-/usr/include/c++/4.8/x86_64-w64-mingw32/bits/cpu_defines.h:
+/usr/include/c++/4.8/i686-w64-mingw32/bits/cpu_defines.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/4.8/include/stddef.h:
+/usr/lib/gcc/i686-w64-mingw32/4.8/include/stddef.h:
 
 /usr/share/mingw-w64/include/stddef.h:
 
@@ -218,7 +213,7 @@ ecwrapper.h:
 
 /usr/include/c++/4.8/bits/allocator.h:
 
-/usr/include/c++/4.8/x86_64-w64-mingw32/bits/c++allocator.h:
+/usr/include/c++/4.8/i686-w64-mingw32/bits/c++allocator.h:
 
 /usr/include/c++/4.8/ext/new_allocator.h:
 
@@ -258,11 +253,11 @@ ecwrapper.h:
 
 /usr/include/c++/4.8/bits/vector.tcc:
 
-/root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/ec.h:
+/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/ec.h:
 
-/root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/opensslconf.h:
+/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h:
 
-/root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/asn1.h:
+/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/asn1.h:
 
 /usr/share/mingw-w64/include/time.h:
 
@@ -276,9 +271,9 @@ ecwrapper.h:
 
 /usr/share/mingw-w64/include/pthread_time.h:
 
-/root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/e_os2.h:
+/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h:
 
-/root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/bio.h:
+/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/bio.h:
 
 /usr/share/mingw-w64/include/stdio.h:
 
@@ -286,25 +281,25 @@ ecwrapper.h:
 
 /usr/share/mingw-w64/include/_mingw_off_t.h:
 
-/usr/x86_64-w64-mingw32/include/swprintf.inl:
+/usr/i686-w64-mingw32/include/swprintf.inl:
 
 /usr/share/mingw-w64/include/sec_api/stdio_s.h:
 
 /usr/share/mingw-w64/include/_mingw_print_pop.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/4.8/include/stdarg.h:
+/usr/lib/gcc/i686-w64-mingw32/4.8/include/stdarg.h:
 
 /usr/share/mingw-w64/include/stdarg.h:
 
 /usr/share/mingw-w64/include/_mingw_stdarg.h:
 
-/root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/crypto.h:
+/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/crypto.h:
 
 /usr/share/mingw-w64/include/stdlib.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/4.8/include-fixed/limits.h:
+/usr/lib/gcc/i686-w64-mingw32/4.8/include-fixed/limits.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/4.8/include-fixed/syslimits.h:
+/usr/lib/gcc/i686-w64-mingw32/4.8/include-fixed/syslimits.h:
 
 /usr/share/mingw-w64/include/limits.h:
 
@@ -312,17 +307,17 @@ ecwrapper.h:
 
 /usr/share/mingw-w64/include/malloc.h:
 
-/root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/stack.h:
+/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/stack.h:
 
-/root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/safestack.h:
+/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/safestack.h:
 
-/root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/opensslv.h:
+/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/opensslv.h:
 
-/root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/ossl_typ.h:
+/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/ossl_typ.h:
 
-/root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/symhacks.h:
+/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/symhacks.h:
 
-/root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/bn.h:
+/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/bn.h:
 
 serialize.h:
 
@@ -368,13 +363,13 @@ serialize.h:
 
 /usr/include/c++/4.8/cstdint:
 
-/usr/lib/gcc/x86_64-w64-mingw32/4.8/include/stdint.h:
+/usr/lib/gcc/i686-w64-mingw32/4.8/include/stdint.h:
 
 /usr/share/mingw-w64/include/stdint.h:
 
 /usr/include/c++/4.8/bits/localefwd.h:
 
-/usr/include/c++/4.8/x86_64-w64-mingw32/bits/c++locale.h:
+/usr/include/c++/4.8/i686-w64-mingw32/bits/c++locale.h:
 
 /usr/include/c++/4.8/clocale:
 
@@ -398,9 +393,9 @@ serialize.h:
 
 /usr/include/c++/4.8/ext/atomicity.h:
 
-/usr/include/c++/4.8/x86_64-w64-mingw32/bits/gthr.h:
+/usr/include/c++/4.8/i686-w64-mingw32/bits/gthr.h:
 
-/usr/include/c++/4.8/x86_64-w64-mingw32/bits/gthr-default.h:
+/usr/include/c++/4.8/i686-w64-mingw32/bits/gthr-default.h:
 
 /usr/share/mingw-w64/include/pthread.h:
 
@@ -418,7 +413,7 @@ serialize.h:
 
 /usr/share/mingw-w64/include/pthread_unistd.h:
 
-/usr/include/c++/4.8/x86_64-w64-mingw32/bits/atomic_word.h:
+/usr/include/c++/4.8/i686-w64-mingw32/bits/atomic_word.h:
 
 /usr/include/c++/4.8/ext/string_conversions.h:
 
@@ -430,25 +425,15 @@ serialize.h:
 
 /usr/include/c++/4.8/bits/random.h:
 
-/usr/include/c++/4.8/x86_64-w64-mingw32/bits/opt_random.h:
+/usr/include/c++/4.8/i686-w64-mingw32/bits/opt_random.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/4.8/include/x86intrin.h:
+/usr/lib/gcc/i686-w64-mingw32/4.8/include/x86intrin.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/4.8/include/ia32intrin.h:
+/usr/lib/gcc/i686-w64-mingw32/4.8/include/ia32intrin.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/4.8/include/mmintrin.h:
+/usr/lib/gcc/i686-w64-mingw32/4.8/include/immintrin.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/4.8/include/xmmintrin.h:
-
-/usr/lib/gcc/x86_64-w64-mingw32/4.8/include/mm_malloc.h:
-
-/usr/lib/gcc/x86_64-w64-mingw32/4.8/include/emmintrin.h:
-
-/usr/lib/gcc/x86_64-w64-mingw32/4.8/include/immintrin.h:
-
-/usr/lib/gcc/x86_64-w64-mingw32/4.8/include/fxsrintrin.h:
-
-/usr/lib/gcc/x86_64-w64-mingw32/4.8/include/adxintrin.h:
+/usr/lib/gcc/i686-w64-mingw32/4.8/include/adxintrin.h:
 
 /usr/include/c++/4.8/bits/random.tcc:
 
@@ -490,11 +475,11 @@ serialize.h:
 
 /usr/share/mingw-w64/include/wctype.h:
 
-/usr/include/c++/4.8/x86_64-w64-mingw32/bits/ctype_base.h:
+/usr/include/c++/4.8/i686-w64-mingw32/bits/ctype_base.h:
 
 /usr/include/c++/4.8/bits/streambuf_iterator.h:
 
-/usr/include/c++/4.8/x86_64-w64-mingw32/bits/ctype_inline.h:
+/usr/include/c++/4.8/i686-w64-mingw32/bits/ctype_inline.h:
 
 /usr/include/c++/4.8/bits/locale_facets.tcc:
 
@@ -524,6 +509,6 @@ uint256.h:
 
 /usr/include/c++/4.8/cstring:
 
-/root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/ecdsa.h:
+/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/ecdsa.h:
 
-/root/current/temporo/Transend/depends/x86_64-w64-mingw32/share/../include/openssl/obj_mac.h:
+/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/openssl/obj_mac.h:
