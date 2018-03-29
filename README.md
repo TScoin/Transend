@@ -54,3 +54,7 @@
 <br/>
 <p>Command above is example how to compile daemon under linux.</p>
 <p>Permissions issue will be fixed in one of next releases. We will additionally inform you about changes.</p> 
+<p>Masternode setup guide now located at https://transendcoin.com/index.php/2018/03/15/masternode-setup-guide/</p>
+
+
+
