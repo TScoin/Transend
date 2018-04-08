@@ -108,8 +108,8 @@ public:
         nModifierUpdateBlock = 1;
 		
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
-        nZerocoinStartTime = 1523145600; // April 8, 2018 00:00:00 GMT
-		nZerocoinStartHeight = 16969;
+        nZerocoinStartTime = 1586328884; // April 8, 2020 00:00:00 GMT
+		nZerocoinStartHeight = 1016969;
 		
 		const char* pszTimestamp = "NY Times 2018/02/09 China Suffers as the World Follows Wall Street's Slump";
 		
