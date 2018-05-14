@@ -2201,10 +2201,10 @@ int64_t GetBlockValue(int nHeight)
         nSubsidy = 30 * COIN;
     } else if (nHeight <= 25000 && nHeight > 24999) {
         nSubsidy = 1000 * COIN;
-    } else if (nHeight <= 647999 && nHeight > 25000) {
+    } else if (nHeight <= 33000 && nHeight > 25000) {
         nSubsidy = 30 * COIN;
-    } else if (nHeight >= 648000) {
-        nSubsidy = 30 * COIN;
+    } else if (nHeight >= 33001) {
+        nSubsidy = 40 * COIN;
     } else {
         nSubsidy = 0 * COIN;
     }
@@ -2220,10 +2220,14 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
         if (nHeight < 200)
             return 0;
     }
-	
+    if (nHeight > 30000)
+    	{
+    		return blockValue * (80 / 100);
+    	}
+
 	if (nHeight == 0)
 		return 0;
-	
+
     if (nHeight <= 5000) {
         ret = 0;
     } else if (nHeight < 963334 && nHeight > 5000) {
@@ -3103,11 +3107,11 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     unsigned int flags = fStrictPayToScriptHash ? SCRIPT_VERIFY_P2SH : SCRIPT_VERIFY_NONE;
 
     // Start enforcing the DERSIG (BIP66) rules, for block.nVersion=3 blocks, when 75% of the network has upgraded:
-    
+
     if (block.nVersion >= 3 && CBlockIndex::IsSuperMajority(3, pindex->pprev, Params().EnforceBlockUpgradeMajority())) {
         flags |= SCRIPT_VERIFY_DERSIG;
     }
-    
+
 
     CBlockUndo blockundo;
 
@@ -4165,7 +4169,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
 
     // Check that the header is valid (particularly PoW).  This is mostly
     // redundant with the call in AcceptBlockHeader.
-    if (!CheckBlockHeader(block, state, fCheckPOW))
+    if (!CheckBlockHeader(block, state, fCheckPOW && block.IsProofOfWork()))
         return state.DoS(100, error("CheckBlock() : CheckBlockHeader failed"),
             REJECT_INVALID, "bad-header", true);
 
@@ -4522,7 +4526,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
 
     return true;
 }
- 
+
 bool CBlockIndex::IsSuperMajority(int minVersion, const CBlockIndex* pstart, unsigned int nRequired)
 {
     unsigned int nToCheck = Params().ToCheckBlockUpgradeMajority();

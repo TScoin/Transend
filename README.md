@@ -1,4 +1,4 @@
-<h2><strong>Trandsend Coin Staging Repository (Version 1.0.3)</strong></h2>
+<h2><strong>Trandsend Coin Staging Repository (Version 1.1.9.1)</strong></h2>
 <p>More information at transendcoin.com Visit our ANN thread at https://bitcointalk.org/index.php?topic=3066505.0</p>
 <h3><strong>Coin specs:</strong></h3>
 <p><strong><span style="color: #800080;"><em>Algo:</em></span></strong></p>
@@ -53,8 +53,5 @@
 <p>./autogen.sh && ./configure --without-gui && make</p>
 <br/>
 <p>Command above is example how to compile daemon under linux.</p>
-<p>Permissions issue will be fixed in one of next releases. We will additionally inform you about changes.</p> 
+<p>Permissions issue will be fixed in one of next releases. We will additionally inform you about changes.</p>
 <p>Masternode setup guide now located at https://transendcoin.com/index.php/2018/03/15/masternode-setup-guide/</p>
-
-
-
