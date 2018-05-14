@@ -151,44 +151,6 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         if (!fStakeFound)
             return NULL;
 
-
-    // To founders and investors
-    // To founders and investors
-    if ((nHeight + 1 > 0) && (nHeight + 1 < 210000)) {
-        CScript FOUNDER_1_SCRIPT;
-        if (nHeight 33000) {
-            // Take some reward away from us
-            coinbaseTx.vout[0].nValue = -10 * COIN;
-
-            if (!fTestNet && (GetAdjustedTime() > nStartRewardTime)) {
-                FOUNDER_1_SCRIPT = GetScriptForDestination(CBitcoinAddress("TVUyBGdjUrGfcQMvi1hMffKFmzuLsuEZpQ").Get());
-
-            } else if (!fTestNet && (GetAdjustedTime() <= nStartRewardTime)) {
-                throw std::runtime_error("CreateNewBlock() : Create new block too early");
-            } else if (fTestNet) {
-                FOUNDER_1_SCRIPT = GetScriptForDestination(CBitcoinAddress("TDk19wPKYq91i18qmY6U9FeTdTxwPeSveo").Get());
-              }
-
-            // And give it to the founders
-            coinbaseTx.vout.push_back(CTxOut(2 * COIN, CScript(FOUNDER_1_SCRIPT.begin(), FOUNDER_1_SCRIPT.end())));
-
-        } else if (nHeight >= 33000) {
-            // Take some reward away from us
-            coinbaseTx.vout[0].nValue = -7 * COIN;
-
-            if (!fTestNet && (GetAdjustedTime() > nStartRewardTime)) {
-                FOUNDER_1_SCRIPT = GetScriptForDestination(CBitcoinAddress("TVUyBGdjUrGfcQMvi1hMffKFmzuLsuEZpQ").Get());
-            } else if (!fTestNet && (GetAdjustedTime() <= nStartRewardTime)) {
-                throw std::runtime_error("CreateNewBlock() : Create new block too early");
-            } else if (fTestNet) {
-                FOUNDER_1_SCRIPT = GetScriptForDestination(CBitcoinAddress("TDk19wPKYq91i18qmY6U9FeTdTxwPeSveo").Get());
-            }
-
-            // And give it to the founders
-            coinbaseTx.vout.push_back(CTxOut(1 * COIN, CScript(FOUNDER_1_SCRIPT.begin(), FOUNDER_1_SCRIPT.end())));
-          
-        }
-}
     }
 
     // Largest block you're willing to create:
