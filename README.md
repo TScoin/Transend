@@ -5,37 +5,9 @@
 <ul>
 <li>Xevan</li>
 </ul>
-<p><strong><span style="color: #800080;"><em>PoW Block Reward:</em></span></strong></p>
-<ul>
-<li>[block# 2-10000] 23,4% MN (7.02 TSC) / 70,0% MINER (21.0 TSC) [block# 10000-963334] 23,4% MN (7.02 TSC) / 65,0% MINER (19.50 TSC) / 6,6% Available to the budget system (1.98 TSC) / 5,0% Dev's fee (1,50 TSC)</li>
-</ul>
-<p><strong><span style="color: #800080;"><em>PoS Block Reward:</em></span></strong></p>
-<ul>
-<li>[block# 8000-Infinite] Variable based on SeeSaw Reward Mechanism</li>
-</ul>
-<p><strong><span style="color: #800080;"><em>Block Time:</em></span></strong></p>
-<ul>
-<li>180 Seconds with Retargeting every Block</li>
-</ul>
-<p><strong><span style="color: #800080;"><em>Max Coin Supply:</em></span></strong></p>
-<ul>
-<li>PoW Phase: 28.900.020 TSC</li>
-</ul>
-<p><strong><span style="color: #800080;"><em>Max Coin Supply:</em></span></strong></p>
-<ul>
-<li>PoS Phase: Infinte</li>
-</ul>
-<p><strong><span style="color: #800080;"><em>PoW Phase 1:</em></span></strong></p>
-<ul>
-<li>[block# 1] 100000 Premine to support the listing to exchanges and diffenet marketing operations.</li>
-</ul>
-<p><strong><span style="color: #800080;"><em>PoW Phase 2:</em></span></strong></p>
-<ul>
-<li>[block#&rsquo;s 2-963334] Approx 2006 Days (5,4 years of clean mining)</li>
-</ul>
-<br/>
-<p>&nbsp;</p>
-<p>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</p>
+
+
+
 <p>&nbsp;</p>
 <p>Transend is a modern cryptocurrency, with many features not available in most other cryptocurrencies.</p>
 <p>Anonymized transactions using coin mixing technology.</p>
