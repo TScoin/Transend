@@ -135,7 +135,7 @@ ax_pthread_flags="pthreads none -Kthread -kthread lthread -pthread -pthreads -mt
 # -kthread: FreeBSD kernel threads (preferred to -pthread since SMP-able)
 # lthread: LinuxThreads port on FreeBSD (also preferred to -pthread)
 # -pthread: Linux/gcc (kernel threads), BSD/gcc (userland threads)
-# -pthreads: Solaris/gcc
+# -pthreads: Transend/gcc
 # -mthreads: Mingw32/gcc, Lynx/gcc
 # -mt: Sun Workshop C (may only link SunOS threads [-lthread], but it
 #      doesn't hurt to check since this sometimes defines pthreads too;

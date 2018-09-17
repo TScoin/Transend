@@ -62,12 +62,12 @@
         <translation>Adreces de recepció</translation>
     </message>
     <message>
-        <source>These are your Transend addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Aquestes són les teves adreces Transend per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
+        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Aquestes són les teves adreces PIVX per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
     </message>
     <message>
-        <source>These are your Transend addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Aquestes són les teves adreces Transend per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
+        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Aquestes són les teves adreces PIVX per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,16 +168,16 @@
         <translation>Confirma l'encriptació del moneder</translation>
     </message>
     <message>
-        <source>Transend will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TSCs from being stolen by malware infecting your computer.</source>
-        <translation>Transend es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus TSC de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
+        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
+        <translation>PIVX es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus PIV de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Estàs segur que vols encriptar el moneder?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TSC&lt;/b&gt;!</source>
-        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES TSCS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
+        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES PIVS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -207,6 +207,9 @@
         <source>Wallet passphrase was successfully changed.</source>
         <translation>La contrasenya del moneder ha estat canviada amb èxit.</translation>
     </message>
+    </context>
+<context>
+    <name>BanTableModel</name>
     </context>
 <context>
     <name>Bip38ToolDialog</name>
@@ -418,12 +421,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>Transend Core</source>
-        <translation>Transend Core</translation>
+        <source>PIVX Core</source>
+        <translation>PIVX Core</translation>
     </message>
     <message>
-        <source>Send coins to a Transend address</source>
-        <translation>Envia monedes a una adreça Transend</translation>
+        <source>Send coins to a PIVX address</source>
+        <translation>Envia monedes a una adreça PIVX</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -434,8 +437,8 @@
         <translation>&amp;Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Transend Core</source>
-        <translation>&amp;Sobre Transend Core</translation>
+        <source>&amp;About PIVX Core</source>
+        <translation>&amp;Sobre PIVX Core</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -458,12 +461,8 @@
         <translation>Obre el fitxer de configuració del Masternode</translation>
     </message>
     <message>
-        <source>Transend Core client</source>
-        <translation>Client Transend core</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Transend network</source>
-        <translation><numerusform>%n connexió activa a la xarxa Transend</numerusform><numerusform>%n connexions actives a la xarxa Transend</numerusform></translation>
+        <source>PIVX Core client</source>
+        <translation>Client PIVX core</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -473,25 +472,9 @@
         <source>Up to date</source>
         <translation>Actualitzat</translation>
     </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n hora</numerusform><numerusform>%n hores</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n dia</numerusform><numerusform>%n dies</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n setmana</numerusform><numerusform>%n setmanes</numerusform></translation>
-    </message>
     <message>
         <source>%1 and %2</source>
         <translation>%1 i %2</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n any</numerusform><numerusform>%n anys</numerusform></translation>
     </message>
     <message>
         <source>Error</source>
@@ -635,6 +618,10 @@
         <translation>Rebut amb l'adreça</translation>
     </message>
     <message>
+        <source>Type</source>
+        <translation>Tipus</translation>
+    </message>
+    <message>
         <source>Date</source>
         <translation>Data</translation>
     </message>
@@ -767,6 +754,10 @@
         <translation>Aquesta etiqueta es posa vermella si la prioritat és més petita que "mitjana"</translation>
     </message>
     <message>
+        <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
+        <translation>Aquesta etiqueta es posa vermella si algun destinatari rep un import inferior a l' %1.</translation>
+    </message>
+    <message>
         <source>(no label)</source>
         <translation>(sense etiqueta)</translation>
     </message>
@@ -814,8 +805,8 @@
         <translation>Edita l'adreça d'enviament</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Transend address.</source>
-        <translation>L'adreça introduïda "%1" no és una adreça Transend vàlida.</translation>
+        <source>The entered address "%1" is not a valid PIVX address.</source>
+        <translation>L'adreça introduïda "%1" no és una adreça PIVX vàlida.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -860,16 +851,16 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>Transend Core</source>
-        <translation>Transend Core</translation>
+        <source>PIVX Core</source>
+        <translation>PIVX Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Transend Core</source>
-        <translation>Sobre Transend Core</translation>
+        <source>About PIVX Core</source>
+        <translation>Sobre PIVX Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -915,12 +906,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to Transend Core.</source>
-        <translation>Benvingut a Transend Core.</translation>
+        <source>Welcome to PIVX Core.</source>
+        <translation>Benvingut a PIVX Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Transend Core will store its data.</source>
-        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del Transend Core.</translation>
+        <source>As this is the first time the program is launched, you can choose where PIVX Core will store its data.</source>
+        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del PIVX Core.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -931,8 +922,8 @@
         <translation>Usar una carpeta de dades personalitzada:</translation>
     </message>
     <message>
-        <source>Transend Core</source>
-        <translation>Transend Core</translation>
+        <source>PIVX Core</source>
+        <translation>PIVX Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -956,10 +947,6 @@
     <message>
         <source>Form</source>
         <translation>Formulari</translation>
-    </message>
-    <message>
-        <source>My Masternodes</source>
-        <translation>Els meus Masternodes</translation>
     </message>
     <message>
         <source>Alias</source>
@@ -1093,6 +1080,10 @@
         <translation>Activa</translation>
     </message>
     <message>
+        <source>(no label)</source>
+        <translation>(sense etiqueta)</translation>
+    </message>
+    <message>
         <source>The entered address:
 </source>
         <translation>L'adreça introduïda:
@@ -1120,9 +1111,24 @@
     </message>
 </context>
 <context>
-    <name>HodgepodgeConfig</name>
+    <name>MultisigDialog</name>
     <message>
-        <source>Configure Hodgepodge</source>
+        <source>Status:</source>
+        <translation>Estat:</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Import:</translation>
+    </message>
+    </context>
+<context>
+    <name>ObfuscationConfig</name>
+    <message>
+        <source>Configure Obfuscation</source>
         <translation>Configura ofuscació</translation>
     </message>
     <message>
@@ -1142,31 +1148,31 @@
         <translation>Si us plau, selecciona un nivell de privacitat.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 TSC</source>
-        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 10000 TSC</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 PIV</source>
+        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 10000 PIV</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 TSC</source>
-        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 10000 TSC</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 PIV</source>
+        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 10000 PIV</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Utilitza 16 masternodes diferents</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 TSC to anonymize 10000 TSC</source>
-        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 TSC per anonimitzar 10000 TSC</translation>
+        <source>This option is the quickest and will cost about ~0.025 PIV to anonymize 10000 PIV</source>
+        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 PIV per anonimitzar 10000 PIV</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 TSC to anonymize 10000 TSC</source>
-        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 TSC per anonimitzar 10000 TSC</translation>
+        <source>This option is moderately fast and will cost about 0.05 PIV to anonymize 10000 PIV</source>
+        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 PIV per anonimitzar 10000 PIV</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Aquesta és l'opció més lenta però més segura. Usar l'anonimitzat màxim té un cost de</translation>
     </message>
     <message>
-        <source>Hodgepodge Configuration</source>
+        <source>Obfuscation Configuration</source>
         <translation>Configuració de l'ofuscació</translation>
     </message>
     </context>
@@ -1208,8 +1214,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start Transend after logging in to the system.</source>
-        <translation>Inicia Transend automàticament després d'identificar-te en el sistema.</translation>
+        <source>Automatically start PIVX after logging in to the system.</source>
+        <translation>Inicia PIVX automàticament després d'identificar-te en el sistema.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1271,18 +1277,6 @@
         <translation>Total:</translation>
     </message>
     <message>
-        <source>TSC:</source>
-        <translation>TSC:</translation>
-    </message>
-    <message>
-        <source>zTSC:</source>
-        <translation>zTSC:</translation>
-    </message>
-    <message>
-        <source>0 %</source>
-        <translation>0 %</translation>
-    </message>
-    <message>
         <source>Recent transactions</source>
         <translation>Transaccions recents</translation>
     </message>
@@ -1304,20 +1298,16 @@
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>ZeroTransend (zTSC)</source>
-        <translation>ZeroTransend (zTSC)</translation>
-    </message>
-    <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zTSC</source>
-        <translation>zTSC</translation>
+        <source>zPIV</source>
+        <translation>zPIV</translation>
     </message>
     <message>
-        <source>0.000 000 00 TSC</source>
-        <translation>0.000 000 00 TSC</translation>
+        <source>0.000 000 00 PIV</source>
+        <translation>0.000 000 00 PIV</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1332,8 +1322,8 @@
         <translation>Import:</translation>
     </message>
     <message>
-        <source>0 zTSC</source>
-        <translation>0 zTSC</translation>
+        <source>0 zPIV</source>
+        <translation>0 zPIV</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1350,6 +1340,10 @@
     <message>
         <source>Priority:</source>
         <translation>Prioritat:</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeText</translation>
     </message>
     <message>
         <source>Fee:</source>
@@ -1630,7 +1624,7 @@
     </message>
     <message>
         <source>After Fee:</source>
-        <translation>Després de la comissió:</translation>
+        <translation>Amb comissió:</translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1719,8 +1713,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Transend Core is shutting down...</source>
-        <translation>Transend Core s'està tancant...</translation>
+        <source>PIVX Core is shutting down...</source>
+        <translation>PIVX Core s'està tancant...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1785,8 +1779,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Transend Core</source>
-        <translation>Transend Core</translation>
+        <source>PIVX Core</source>
+        <translation>PIVX Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1892,10 +1886,6 @@
         <translation>Aquest any</translation>
     </message>
     <message>
-        <source>Obfuscated</source>
-        <translation>Ofuscat</translation>
-    </message>
-    <message>
         <source>Copy address</source>
         <translation>Copia l'adreça</translation>
     </message>
@@ -1969,7 +1959,7 @@
     </message>
     </context>
 <context>
-    <name>ZTSCControlDialog</name>
+    <name>ZPivControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Quantitat</translation>
@@ -1979,12 +1969,12 @@
         <translation>0</translation>
     </message>
     <message>
-        <source>zTSC</source>
-        <translation>zTSC</translation>
+        <source>zPIV</source>
+        <translation>zPIV</translation>
     </message>
     </context>
 <context>
-    <name>transend-core</name>
+    <name>pivx-core</name>
     <message>
         <source>Can't mix while sync in progress.</source>
         <translation>No es pot mesclar mentre s'està sincronitzant.</translation>

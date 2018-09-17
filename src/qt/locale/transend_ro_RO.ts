@@ -61,6 +61,9 @@
     <name>AskPassphraseDialog</name>
     </context>
 <context>
+    <name>BanTableModel</name>
+    </context>
+<context>
     <name>Bip38ToolDialog</name>
     </context>
 <context>
@@ -94,7 +97,10 @@
     <name>MultiSendDialog</name>
     </context>
 <context>
-    <name>HodgepodgeConfig</name>
+    <name>MultisigDialog</name>
+    </context>
+<context>
+    <name>ObfuscationConfig</name>
     </context>
 <context>
     <name>OpenURIDialog</name>
@@ -183,9 +189,9 @@
     </message>
     </context>
 <context>
-    <name>ZTSCControlDialog</name>
+    <name>ZPivControlDialog</name>
     </context>
 <context>
-    <name>transend-core</name>
+    <name>pivx-core</name>
     </context>
 </TS>

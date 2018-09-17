@@ -1,0 +1,26 @@
+# /etc/conf.d/transendd: config file for /etc/init.d/transendd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/transend/transend.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/transendd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/transendd.pid"
+
+# Where to write transendd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/transendd"
+
+# User and group to own transendd process
+#BITCOIND_USER="transend"
+#BITCOIND_GROUP="transend"
+
+# Path to transendd executable
+#BITCOIND_BIN="/usr/bin/transendd"
+
+# Nice value to run transendd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

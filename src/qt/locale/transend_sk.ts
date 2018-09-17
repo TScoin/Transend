@@ -62,12 +62,12 @@
         <translation>Prijímacia adresa</translation>
     </message>
     <message>
-        <source>These are your Transend addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto sú vaše Transend adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
+        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto sú vaše PIVX adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
     </message>
     <message>
-        <source>These are your Transend addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto sú vaše Transend adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
+        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto sú vaše PIVX adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -136,10 +136,6 @@
         <translation>Slúži na zakázanie obyčajného odoslania peňazí, v prípade, že bol OS účet kompromitovaný. Neposkytuje žiadnu skutočnú bezpečnosť.</translation>
     </message>
     <message>
-        <source>For anonymization and staking only</source>
-        <translation>Len pre anonymizáciu a staking</translation>
-    </message>
-    <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Zadajte novú prístupovú frázu do peňaženky. &lt;br/&gt; Použite prístupovú frázu &lt;b&gt;, ktorá má desať alebo viac náhodných znakov &lt;/ b&gt; alebo &lt;b&gt; osem alebo viac slov &lt;/ b&gt;.</translation>
     </message>
@@ -176,16 +172,16 @@
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>Transend will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TSCs from being stolen by malware infecting your computer.</source>
-        <translation>Transend sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše TSC pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
+        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
+        <translation>PIVX sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše PIV pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Naozaj chcete zašifrovať svoju peňaženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TSC&lt;/b&gt;!</source>
-        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY TSC &lt;/ b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
+        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY PIV &lt;/ b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -229,6 +225,9 @@
     </message>
 </context>
 <context>
+    <name>BanTableModel</name>
+    </context>
+<context>
     <name>Bip38ToolDialog</name>
     <message>
         <source>BIP 38 Tool</source>
@@ -239,16 +238,8 @@
         <translation>BIP 38 Šifrovanie</translation>
     </message>
     <message>
-        <source>Enter a Transend Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadajte adresu Transend, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
-    </message>
-    <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
-    </message>
-    <message>
-        <source>The Transend address to sign the message with</source>
-        <translation>Adresa Transend, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,16 +270,8 @@
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Transend address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Transend adresy</translation>
-    </message>
-    <message>
         <source>Encrypt &amp;Key</source>
         <translation>Zašifrovať kľúč</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>Zmazať všetky polia správy</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -303,20 +286,8 @@
         <translation>Zadajte súkromný kľúč zašifrovaný BIP 38. Zadajte prístupovú frázu do stredného poľa. Kliknite na Dešifrovať kľúč, ak chcete vypočítať privátny kľúč. Po dešifrovaní kľúča pridáte do peňaženky tento súkromný kľúč kliknutím na položku 'Importovať adresu'.</translation>
     </message>
     <message>
-        <source>The Transend address the message was signed with</source>
-        <translation>Transend adresa, ktorou bola správa podpísaná</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified Transend address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Transend adresou</translation>
-    </message>
-    <message>
         <source>Decrypt &amp;Key</source>
         <translation>Dešifrovať kľúč</translation>
-    </message>
-    <message>
-        <source>Reset all verify message fields</source>
-        <translation>Zmazať všetky polia verifikácie správy</translation>
     </message>
     <message>
         <source>Decrypted Key:</source>
@@ -598,16 +569,16 @@
         <translation>Panel nástrojov Záložky</translation>
     </message>
     <message>
-        <source>Transend Core</source>
-        <translation>Transend Core</translation>
+        <source>PIVX Core</source>
+        <translation>PIVX Core</translation>
     </message>
     <message>
-        <source>Send coins to a Transend address</source>
-        <translation>Odoslať mince na adresu Transend</translation>
+        <source>Send coins to a PIVX address</source>
+        <translation>Odoslať mince na adresu PIVX</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and transend: URIs)</source>
-        <translation>Vyžiadať platby (generuje QR kódy a transend: identifikátory URI)</translation>
+        <source>Request payments (generates QR codes and pivx: URIs)</source>
+        <translation>Vyžiadať platby (generuje QR kódy a pivx: identifikátory URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -618,24 +589,24 @@
         <translation>Prezrieť masternody</translation>
     </message>
     <message>
-        <source>&amp;About Transend Core</source>
-        <translation>O Transend Core</translation>
+        <source>&amp;About PIVX Core</source>
+        <translation>O PIVX Core</translation>
     </message>
     <message>
-        <source>Show information about Transend Core</source>
-        <translation>Zobraziť informácie o Transend Core</translation>
+        <source>Show information about PIVX Core</source>
+        <translation>Zobraziť informácie o PIVX Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Transend</source>
-        <translation>Zmeňte možnosti konfigurácie pre Transend</translation>
+        <source>Modify configuration options for PIVX</source>
+        <translation>Zmeňte možnosti konfigurácie pre PIVX</translation>
     </message>
     <message>
-        <source>Sign messages with your Transend addresses to prove you own them</source>
-        <translation>Podpíšte správy pomocou adresy Transend, aby ste preukázali, že ich vlastníte</translation>
+        <source>Sign messages with your PIVX addresses to prove you own them</source>
+        <translation>Podpíšte správy pomocou adresy PIVX, aby ste preukázali, že ich vlastníte</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Transend addresses</source>
-        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými Transend adresami</translation>
+        <source>Verify messages to ensure they were signed with specified PIVX addresses</source>
+        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými PIVX adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +637,8 @@
         <translation>Otvoriť konfiguračný súbor masternodu</translation>
     </message>
     <message>
-        <source>Open a Transend: URI or payment request</source>
-        <translation>Otvorte Transend: URI alebo žiadosť o platbu</translation>
+        <source>Open a PIVX: URI or payment request</source>
+        <translation>Otvorte PIVX: URI alebo žiadosť o platbu</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +649,12 @@
         <translation>Okno blockchain prehliadača</translation>
     </message>
     <message>
-        <source>Show the Transend Core help message to get a list with possible Transend command-line options</source>
-        <translation>Zobraziť pomocnú správu programu Transend Core a získajte zoznam možností príkazového riadka Transend</translation>
+        <source>Show the PIVX Core help message to get a list with possible PIVX command-line options</source>
+        <translation>Zobraziť pomocnú správu programu PIVX Core a získajte zoznam možností príkazového riadka PIVX</translation>
     </message>
     <message>
-        <source>Transend Core client</source>
-        <translation>Transend Core klient</translation>
+        <source>PIVX Core client</source>
+        <translation>PIVX Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -708,10 +679,6 @@
     <message>
         <source>%1 and %2</source>
         <translation>%1 a %2</translation>
-    </message>
-    <message>
-        <source>%1 behind</source>
-        <translation>%1 pozadu</translation>
     </message>
     <message>
         <source>Catching up...</source>
@@ -786,10 +753,6 @@ MultiSend: %1</translation>
         <translation>Peňaženka je &lt;b&gt;zašifrovaná&lt;/ b&gt; a momentálne je &lt;b&gt;odomknutá&lt;/ b&gt;</translation>
     </message>
     <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonimization and staking only</source>
-        <translation>Peňaženka je &lt;b&gt;zašifrovaná&lt;/ b&gt; a momentálne &lt;b&gt;odomknutá&lt;/ b&gt; iba na anonymizáciu a staking</translation>
-    </message>
-    <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Peňaženka je &lt;b&gt;zašifrovaná&lt;/ b&gt; a momentálne je &lt;b&gt;zamknutá&lt;/ b&gt;</translation>
     </message>
@@ -813,8 +776,8 @@ MultiSend: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (transend.conf).</source>
-        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (transend.conf) nastaviť txindex = 1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (pivx.conf).</source>
+        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (pivx.conf) nastaviť txindex = 1.</translation>
     </message>
 </context>
 <context>
@@ -904,15 +867,15 @@ MultiSend: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Transend Core</source>
-        <translation>Transend Core</translation>
+        <source>PIVX Core</source>
+        <translation>PIVX Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Transend Core</source>
-        <translation>Transend Core</translation>
+        <source>PIVX Core</source>
+        <translation>PIVX Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -940,9 +903,20 @@ MultiSend: %1</translation>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(žiaden štítok)</translation>
+    </message>
     </context>
 <context>
-    <name>HodgepodgeConfig</name>
+    <name>MultisigDialog</name>
+    <message>
+        <source>Amount:</source>
+        <translation>Suma:</translation>
+    </message>
+    </context>
+<context>
+    <name>ObfuscationConfig</name>
     </context>
 <context>
     <name>OpenURIDialog</name>
@@ -988,6 +962,10 @@ MultiSend: %1</translation>
     <message>
         <source>Priority:</source>
         <translation>Priorita:</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
     </message>
     <message>
         <source>Fee:</source>
@@ -1136,8 +1114,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The Transend address to sign the message with</source>
-        <translation>Adresa Transend, ktorou chcete správu podpísať</translation>
+        <source>The PIVX address to sign the message with</source>
+        <translation>Adresa PIVX, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1160,16 +1138,16 @@ MultiSend: %1</translation>
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Transend address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Transend adresy</translation>
+        <source>Sign the message to prove you own this PIVX address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto PIVX adresy</translation>
     </message>
     <message>
-        <source>The Transend address the message was signed with</source>
-        <translation>Transend adresa, ktorou bola správa podpísaná</translation>
+        <source>The PIVX address the message was signed with</source>
+        <translation>PIVX adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Transend address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Transend adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified PIVX address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou PIVX adresou</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1207,8 +1185,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Transend Core</source>
-        <translation>Transend Core</translation>
+        <source>PIVX Core</source>
+        <translation>PIVX Core</translation>
     </message>
     </context>
 <context>
@@ -1303,10 +1281,10 @@ MultiSend: %1</translation>
     </message>
     </context>
 <context>
-    <name>ZTSCControlDialog</name>
+    <name>ZPivControlDialog</name>
     </context>
 <context>
-    <name>transend-core</name>
+    <name>pivx-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

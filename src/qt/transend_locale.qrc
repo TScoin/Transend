@@ -7,13 +7,18 @@
         <file alias="de">locale/transend_de.qm</file>
         <file alias="en">locale/transend_en.qm</file>
         <file alias="en_US">locale/transend_en_US.qm</file>
+        <file alias="eo">locale/transend_eo.qm</file>
         <file alias="es">locale/transend_es.qm</file>
+        <file alias="es_ES">locale/transend_es_ES.qm</file>
         <file alias="fi">locale/transend_fi.qm</file>
         <file alias="fr_FR">locale/transend_fr_FR.qm</file>
+        <file alias="hi_IN">locale/transend_hi_IN.qm</file>
         <file alias="hr">locale/transend_hr.qm</file>
+        <file alias="hr_HR">locale/transend_hr_HR.qm</file>
         <file alias="it">locale/transend_it.qm</file>
         <file alias="ja">locale/transend_ja.qm</file>
         <file alias="ko_KR">locale/transend_ko_KR.qm</file>
+        <file alias="lt_LT">locale/transend_lt_LT.qm</file>
         <file alias="nl">locale/transend_nl.qm</file>
         <file alias="pl">locale/transend_pl.qm</file>
         <file alias="pt">locale/transend_pt.qm</file>
@@ -24,6 +29,7 @@
         <file alias="sv">locale/transend_sv.qm</file>
         <file alias="tr">locale/transend_tr.qm</file>
         <file alias="uk">locale/transend_uk.qm</file>
+        <file alias="vi">locale/transend_vi.qm</file>
         <file alias="zh_CN">locale/transend_zh_CN.qm</file>
         <file alias="zh_TW">locale/transend_zh_TW.qm</file>
     </qresource>

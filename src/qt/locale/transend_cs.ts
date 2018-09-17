@@ -15,7 +15,7 @@
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Kopírovat vybranou adresu do mezipaměti</translation>
+        <translation>Kopírovat vybranou adresu do schránky</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
@@ -62,12 +62,12 @@
         <translation>Adresy pro přijetí peněz</translation>
     </message>
     <message>
-        <source>These are your Transend addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto jsou Vaše Transend adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
+        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto jsou Vaše PIVX adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
     </message>
     <message>
-        <source>These are your Transend addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto jsou Vaše Transend adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
+        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto jsou Vaše PIVX adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -136,10 +136,6 @@
         <translation>Slouží k neumožnění zaslání jednoduché platby, pokud je učet OS kompromitován. Neposkytuje tak reálné zabezpeční.</translation>
     </message>
     <message>
-        <source>For anonymization and staking only</source>
-        <translation>Pouze pro anonymizaci a sázení</translation>
-    </message>
-    <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Zadejte nové frázové heslo pro Vaši peněženku &lt;br/&gt; Prosím, použijte frázové heslo z &lt;b&gt; nebo více náhodných znaků &lt;/b&gt;, nebo&lt;b&gt;z osmi nebo více slov&lt;/b&gt;  .</translation>
     </message>
@@ -176,16 +172,16 @@
         <translation>Potvrdit zašifrování peněženky</translation>
     </message>
     <message>
-        <source>Transend will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TSCs from being stolen by malware infecting your computer.</source>
-        <translation>Transend se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše TSCy před krádží, pokud je Váš počítač infikován malwarem.</translation>
+        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
+        <translation>PIVX se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše PIVy před krádží, pokud je Váš počítač infikován malwarem.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Opravdu chcete zašifrovat Vaši peněženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TSC&lt;/b&gt;!</source>
-        <translation>Varování: Pokud zašifrujete svou peněženku a ztratíte frázové heslo, tak &lt;b&gt;ZTRATÍTE VŠECHNY VAŠE TSCy&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
+        <translation>Varování: Pokud zašifrujete svou peněženku a ztratíte frázové heslo, tak &lt;b&gt;ZTRATÍTE VŠECHNY VAŠE PIVy&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -229,6 +225,9 @@
     </message>
 </context>
 <context>
+    <name>BanTableModel</name>
+    </context>
+<context>
     <name>Bip38ToolDialog</name>
     <message>
         <source>BIP 38 Tool</source>
@@ -239,16 +238,8 @@
         <translation>&amp;BIP 38 Šifrovat</translation>
     </message>
     <message>
-        <source>Enter a Transend Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadejte Transend adresu, kterou si přejete zašifrovat pomocí BIP38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
-    </message>
-    <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
-    </message>
-    <message>
-        <source>The Transend address to sign the message with</source>
-        <translation>Transend adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,16 +270,8 @@
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Transend address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto Transend adresu</translation>
-    </message>
-    <message>
         <source>Encrypt &amp;Key</source>
         <translation>Šifrovat &amp;Klíč</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>Resetovat všechny položky podepsání zprávy</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -303,20 +286,8 @@
         <translation>Vložte BIP 38 šifrovaný privítní klíc. Frázové heslo vložte do prostředního boxu. Kliknětě na Dešifrovat Klíč pro výpočet privátního klíče. Poté co bude klíč dešifrován, kliknutím na 'Importovat Adresu' přidáte privátní klíč do Vaší peněženky.</translation>
     </message>
     <message>
-        <source>The Transend address the message was signed with</source>
-        <translation>Transend adresa zprávy byla podpsána</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified Transend address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou Transend adresou</translation>
-    </message>
-    <message>
         <source>Decrypt &amp;Key</source>
         <translation>Dešifrovat &amp;Klíč</translation>
-    </message>
-    <message>
-        <source>Reset all verify message fields</source>
-        <translation>Resetovat všechny položky pro ověření zprávy</translation>
     </message>
     <message>
         <source>Decrypted Key:</source>
@@ -424,6 +395,10 @@
     <message>
         <source>Browse transaction history</source>
         <translation>Procházet historii transakcí</translation>
+    </message>
+    <message>
+        <source>Privacy Actions for zPIV</source>
+        <translation>Řešení soukromí pro zPIV</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -566,6 +541,30 @@
         <translation>Zobrazit seznam použitých adres  a popisků pro přijetí plateb</translation>
     </message>
     <message>
+        <source>&amp;Multisignature creation...</source>
+        <translation>&amp;Vytvoření multisignatury</translation>
+    </message>
+    <message>
+        <source>Create a new multisignature address and add it to this wallet</source>
+        <translation>Vytvořit novou multisignaturní adresu a přidat ji do této peněženky</translation>
+    </message>
+    <message>
+        <source>&amp;Multisignature spending...</source>
+        <translation>&amp;Multisignaturní výdaje...</translation>
+    </message>
+    <message>
+        <source>Spend from a multisignature address</source>
+        <translation>Uhradit z multisignaturní adresy</translation>
+    </message>
+    <message>
+        <source>&amp;Multisignature signing...</source>
+        <translation>&amp;Multisignaturní podepisování...</translation>
+    </message>
+    <message>
+        <source>Sign with a multisignature address</source>
+        <translation>Podepsat multisignaturní adresou</translation>
+    </message>
+    <message>
         <source>Open &amp;URI...</source>
         <translation>Otevřít &amp;URI...</translation>
     </message>
@@ -576,6 +575,10 @@
     <message>
         <source>Synchronizing additional data: %p%</source>
         <translation>Synchronizuji přídavná data: %p%</translation>
+    </message>
+    <message>
+        <source>%1 behind. Scanning block %2</source>
+        <translation>Zbývá %1 bloků. Skenuji blok %2</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -598,16 +601,20 @@
         <translation>Nástrojová lišta záložek</translation>
     </message>
     <message>
-        <source>Transend Core</source>
-        <translation>Transend Core</translation>
+        <source>PIVX Core</source>
+        <translation>PIVX Core</translation>
     </message>
     <message>
-        <source>Send coins to a Transend address</source>
-        <translation>Odeslat platbuna Transend adresu</translation>
+        <source>Send coins to a PIVX address</source>
+        <translation>Odeslat platbuna PIVX adresu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and transend: URIs)</source>
-        <translation>Vyžádat platbu (generování QK kódu a transend: URIs)</translation>
+        <source>Request payments (generates QR codes and pivx: URIs)</source>
+        <translation>Vyžádat platbu (generování QK kódu a pivx: URIs)</translation>
+    </message>
+    <message>
+        <source>&amp;Privacy</source>
+        <translation>&amp;Soukromí</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -618,24 +625,24 @@
         <translation>Procházet masternody</translation>
     </message>
     <message>
-        <source>&amp;About Transend Core</source>
-        <translation>&amp;O Transend Core</translation>
+        <source>&amp;About PIVX Core</source>
+        <translation>&amp;O PIVX Core</translation>
     </message>
     <message>
-        <source>Show information about Transend Core</source>
-        <translation>Zobraz informace o Transend Core</translation>
+        <source>Show information about PIVX Core</source>
+        <translation>Zobraz informace o PIVX Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Transend</source>
-        <translation>Upravit možnosti konfigurace pro Transend</translation>
+        <source>Modify configuration options for PIVX</source>
+        <translation>Upravit možnosti konfigurace pro PIVX</translation>
     </message>
     <message>
-        <source>Sign messages with your Transend addresses to prove you own them</source>
-        <translation>Podepsat zprávy Vaší Transend adresou pro prokázaní, že jste jejich vlastníkem</translation>
+        <source>Sign messages with your PIVX addresses to prove you own them</source>
+        <translation>Podepsat zprávy Vaší PIVX adresou pro prokázaní, že jste jejich vlastníkem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Transend addresses</source>
-        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými Transend adresami</translation>
+        <source>Verify messages to ensure they were signed with specified PIVX addresses</source>
+        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými PIVX adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +673,8 @@
         <translation>Otevřít Masternodový konfigurační soubor</translation>
     </message>
     <message>
-        <source>Open a Transend: URI or payment request</source>
-        <translation>Otevřít Transend: URI nebo platební žádost</translation>
+        <source>Open a PIVX: URI or payment request</source>
+        <translation>Otevřít PIVX: URI nebo platební žádost</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +685,12 @@
         <translation>Okno blokového průzkumníka</translation>
     </message>
     <message>
-        <source>Show the Transend Core help message to get a list with possible Transend command-line options</source>
-        <translation>Zobrazit Transend Core pomocnou zpráv pro získání seznamu možných parametrů Transend pro příkazy do příkazové řádky</translation>
+        <source>Show the PIVX Core help message to get a list with possible PIVX command-line options</source>
+        <translation>Zobrazit PIVX Core pomocnou zpráv pro získání seznamu možných parametrů PIVX pro příkazy do příkazové řádky</translation>
     </message>
     <message>
-        <source>Transend Core client</source>
-        <translation>Transend Core klient</translation>
+        <source>PIVX Core client</source>
+        <translation>PIVX Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -710,8 +717,8 @@
         <translation>%1 a %2</translation>
     </message>
     <message>
-        <source>%1 behind</source>
-        <translation>%1 za</translation>
+        <source>Catching up...</source>
+        <translation>Doháníme co se dá...</translation>
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
@@ -782,10 +789,6 @@ MultiSend: %1</translation>
         <translation>Peněženka je &lt;b&gt;zašifrovaná&lt;/b&gt; a momentálně je &lt;b&gt;odemčená&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonimization and staking only</source>
-        <translation>Peněženka je &lt;b&gt;zašifrovaná&lt;/b&gt; a momentálně je &lt;b&gt;odemčená&lt;/b&gt; pouze pro anonimizace a sázení</translation>
-    </message>
-    <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Peněženka je &lt;b&gt;zašifrovaná&lt;/b&gt; a momentálně je &lt;b&gt;zamčená&lt;/b&gt;</translation>
     </message>
@@ -795,6 +798,14 @@ MultiSend: %1</translation>
     <message>
         <source>Blockchain Explorer</source>
         <translation>Blockchainový průzkumník</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>Zpět</translation>
+    </message>
+    <message>
+        <source>Forward</source>
+        <translation>Dále</translation>
     </message>
     <message>
         <source>Address / Block / Transaction</source>
@@ -809,12 +820,16 @@ MultiSend: %1</translation>
         <translation>TextPopisku</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (transend.conf).</source>
-        <translation>Ne všechny transakce budou zobrazeny. Pro zobrazení všech transackí nastavte v konfiguračním souboru (transend.conf) txindex=1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (pivx.conf).</source>
+        <translation>Ne všechny transakce budou zobrazeny. Pro zobrazení všech transackí nastavte v konfiguračním souboru (pivx.conf) txindex=1.</translation>
     </message>
 </context>
 <context>
     <name>ClientModel</name>
+    <message>
+        <source>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</source>
+        <translation>Celkem: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / neznámé: %5)</translation>
+    </message>
     <message>
         <source>Network Alert</source>
         <translation>Upozornění sítě</translation>
@@ -1066,8 +1081,8 @@ MultiSend: %1</translation>
         <translation>Upravit adresu k odeslání platby</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Transend address.</source>
-        <translation>Zadaná adresa "%1" není validní Transend adresa.</translation>
+        <source>The entered address "%1" is not a valid PIVX address.</source>
+        <translation>Zadaná adresa "%1" není validní PIVX adresa.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1112,12 +1127,12 @@ MultiSend: %1</translation>
         <translation>verze</translation>
     </message>
     <message>
-        <source>Transend Core</source>
-        <translation>Transend Core</translation>
+        <source>PIVX Core</source>
+        <translation>PIVX Core</translation>
     </message>
     <message>
-        <source>About Transend Core</source>
-        <translation>O Transend Core</translation>
+        <source>About PIVX Core</source>
+        <translation>O PIVX Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1151,16 +1166,16 @@ MultiSend: %1</translation>
         <translation>Vítejte</translation>
     </message>
     <message>
-        <source>Welcome to Transend Core.</source>
-        <translation>Vítejte v Transend Core.</translation>
+        <source>Welcome to PIVX Core.</source>
+        <translation>Vítejte v PIVX Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Transend Core will store its data.</source>
-        <translation>Při prvním spuštění programu si můžete vybrat, kam bude Transend Core ukládat svá data.</translation>
+        <source>As this is the first time the program is launched, you can choose where PIVX Core will store its data.</source>
+        <translation>Při prvním spuštění programu si můžete vybrat, kam bude PIVX Core ukládat svá data.</translation>
     </message>
     <message>
-        <source>Transend Core will download and store a copy of the Transend block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Transend Core stáhne a uloží kopii Transend blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
+        <source>PIVX Core will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>PIVX Core stáhne a uloží kopii PIVX blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1171,8 +1186,8 @@ MultiSend: %1</translation>
         <translation>Použít vlastní složku pro data</translation>
     </message>
     <message>
-        <source>Transend Core</source>
-        <translation>Transend Core</translation>
+        <source>PIVX Core</source>
+        <translation>PIVX Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1196,10 +1211,6 @@ MultiSend: %1</translation>
     <message>
         <source>Form</source>
         <translation>Od</translation>
-    </message>
-    <message>
-        <source>My Masternodes</source>
-        <translation>Moje Masternody</translation>
     </message>
     <message>
         <source>Alias</source>
@@ -1377,6 +1388,10 @@ MultiSend: %1</translation>
         <translation>Poslat pro odměny masternodů</translation>
     </message>
     <message>
+        <source>(no label)</source>
+        <translation>(bez popisku)</translation>
+    </message>
+    <message>
         <source>The entered address:
 </source>
         <translation>Zadaná adresa:
@@ -1416,9 +1431,24 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     </message>
 </context>
 <context>
-    <name>HodgepodgeConfig</name>
+    <name>MultisigDialog</name>
     <message>
-        <source>Configure Hodgepodge</source>
+        <source>Status:</source>
+        <translation>Stav:</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Hodnota:</translation>
+    </message>
+    </context>
+<context>
+    <name>ObfuscationConfig</name>
+    <message>
+        <source>Configure Obfuscation</source>
         <translation>Konfigurace obfuskace</translation>
     </message>
     <message>
@@ -1438,27 +1468,27 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Vyberte úrpvěň ochrany soukromí</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 TSC</source>
-        <translation>Použí 2 oddělené masternody k promíchání prostředků až do 10000 TSC</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 PIV</source>
+        <translation>Použí 2 oddělené masternody k promíchání prostředků až do 10000 PIV</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Použít 16 oddělených masternodů</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 TSC to anonymize 10000 TSC</source>
-        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 TSC pro anonymizaci 10000 TSC</translation>
+        <source>This option is the quickest and will cost about ~0.025 PIV to anonymize 10000 PIV</source>
+        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 PIV pro anonymizaci 10000 PIV</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Toto je nejpomalejší a nejvíce bezpečná volba. Použití maximalní anonymity bude stát</translation>
     </message>
     <message>
-        <source>0.1 TSC per 10000 TSC you anonymize.</source>
-        <translation>0.1 TSC za 10000 TSC anonymizujete.</translation>
+        <source>0.1 PIV per 10000 PIV you anonymize.</source>
+        <translation>0.1 PIV za 10000 PIV anonymizujete.</translation>
     </message>
     <message>
-        <source>Hodgepodge Configuration</source>
+        <source>Obfuscation Configuration</source>
         <translation>Konfigurace obufuskace</translation>
     </message>
     </context>
@@ -1520,12 +1550,12 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start Transend after logging in to the system.</source>
-        <translation>Automaticky spustit Transend po přihlášení do systému</translation>
+        <source>Automatically start PIVX after logging in to the system.</source>
+        <translation>Automaticky spustit PIVX po přihlášení do systému</translation>
     </message>
     <message>
-        <source>&amp;Start Transend on system login</source>
-        <translation>&amp;Spusti Transend při přihlášení do systému</translation>
+        <source>&amp;Start PIVX on system login</source>
+        <translation>&amp;Spusti PIVX při přihlášení do systému</translation>
     </message>
     <message>
         <source>Show Masternodes Tab</source>
@@ -1611,10 +1641,6 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Celkem:</translation>
     </message>
     <message>
-        <source>Your current total balance</source>
-        <translation>Vaše aktuální celková balance</translation>
-    </message>
-    <message>
         <source>Spendable:</source>
         <translation>Disponibilní:</translation>
     </message>
@@ -1682,6 +1708,10 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     <message>
         <source>Priority:</source>
         <translation>Priorita:</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextPopisku</translation>
     </message>
     <message>
         <source>Fee:</source>
@@ -2057,8 +2087,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Změna:</translation>
     </message>
     <message>
-        <source>0 TSC</source>
-        <translation>0 TSC</translation>
+        <source>0 PIV</source>
+        <translation>0 PIV</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2099,10 +2129,6 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     <message>
         <source>Add &amp;Recipient</source>
         <translation>Přidat &amp;Příjemce</translation>
-    </message>
-    <message>
-        <source>SwiftTX</source>
-        <translation>SwiftTX</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -2186,8 +2212,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The Transend address to sign the message with</source>
-        <translation>Transend adresa pro podepsání zprávy</translation>
+        <source>The PIVX address to sign the message with</source>
+        <translation>PIVX adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2214,16 +2240,16 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Transend address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto Transend adresu</translation>
+        <source>Sign the message to prove you own this PIVX address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto PIVX adresu</translation>
     </message>
     <message>
-        <source>The Transend address the message was signed with</source>
-        <translation>Transend adresa zprávy byla podpsána</translation>
+        <source>The PIVX address the message was signed with</source>
+        <translation>PIVX adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Transend address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou Transend adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified PIVX address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou PIVX adresou</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2265,8 +2291,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Transend Core</source>
-        <translation>Transend Core</translation>
+        <source>PIVX Core</source>
+        <translation>PIVX Core</translation>
     </message>
     </context>
 <context>
@@ -2369,14 +2395,14 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     </message>
     </context>
 <context>
-    <name>ZTSCControlDialog</name>
+    <name>ZPivControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     </context>
 <context>
-    <name>transend-core</name>
+    <name>pivx-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>
@@ -2384,10 +2410,6 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     <message>
         <source>Information</source>
         <translation>Informace</translation>
-    </message>
-    <message>
-        <source>SwiftTX options:</source>
-        <translation>SwiftTx možnosti:</translation>
     </message>
     <message>
         <source>Synchronization failed</source>

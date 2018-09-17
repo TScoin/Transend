@@ -476,7 +476,7 @@ BITCOIN_CLI_BIN = $(top_builddir)/src/$(BITCOIN_CLI_NAME)$(EXEEXT)
 BITCOIN_WIN_INSTALLER = $(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
 empty := 
 space := $(empty) $(empty)
-OSX_APP = Solaris-Qt.app
+OSX_APP = Transend-Qt.app
 OSX_VOLNAME = $(subst $(space),-,$(PACKAGE_NAME))
 OSX_DMG = $(OSX_VOLNAME).dmg
 OSX_BACKGROUND_SVG = background.svg
@@ -501,13 +501,13 @@ OSX_PACKAGING = $(OSX_DEPLOY_SCRIPT) $(OSX_FANCY_PLIST) $(OSX_INSTALLER_ICONS) \
   $(top_srcdir)/contrib/macdeploy/detached-sig-create.sh
 
 COVERAGE_INFO = baseline_filtered_combined.info baseline.info block_test.info \
-  leveldb_baseline.info test_solaris_filtered.info total_coverage.info \
+  leveldb_baseline.info test_transend_filtered.info total_coverage.info \
   baseline_filtered.info block_test_filtered.info \
-  leveldb_baseline_filtered.info test_solaris_coverage.info test_solaris.info
+  leveldb_baseline_filtered.info test_transend_coverage.info test_transend.info
 
 OSX_APP_BUILT = $(OSX_APP)/Contents/PkgInfo $(OSX_APP)/Contents/Resources/empty.lproj \
   $(OSX_APP)/Contents/Resources/bitcoin.icns $(OSX_APP)/Contents/Info.plist \
-  $(OSX_APP)/Contents/MacOS/Solaris-Qt $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings
+  $(OSX_APP)/Contents/MacOS/Transend-Qt $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings
 
 @BUILD_DARWIN_FALSE@APP_DIST_DIR = $(top_builddir)/dist
 @BUILD_DARWIN_FALSE@APP_DIST_EXTRAS = $(APP_DIST_DIR)/.background/$(OSX_BACKGROUND_IMAGE) $(APP_DIST_DIR)/.DS_Store $(APP_DIST_DIR)/Applications
@@ -1044,7 +1044,7 @@ $(OSX_APP)/Contents/Resources/bitcoin.icns: $(OSX_INSTALLER_ICONS)
 	$(MKDIR_P) $(@D)
 	$(INSTALL_DATA) $< $@
 
-$(OSX_APP)/Contents/MacOS/Solaris-Qt: $(BITCOIN_QT_BIN)
+$(OSX_APP)/Contents/MacOS/Transend-Qt: $(BITCOIN_QT_BIN)
 	$(MKDIR_P) $(@D)
 	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM)  $< $@
 
@@ -1071,7 +1071,7 @@ osx_volname:
 @BUILD_DARWIN_FALSE@	@rm -f $@
 @BUILD_DARWIN_FALSE@	@cd $(@D); $(LN_S) /Applications $(@F)
 
-@BUILD_DARWIN_FALSE@$(APP_DIST_EXTRAS): $(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/Solaris-Qt
+@BUILD_DARWIN_FALSE@$(APP_DIST_EXTRAS): $(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/Transend-Qt
 
 @BUILD_DARWIN_FALSE@$(OSX_DMG): $(APP_DIST_EXTRAS)
 @BUILD_DARWIN_FALSE@	$(GENISOIMAGE) -no-cache-inodes -D -l -probe -V "$(OSX_VOLNAME)" -no-pad -r -dir-mode 0755 -apple -o $@ dist
@@ -1085,7 +1085,7 @@ osx_volname:
 @BUILD_DARWIN_FALSE@$(APP_DIST_DIR)/.DS_Store: $(OSX_DSSTORE_GEN)
 @BUILD_DARWIN_FALSE@	$(PYTHON) $< "$@" "$(OSX_VOLNAME)"
 
-@BUILD_DARWIN_FALSE@$(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/Solaris-Qt: $(OSX_APP_BUILT) $(OSX_PACKAGING)
+@BUILD_DARWIN_FALSE@$(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/Transend-Qt: $(OSX_APP_BUILT) $(OSX_PACKAGING)
 @BUILD_DARWIN_FALSE@	INSTALLNAMETOOL=$(INSTALLNAMETOOL)  OTOOL=$(OTOOL) STRIP=$(STRIP) $(PYTHON) $(OSX_DEPLOY_SCRIPT) $(OSX_APP) -translations-dir=$(QT_TRANSLATION_DIR) -add-qt-tr $(OSX_QT_TRANSLATIONS) -verbose 2
 
 @BUILD_DARWIN_FALSE@deploydir: $(APP_DIST_EXTRAS)
@@ -1118,16 +1118,16 @@ $(BITCOIN_CLI_BIN): FORCE
 @USE_LCOV_TRUE@baseline_filtered_combined.info: leveldb_baseline_filtered.info baseline_filtered.info
 @USE_LCOV_TRUE@	$(LCOV) -a leveldb_baseline_filtered.info -a baseline_filtered.info -o $@
 
-@USE_LCOV_TRUE@test_solaris.info: baseline_filtered_combined.info
+@USE_LCOV_TRUE@test_transend.info: baseline_filtered_combined.info
 @USE_LCOV_TRUE@	$(MAKE) -C src/ check
-@USE_LCOV_TRUE@	$(LCOV) -c -d $(abs_builddir)/src -t test_solaris -o $@
+@USE_LCOV_TRUE@	$(LCOV) -c -d $(abs_builddir)/src -t test_transend -o $@
 @USE_LCOV_TRUE@	$(LCOV) -z -d $(abs_builddir)/src
 @USE_LCOV_TRUE@	$(LCOV) -z -d $(abs_builddir)/src/leveldb
 
-@USE_LCOV_TRUE@test_solaris_filtered.info: test_solaris.info
+@USE_LCOV_TRUE@test_transend_filtered.info: test_transend.info
 @USE_LCOV_TRUE@	$(LCOV) -r $< "/usr/include/*" -o $@
 
-@USE_LCOV_TRUE@block_test.info: test_solaris_filtered.info
+@USE_LCOV_TRUE@block_test.info: test_transend_filtered.info
 @USE_LCOV_TRUE@	$(MKDIR_P) qa/tmp
 @USE_LCOV_TRUE@	-@TIMEOUT=15 qa/pull-tester/run-bitcoind-for-test.sh $(JAVA) -jar $(JAVA_COMPARISON_TOOL) qa/tmp/compTool 0
 @USE_LCOV_TRUE@	$(LCOV) -c -d $(abs_builddir)/src --t BitcoinJBlockTest -o $@
@@ -1137,13 +1137,13 @@ $(BITCOIN_CLI_BIN): FORCE
 @USE_LCOV_TRUE@block_test_filtered.info: block_test.info
 @USE_LCOV_TRUE@	$(LCOV) -r $< "/usr/include/*" -o $@
 
-@USE_LCOV_TRUE@test_solaris_coverage.info: baseline_filtered_combined.info test_solaris_filtered.info
-@USE_LCOV_TRUE@	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_solaris_filtered.info -o $@
+@USE_LCOV_TRUE@test_transend_coverage.info: baseline_filtered_combined.info test_transend_filtered.info
+@USE_LCOV_TRUE@	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_transend_filtered.info -o $@
 
-@USE_LCOV_TRUE@total_coverage.info:  baseline_filtered_combined.info test_solaris_filtered.info block_test_filtered.info
-@USE_LCOV_TRUE@	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_solaris_filtered.info -a block_test_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
+@USE_LCOV_TRUE@total_coverage.info:  baseline_filtered_combined.info test_transend_filtered.info block_test_filtered.info
+@USE_LCOV_TRUE@	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_transend_filtered.info -a block_test_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
 
-@USE_LCOV_TRUE@test_solaris.coverage/.dirstamp:  test_solaris_coverage.info
+@USE_LCOV_TRUE@test_transend.coverage/.dirstamp:  test_transend_coverage.info
 @USE_LCOV_TRUE@	$(GENHTML) -s $< -o $(@D)
 @USE_LCOV_TRUE@	@touch $@
 
@@ -1151,12 +1151,12 @@ $(BITCOIN_CLI_BIN): FORCE
 @USE_LCOV_TRUE@	$(GENHTML) -s $< -o $(@D)
 @USE_LCOV_TRUE@	@touch $@
 
-@USE_LCOV_TRUE@cov: test_solaris.coverage/.dirstamp total.coverage/.dirstamp
+@USE_LCOV_TRUE@cov: test_transend.coverage/.dirstamp total.coverage/.dirstamp
 
 .INTERMEDIATE: $(COVERAGE_INFO)
 
 clean-local:
-	rm -rf test_solaris.coverage/ total.coverage/ $(OSX_APP)
+	rm -rf test_transend.coverage/ total.coverage/ $(OSX_APP)
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

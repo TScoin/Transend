@@ -1,0 +1,26 @@
+[Unit]
+Description=Transend's distributed currency daemon
+After=network.target
+
+[Service]
+User=transend
+Group=transend
+
+Type=forking
+PIDFile=/var/lib/transendd/transendd.pid
+
+ExecStart=/usr/bin/transendd -daemon -pid=/var/lib/transendd/transendd.pid \
+          -conf=/etc/transend/transend.conf -datadir=/var/lib/transendd
+
+ExecStop=-/usr/bin/transend-cli -conf=/etc/transend/transend.conf \
+         -datadir=/var/lib/transendd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

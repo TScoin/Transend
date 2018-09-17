@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>选择发送Transend coin的地址</translation>
+        <translation>选择发送PIVX coin的地址</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>选择接收Transend coin的地址</translation>
+        <translation>选择接收PIVX coin的地址</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -62,12 +62,12 @@
         <translation>接收地址</translation>
     </message>
     <message>
-        <source>These are your Transend addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>这是用于发送Transend的地址。在发送Transend之前，请认真核查发送金额和接收地址。</translation>
+        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>这是用于发送PIVX的地址。在发送PIVX之前，请认真核查发送金额和接收地址。</translation>
     </message>
     <message>
-        <source>These are your Transend addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>这是用于接收Transend的钱包地址。建议每一笔交易都使用一个新的钱包地址。</translation>
+        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>这是用于接收PIVX的钱包地址。建议每一笔交易都使用一个新的钱包地址。</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -136,10 +136,6 @@
         <translation>用于在操作系统帐户遭到破坏时禁用琐碎的sendmoney。没有真正的安全性。</translation>
     </message>
     <message>
-        <source>For anonymization and staking only</source>
-        <translation>仅用于匿名化和加密</translation>
-    </message>
-    <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>输入一个新的钱包密码&lt;br/&gt;钱包密码&lt;b&gt;建议使用10位以上的随机字符&lt;/b&gt;，或者&lt;b&gt; 3个以上的单词&lt;/b&gt;。并建议有序使用大小写字母。</translation>
     </message>
@@ -176,16 +172,16 @@
         <translation>确认钱包加密</translation>
     </message>
     <message>
-        <source>Transend will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TSCs from being stolen by malware infecting your computer.</source>
-        <translation>Transend将关闭以完成加密过程。但是，仅仅加密您的钱包是不够的，因为它并不能阻止恶意软件从您的电脑里面偷取TSCs。</translation>
+        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
+        <translation>PIVX将关闭以完成加密过程。但是，仅仅加密您的钱包是不够的，因为它并不能阻止恶意软件从您的电脑里面偷取PIVs。</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>您确定加密您的钱包吗？</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TSC&lt;/b&gt;!</source>
-        <translation>注意：请妥善保管好你的密码，因为在加密后，没有密码将无法打开钱包。这将会让您&lt;b&gt;损失钱包中所有的TSC&lt;/b&gt;！</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
+        <translation>注意：请妥善保管好你的密码，因为在加密后，没有密码将无法打开钱包。这将会让您&lt;b&gt;损失钱包中所有的PIV&lt;/b&gt;！</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -229,6 +225,9 @@
     </message>
 </context>
 <context>
+    <name>BanTableModel</name>
+    </context>
+<context>
     <name>Bip38ToolDialog</name>
     <message>
         <source>BIP 38 Tool</source>
@@ -239,16 +238,8 @@
         <translation>&amp;BIP 38 加密</translation>
     </message>
     <message>
-        <source>Enter a Transend Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>输入您要使用BIP 38加密的Transend地址。在中间框中输入密码。按加密计算加密私钥。</translation>
-    </message>
-    <message>
         <source>Address:</source>
         <translation>地址：</translation>
-    </message>
-    <message>
-        <source>The Transend address to sign the message with</source>
-        <translation>该Transend地址签名的消息</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,16 +270,8 @@
         <translation>将当前签名复制到系统剪贴板</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Transend address</source>
-        <translation>签署消息以证明您拥有此Transend地址</translation>
-    </message>
-    <message>
         <source>Encrypt &amp;Key</source>
         <translation>加密&amp;秘钥</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>重置所有签名信息</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -303,20 +286,8 @@
         <translation>输入BIP 38加密私钥。 在中间框中输入密码。 单击解密密钥计算私钥。 密钥解密后，单击“导入地址”将将该私钥添加到钱包中。</translation>
     </message>
     <message>
-        <source>The Transend address the message was signed with</source>
-        <translation>由Transend地址签名的消息</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified Transend address</source>
-        <translation>验证消息确保它已使用指定的Transend地址进行签名</translation>
-    </message>
-    <message>
         <source>Decrypt &amp;Key</source>
         <translation>解密&amp;秘钥</translation>
-    </message>
-    <message>
-        <source>Reset all verify message fields</source>
-        <translation>重置所有验证消息</translation>
     </message>
     <message>
         <source>Decrypted Key:</source>
@@ -573,10 +544,6 @@
         <source>&amp;Command-line options</source>
         <translation>&amp;C命令行选项</translation>
     </message>
-    <message numerus="yes">
-        <source>Processed %n blocks of transaction history.</source>
-        <translation><numerusform>处理的 %n个交易记录块。</numerusform></translation>
-    </message>
     <message>
         <source>Synchronizing additional data: %p%</source>
         <translation>同步其他数据：%p%</translation>
@@ -602,24 +569,20 @@
         <translation>标签工具栏</translation>
     </message>
     <message>
-        <source>Transend Core</source>
-        <translation>Transend Core</translation>
+        <source>PIVX Core</source>
+        <translation>PIVX Core</translation>
     </message>
     <message>
-        <source>Send coins to a Transend address</source>
-        <translation>发送数字货币到Transend地址</translation>
+        <source>Send coins to a PIVX address</source>
+        <translation>发送数字货币到PIVX地址</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and transend: URIs)</source>
-        <translation>请求支付（生成二维码和transend：URIs）</translation>
+        <source>Request payments (generates QR codes and pivx: URIs)</source>
+        <translation>请求支付（生成二维码和pivx：URIs）</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
         <translation>&amp;P隐私</translation>
-    </message>
-    <message>
-        <source>Privacy Action for zTSC and Hodgepodge</source>
-        <translation>zTSC和混淆的隐私操作</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -630,24 +593,24 @@
         <translation>浏览主节点</translation>
     </message>
     <message>
-        <source>&amp;About Transend Core</source>
-        <translation>&amp;A关于Transend Core</translation>
+        <source>&amp;About PIVX Core</source>
+        <translation>&amp;A关于PIVX Core</translation>
     </message>
     <message>
-        <source>Show information about Transend Core</source>
-        <translation>显示Transend  Core的相关信息</translation>
+        <source>Show information about PIVX Core</source>
+        <translation>显示PIVX  Core的相关信息</translation>
     </message>
     <message>
-        <source>Modify configuration options for Transend</source>
-        <translation>修改Transend的配置选项</translation>
+        <source>Modify configuration options for PIVX</source>
+        <translation>修改PIVX的配置选项</translation>
     </message>
     <message>
-        <source>Sign messages with your Transend addresses to prove you own them</source>
-        <translation>使用您的Transend地址验证消息，以证明您拥有他们</translation>
+        <source>Sign messages with your PIVX addresses to prove you own them</source>
+        <translation>使用您的PIVX地址验证消息，以证明您拥有他们</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Transend addresses</source>
-        <translation>验证消息确保它已使用指定的Transend地址进行签名</translation>
+        <source>Verify messages to ensure they were signed with specified PIVX addresses</source>
+        <translation>验证消息确保它已使用指定的PIVX地址进行签名</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -678,8 +641,8 @@
         <translation>打开主节点配置文件</translation>
     </message>
     <message>
-        <source>Open a Transend: URI or payment request</source>
-        <translation>打开Transend：URI或付款请求</translation>
+        <source>Open a PIVX: URI or payment request</source>
+        <translation>打开PIVX：URI或付款请求</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -690,17 +653,12 @@
         <translation>区块浏览窗口</translation>
     </message>
     <message>
-        <source>Show the Transend Core help message to get a list with possible Transend command-line options</source>
-        <translation>显示Transend Core帮助信息并获取Transend命令行选项列表</translation>
+        <source>Show the PIVX Core help message to get a list with possible PIVX command-line options</source>
+        <translation>显示PIVX Core帮助信息并获取PIVX命令行选项列表</translation>
     </message>
     <message>
-        <source>Transend Core client</source>
-        <translation>Transend Core 客户端</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Transend network</source>
-        <translation><numerusform>%n 活动连接到Transend网络
-</numerusform></translation>
+        <source>PIVX Core client</source>
+        <translation>PIVX Core 客户端</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -721,26 +679,6 @@
     <message>
         <source>Up to date</source>
         <translation>最新</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n 小时</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n 天</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n 星期</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n 年</numerusform></translation>
-    </message>
-    <message>
-        <source>%1 behind</source>
-        <translation>%1 落后</translation>
     </message>
     <message>
         <source>Catching up...</source>
@@ -865,31 +803,31 @@ Address: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Transend Core</source>
-        <translation>Transend Core</translation>
+        <source>PIVX Core</source>
+        <translation>PIVX Core</translation>
     </message>
     <message>
-        <source>About Transend Core</source>
-        <translation>关于Transend Core</translation>
+        <source>About PIVX Core</source>
+        <translation>关于PIVX Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Welcome to Transend Core.</source>
-        <translation>欢迎使用 Transend Core</translation>
+        <source>Welcome to PIVX Core.</source>
+        <translation>欢迎使用 PIVX Core</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Transend Core will store its data.</source>
-        <translation>由于这是该程序第一次启动，您可以选择存储Transend Core 数据的位置。</translation>
+        <source>As this is the first time the program is launched, you can choose where PIVX Core will store its data.</source>
+        <translation>由于这是该程序第一次启动，您可以选择存储PIVX Core 数据的位置。</translation>
     </message>
     <message>
-        <source>Transend Core will download and store a copy of the Transend block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Transend Core将下载并存储Transend区块链副本。 至少 %1 GB的数据将存储在此目录中，并且会随着时间的推移而增长。 钱包也将存储在此目录中。</translation>
+        <source>PIVX Core will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>PIVX Core将下载并存储PIVX区块链副本。 至少 %1 GB的数据将存储在此目录中，并且会随着时间的推移而增长。 钱包也将存储在此目录中。</translation>
     </message>
     <message>
-        <source>Transend Core</source>
-        <translation>Transend Core</translation>
+        <source>PIVX Core</source>
+        <translation>PIVX Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -941,9 +879,20 @@ Address: %4
         <source>Address:</source>
         <translation>地址：</translation>
     </message>
+    <message>
+        <source>Enter a label for this address to add it to your address book</source>
+        <translation>输入此地址的标签，将其添加到您的地址列表中</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>未设置标签</translation>
+    </message>
     </context>
 <context>
-    <name>HodgepodgeConfig</name>
+    <name>MultisigDialog</name>
+    </context>
+<context>
+    <name>ObfuscationConfig</name>
     </context>
 <context>
     <name>OpenURIDialog</name>
@@ -971,16 +920,16 @@ Address: %4
         <translation>如果您要禁用未经确认发送，在至少有一个确认之前&lt;br/&gt;不能更改。&lt;br/&gt;这也将影响您的余额计算。</translation>
     </message>
     <message>
-        <source>Automatically open the Transend client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>自动打开路由器上的Transend钱包使用的端口。 这只有当您的路由器支持UPnP并且该享生效时才有用。</translation>
+        <source>Automatically open the PIVX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>自动打开路由器上的PIVX钱包使用的端口。 这只有当您的路由器支持UPnP并且该享生效时才有用。</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
         <translation>&amp;使用SOCKS5代理（默认代理）</translation>
     </message>
     <message>
-        <source>&amp;Start Transend on system login</source>
-        <translation>&amp;开机启动Transend</translation>
+        <source>&amp;Start PIVX on system login</source>
+        <translation>&amp;开机启动PIVX</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1040,7 +989,7 @@ Address: %4
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>选择显示发送Transend的默认单位。</translation>
+        <translation>选择显示发送PIVX的默认单位。</translation>
     </message>
     <message>
         <source>Decimal digits</source>
@@ -1102,7 +1051,7 @@ Address: %4
         <source>The supplied proxy address is invalid.</source>
         <translation>提供的代理地址无效。</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>OverviewPage</name>
     <message>
@@ -1118,12 +1067,8 @@ Address: %4
         <translation>您目前的支出余额</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Transend network after a connection is established, but this process has not completed yet.</source>
-        <translation>显示的信息可能已过期。建立连接后，您的钱包会自动与Transend网络同步，但此过程尚未完成。</translation>
-    </message>
-    <message>
-        <source>Your current total balance</source>
-        <translation>您当前的总余额</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PIVX network after a connection is established, but this process has not completed yet.</source>
+        <translation>显示的信息可能已过期。建立连接后，您的钱包会自动与PIVX网络同步，但此过程尚未完成。</translation>
     </message>
     <message>
         <source>Your current balance in watch-only addresses</source>
@@ -1139,8 +1084,8 @@ Address: %4
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Transend network after a connection is established, but this process has not completed yet.</source>
-        <translation>显示的信息可能已过期。建立连接后，您的钱包会自动与Transend网络同步，但此过程尚未完成。</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PIVX network after a connection is established, but this process has not completed yet.</source>
+        <translation>显示的信息可能已过期。建立连接后，您的钱包会自动与PIVX网络同步，但此过程尚未完成。</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -1189,7 +1134,7 @@ Address: %4
     <name>RPCConsole</name>
     <message>
         <source>&amp;Information</source>
-        <translation>&amp;信息</translation>
+        <translation>&amp;I信息</translation>
     </message>
     <message>
         <source>&amp;Open</source>
@@ -1227,12 +1172,12 @@ Address: %4
         <translation>&amp;消息：</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Transend network.</source>
-        <translation>附加到付款请求的可选消息，将在请求打开时显示。 注意：消息不会在付款时通过Transend网络发送。</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the PIVX network.</source>
+        <translation>附加到付款请求的可选消息，将在请求打开时显示。 注意：消息不会在付款时通过PIVX网络发送。</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Transend network.</source>
-        <translation>附加到付款请求的可选消息，将在请求打开时显示。&lt;br&gt; 注意：消息不会在付款时通过Transend网络发送。</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the PIVX network.</source>
+        <translation>附加到付款请求的可选消息，将在请求打开时显示。&lt;br&gt; 注意：消息不会在付款时通过PIVX网络发送。</translation>
     </message>
     <message>
         <source>&amp;Label:</source>
@@ -1367,8 +1312,8 @@ Address: %4
         <translation>消息:</translation>
     </message>
     <message>
-        <source>A message that was attached to the Transend: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Transend network.</source>
-        <translation>附加到Transend：URI的消息，该消息将与转账信息一起存储以供参考。 注意：此消息不会通过Transend网络发送。</translation>
+        <source>A message that was attached to the PIVX: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the PIVX network.</source>
+        <translation>附加到PIVX：URI的消息，该消息将与转账信息一起存储以供参考。 注意：此消息不会通过PIVX网络发送。</translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>
@@ -1393,8 +1338,8 @@ Address: %4
         <translation>您可以使用地址签名消息，以证明您拥有他们。 小心不要签名任何您不了解的，因为网络钓鱼攻击可能会试图欺骗您，以让您签名。 只能签署您熟悉并且了解和同意的。</translation>
     </message>
     <message>
-        <source>The Transend address to sign the message with</source>
-        <translation>该Transend地址签名的消息</translation>
+        <source>The PIVX address to sign the message with</source>
+        <translation>该PIVX地址签名的消息</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1421,16 +1366,16 @@ Address: %4
         <translation>将当前签名复制到系统剪贴板</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Transend address</source>
-        <translation>签署消息以证明您拥有此Transend地址</translation>
+        <source>Sign the message to prove you own this PIVX address</source>
+        <translation>签署消息以证明您拥有此PIVX地址</translation>
     </message>
     <message>
-        <source>The Transend address the message was signed with</source>
-        <translation>由Transend地址签名的消息</translation>
+        <source>The PIVX address the message was signed with</source>
+        <translation>由PIVX地址签名的消息</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Transend address</source>
-        <translation>验证消息确保它已使用指定的Transend地址进行签名</translation>
+        <source>Verify the message to ensure it was signed with the specified PIVX address</source>
+        <translation>验证消息确保它已使用指定的PIVX地址进行签名</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1508,8 +1453,8 @@ Address: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Transend Core</source>
-        <translation>Transend Core</translation>
+        <source>PIVX Core</source>
+        <translation>PIVX Core</translation>
     </message>
     </context>
 <context>
@@ -1588,17 +1533,17 @@ Address: %4
     </message>
     </context>
 <context>
-    <name>ZTSCControlDialog</name>
+    <name>ZPivControlDialog</name>
     </context>
 <context>
-    <name>transend-core</name>
+    <name>pivx-core</name>
     <message>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
         <translation>在收到相关警报时执行命令，或者看到一个很长的分叉（cmd中的%s被消息替换）</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Transend Core will not work properly.</source>
-        <translation>注意：请检查您的电脑的日期和时间是否正确！ 如果您的时间设置不正确，Transend Core将无法正常工作。</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong PIVX Core will not work properly.</source>
+        <translation>注意：请检查您的电脑的日期和时间是否正确！ 如果您的时间设置不正确，PIVX Core将无法正常工作。</translation>
     </message>
     <message>
         <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>

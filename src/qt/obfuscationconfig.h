@@ -1,3 +1,8 @@
+// Copyright (c) 2014-2016 The Dash Developers
+// Copyright (c) 2016-2017 The PIVX developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
 #ifndef OBFUSCATIONCONFIG_H
 #define OBFUSCATIONCONFIG_H
 
@@ -5,25 +10,25 @@
 
 namespace Ui
 {
-class HodgepodgeConfig;
+class ObfuscationConfig;
 }
 class WalletModel;
 
 /** Multifunctional dialog to ask for passphrases. Used for encryption, unlocking, and changing the passphrase.
  */
-class HodgepodgeConfig : public QDialog
+class ObfuscationConfig : public QDialog
 {
     Q_OBJECT
 
 public:
-    HodgepodgeConfig(QWidget* parent = 0);
-    ~HodgepodgeConfig();
+    ObfuscationConfig(QWidget* parent = 0);
+    ~ObfuscationConfig();
 
     void setModel(WalletModel* model);
 
 
 private:
-    Ui::HodgepodgeConfig* ui;
+    Ui::ObfuscationConfig* ui;
     WalletModel* model;
     void configure(bool enabled, int coins, int rounds);
 

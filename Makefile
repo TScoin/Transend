@@ -64,10 +64,10 @@ am__make_running_with_option = \
   test $$has_opt = yes
 am__make_dryrun = (target_option=n; $(am__make_running_with_option))
 am__make_keepgoing = (target_option=k; $(am__make_running_with_option))
-pkgdatadir = $(datadir)/solaris
-pkgincludedir = $(includedir)/solaris
-pkglibdir = $(libdir)/solaris
-pkglibexecdir = $(libexecdir)/solaris
+pkgdatadir = $(datadir)/transend
+pkgincludedir = $(includedir)/transend
+pkglibdir = $(libdir)/transend
+pkglibexecdir = $(libexecdir)/transend
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 install_sh_DATA = $(install_sh) -c -m 644
 install_sh_PROGRAM = $(install_sh) -c
@@ -81,7 +81,7 @@ NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
 build_triplet = x86_64-unknown-linux-gnu
-host_triplet = i686-w64-mingw32
+host_triplet = x86_64-unknown-linux-gnu
 subdir = .
 DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am \
 	$(top_srcdir)/configure $(am__configure_deps) \
@@ -232,70 +232,70 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /root/current/temporo/Transend/build-aux/missing aclocal-1.14
+ACLOCAL = ${SHELL} /home/dentist/Transend-2.0.0-Core/build-aux/missing aclocal-1.14
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
-AR = /usr/bin/i686-w64-mingw32-ar
-AUTOCONF = ${SHELL} /root/current/temporo/Transend/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /root/current/temporo/Transend/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /root/current/temporo/Transend/build-aux/missing automake-1.14
+AR = /usr/bin/ar
+AUTOCONF = ${SHELL} /home/dentist/Transend-2.0.0-Core/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /home/dentist/Transend-2.0.0-Core/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /home/dentist/Transend-2.0.0-Core/build-aux/missing automake-1.14
 AWK = gawk
 BDB_CPPFLAGS = 
 BDB_LIBS = -ldb_cxx-4.8
-BITCOIN_CLI_NAME = solaris-cli
-BITCOIN_DAEMON_NAME = solarisd
-BITCOIN_GUI_NAME = solaris-qt
-BITCOIN_TX_NAME = solaris-tx
-BOOST_CHRONO_LIB = -lboost_chrono-mt-s
-BOOST_CPPFLAGS = -mthreads -I/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include
-BOOST_FILESYSTEM_LIB = -lboost_filesystem-mt-s
-BOOST_LDFLAGS = -L/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../lib
-BOOST_LIBS = -L/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../lib -lboost_system-mt-s -lboost_filesystem-mt-s -lboost_program_options-mt-s -lboost_thread_win32-mt-s -lboost_chrono-mt-s
-BOOST_PROGRAM_OPTIONS_LIB = -lboost_program_options-mt-s
-BOOST_SYSTEM_LIB = -lboost_system-mt-s
-BOOST_THREAD_LIB = -lboost_thread_win32-mt-s
-BOOST_UNIT_TEST_FRAMEWORK_LIB = -lboost_unit_test_framework-mt-s
+BITCOIN_CLI_NAME = transend-cli
+BITCOIN_DAEMON_NAME = transendd
+BITCOIN_GUI_NAME = transend-qt
+BITCOIN_TX_NAME = transend-tx
+BOOST_CHRONO_LIB = -lboost_chrono
+BOOST_CPPFLAGS = -pthread -I/usr/include
+BOOST_FILESYSTEM_LIB = -lboost_filesystem
+BOOST_LDFLAGS = -L/usr/lib/x86_64-linux-gnu
+BOOST_LIBS = -L/usr/lib/x86_64-linux-gnu -lboost_system -lboost_filesystem -lboost_program_options -lboost_thread -lboost_chrono
+BOOST_PROGRAM_OPTIONS_LIB = -lboost_program_options
+BOOST_SYSTEM_LIB = -lboost_system
+BOOST_THREAD_LIB = -lboost_thread
+BOOST_UNIT_TEST_FRAMEWORK_LIB = 
 BREW = 
-BUILD_QT = qt
-BUILD_TEST = test
-BUILD_TEST_QT = test
-CC = /root/current/temporo/Transend/depends/i686-w64-mingw32/share/../native/bin/ccache i686-w64-mingw32-gcc
-CCACHE = /root/current/temporo/Transend/depends/i686-w64-mingw32/share/../native/bin/ccache
+BUILD_QT = 
+BUILD_TEST = 
+BUILD_TEST_QT = 
+CC = gcc
+CCACHE = 
 CCDEPMODE = depmode=gcc3
-CFLAGS = -pipe -O2 
+CFLAGS = -g -O2
 CLIENT_VERSION_BUILD = 0
 CLIENT_VERSION_IS_RELEASE = true
-CLIENT_VERSION_MAJOR = 1
+CLIENT_VERSION_MAJOR = 2
 CLIENT_VERSION_MINOR = 0
-CLIENT_VERSION_REVISION = 5
+CLIENT_VERSION_REVISION = 0
 COMPARISON_TOOL_REORG_TESTS = 0
 COPYRIGHT_YEAR = 2018
-CPP = i686-w64-mingw32-gcc -E
-CPPFILT = /usr/bin/i686-w64-mingw32-c++filt
-CPPFLAGS = -I/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -DHAVE_QT5
-CRYPTO_CFLAGS = 
-CRYPTO_LIBS = -lcrypto
-CXX = /root/current/temporo/Transend/depends/i686-w64-mingw32/share/../native/bin/ccache i686-w64-mingw32-g++ -std=c++11
-CXXCPP = i686-w64-mingw32-g++ -std=c++11 -E
+CPP = gcc -E
+CPPFILT = /usr/bin/c++filt
+CPPFLAGS =  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2
+CRYPTO_CFLAGS =  
+CRYPTO_LIBS = -lcrypto  
+CXX = g++ -std=c++11
+CXXCPP = g++ -std=c++11 -E
 CXXDEPMODE = depmode=gcc3
-CXXFLAGS = -pipe -O2   -Wstack-protector -fstack-protector-all -fvisibility=hidden
+CXXFLAGS = -g -O2 -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter  -Wstack-protector -fstack-protector-all -fPIC -fvisibility=hidden
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
-DLLTOOL = i686-w64-mingw32-dlltool
+DLLTOOL = false
 DSYMUTIL = 
 DUMPBIN = 
 ECHO_C = 
 ECHO_N = -n
 ECHO_T = 
 EGREP = /bin/grep -E
-EVENT_CFLAGS = 
-EVENT_LIBS = -levent
-EVENT_PTHREADS_CFLAGS = 
-EVENT_PTHREADS_LIBS = 
-EXEEXT = .exe
+EVENT_CFLAGS =  
+EVENT_LIBS = -levent  
+EVENT_PTHREADS_CFLAGS = -pthread  
+EVENT_PTHREADS_LIBS = -levent_pthreads -levent  
+EXEEXT = 
 FGREP = /bin/grep -F
-GCOV = /usr/bin/i686-w64-mingw32-gcov
+GCOV = /usr/bin/gcov
 GENHTML = 
 GENISOIMAGE = 
 GIT = /usr/bin/git
@@ -309,65 +309,65 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-JAVA = /usr/bin/java
+JAVA = 
 JAVA_COMPARISON_TOOL = 
 LCOV = 
-LD = /usr/bin/i686-w64-mingw32-ld
-LDFLAGS = -L/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../lib  -Wl,--large-address-aware  -Wl,--dynamicbase -Wl,--nxcompat
+LD = /usr/bin/ld -m elf_x86_64
+LDFLAGS =   -Wl,-z,relro -Wl,-z,now
 LEVELDB_CPPFLAGS = 
-LEVELDB_TARGET_FLAGS = TARGET_OS=OS_WINDOWS_CROSSCOMPILE
+LEVELDB_TARGET_FLAGS = 
 LIBLEVELDB = 
 LIBMEMENV = 
 LIBOBJS = 
-LIBS = -lcrypto -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd 
+LIBS = -lcrypto -lanl 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
-LIBTOOL_APP_LDFLAGS =  -all-static
+LIBTOOL_APP_LDFLAGS = 
 LIPO = 
 LN_S = ln -s
-LRELEASE = /root/current/temporo/Transend/depends/i686-w64-mingw32/share/../native/bin/lrelease
+LRELEASE = 
 LTLIBOBJS = 
 LUPDATE = 
 MAINT = 
-MAKEINFO = ${SHELL} /root/current/temporo/Transend/build-aux/missing makeinfo
-MAKENSIS = none
+MAKEINFO = ${SHELL} /home/dentist/Transend-2.0.0-Core/build-aux/missing makeinfo
+MAKENSIS = 
 MANIFEST_TOOL = :
-MINIUPNPC_CPPFLAGS = -DSTATICLIB -DMINIUPNP_STATICLIB
+MINIUPNPC_CPPFLAGS = 
 MINIUPNPC_LIBS = -lminiupnpc
 MKDIR_P = /bin/mkdir -p
-MOC = /root/current/temporo/Transend/depends/i686-w64-mingw32/share/../native/bin/moc
+MOC = 
 MOC_DEFS = -DHAVE_CONFIG_H -I$(srcdir)
-NM = i686-w64-mingw32-nm
+NM = /usr/bin/nm -B
 NMEDIT = 
-OBJCOPY = /usr/bin/i686-w64-mingw32-objcopy
-OBJCXX = i686-w64-mingw32-g++ -std=c++11
+OBJCOPY = /usr/bin/objcopy
+OBJCXX = g++ -std=c++11
 OBJCXXDEPMODE = depmode=gcc3
-OBJCXXFLAGS = -pipe -O2   -Wstack-protector -fstack-protector-all
-OBJDUMP = i686-w64-mingw32-objdump
+OBJCXXFLAGS = -g -O2 -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter  -Wstack-protector -fstack-protector-all -fPIC
+OBJDUMP = objdump
 OBJEXT = o
 OTOOL = 
 OTOOL64 = 
-PACKAGE = solaris
-PACKAGE_BUGREPORT = www.solaris.org
-PACKAGE_NAME = Solaris Core
-PACKAGE_STRING = Solaris Core 1.0.5
-PACKAGE_TARNAME = solaris
+PACKAGE = transend
+PACKAGE_BUGREPORT = www.transendcoin.com
+PACKAGE_NAME = Transend Core
+PACKAGE_STRING = Transend Core 2.0.0
+PACKAGE_TARNAME = transend
 PACKAGE_URL = 
-PACKAGE_VERSION = 1.0.5
+PACKAGE_VERSION = 2.0.0
 PATH_SEPARATOR = :
-PKG_CONFIG = /usr/bin/pkg-config --static
-PKG_CONFIG_LIBDIR = /root/current/temporo/Transend/depends/i686-w64-mingw32/share/../lib/pkgconfig
-PKG_CONFIG_PATH = /root/current/temporo/Transend/depends/i686-w64-mingw32/share/../share/pkgconfig
+PKG_CONFIG = /usr/bin/pkg-config
+PKG_CONFIG_LIBDIR = 
+PKG_CONFIG_PATH = 
 PORT = 
 PROTOBUF_CFLAGS = 
-PROTOBUF_LIBS = -lprotobuf
-PROTOC = /root/current/temporo/Transend/depends/i686-w64-mingw32/share/../native/bin/protoc
-PTHREAD_CC = i686-w64-mingw32-gcc
-PTHREAD_CFLAGS = 
+PROTOBUF_LIBS = 
+PROTOC = 
+PTHREAD_CC = gcc
+PTHREAD_CFLAGS = -pthread
 PTHREAD_LIBS = 
 PYTHON = /usr/bin/python3
-PYTHONPATH = /root/current/temporo/Transend/depends/i686-w64-mingw32/share/../native/lib/python/dist-packages:
+PYTHONPATH = 
 QR_CFLAGS = 
-QR_LIBS = -lqrencode
+QR_LIBS = 
 QTPLATFORM_CFLAGS = 
 QTPLATFORM_LIBS = 
 QTPRINT_CFLAGS = 
@@ -377,47 +377,47 @@ QTXCBQPA_LIBS =
 QT_CFLAGS = 
 QT_DBUS_CFLAGS = 
 QT_DBUS_INCLUDES = 
-QT_DBUS_LIBS = -lQt5DBus -L/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../lib
-QT_INCLUDES = -I/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include -I/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/QtCore -I/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/QtGui -I/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/QtWidgets -I/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/QtNetwork -I/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/QtTest -I/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../include/QtDBus
-QT_LDFLAGS =  -mwindows
-QT_LIBS = -lqwindows -lQt5Widgets -lQt5Network -lQt5Gui     -lQt5Core    -lqtharfbuzzng -lqtpcre -lqtpng -lz  -limm32  -L/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../lib -L/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../plugins/platforms
+QT_DBUS_LIBS = 
+QT_INCLUDES = 
+QT_LDFLAGS = 
+QT_LIBS = 
 QT_PIE_FLAGS = 
-QT_SELECT = qt5
+QT_SELECT = qt
 QT_TEST_CFLAGS = 
 QT_TEST_INCLUDES = 
-QT_TEST_LIBS = -lQt5Test -L/root/current/temporo/Transend/depends/i686-w64-mingw32/share/../lib
-QT_TRANSLATION_DIR = /root/current/temporo/Transend/depends/i686-w64-mingw32/share/../translations
-RANLIB = /usr/bin/i686-w64-mingw32-ranlib
-RCC = /root/current/temporo/Transend/depends/i686-w64-mingw32/share/../native/bin/rcc
-READELF = /usr/bin/i686-w64-mingw32-readelf
+QT_TEST_LIBS = 
+QT_TRANSLATION_DIR = 
+RANLIB = /usr/bin/ranlib
+RCC = 
+READELF = /usr/bin/readelf
 RELDFLAGS = -Wl,--exclude-libs,ALL
 RSVG_CONVERT = 
 SED = /bin/sed
 SET_MAKE = 
 SHELL = /bin/bash
-SSL_CFLAGS = 
-SSL_LIBS = -lssl
-STRIP = /usr/bin/i686-w64-mingw32-strip
+SSL_CFLAGS =  
+SSL_LIBS = -lssl -lcrypto  
+STRIP = /usr/bin/strip
 TESTDEFS = 
 TIFFCP = 
-UIC = /root/current/temporo/Transend/depends/i686-w64-mingw32/share/../native/bin/uic
+UIC = 
 USE_QRCODE = 
 USE_UPNP = 
-VERSION = 1.0.5
-WINDOWS_BITS = 32
-WINDRES = /usr/bin/i686-w64-mingw32-windres
+VERSION = 2.0.0
+WINDOWS_BITS = 
+WINDRES = 
 X11XCB_CFLAGS = 
 X11XCB_LIBS = 
 XGETTEXT = 
-ZMQ_CFLAGS =  -DZMQ_STATIC
-ZMQ_LIBS = -lzmq
-abs_builddir = /root/current/temporo/Transend
-abs_srcdir = /root/current/temporo/Transend
-abs_top_builddir = /root/current/temporo/Transend
-abs_top_srcdir = /root/current/temporo/Transend
-ac_ct_AR = 
-ac_ct_CC = 
-ac_ct_CXX = 
+ZMQ_CFLAGS =  
+ZMQ_LIBS = -lzmq  
+abs_builddir = /home/dentist/Transend-2.0.0-Core
+abs_srcdir = /home/dentist/Transend-2.0.0-Core
+abs_top_builddir = /home/dentist/Transend-2.0.0-Core
+abs_top_srcdir = /home/dentist/Transend-2.0.0-Core
+ac_ct_AR = ar
+ac_ct_CC = gcc
+ac_ct_CXX = g++
 ac_ct_DUMPBIN = 
 ac_ct_OBJCXX = 
 am__include = include
@@ -438,15 +438,15 @@ datarootdir = ${prefix}/share
 docdir = ${datarootdir}/doc/${PACKAGE_TARNAME}
 dvidir = ${docdir}
 exec_prefix = ${prefix}
-host = i686-w64-mingw32
-host_alias = i686-w64-mingw32
-host_cpu = i686
-host_os = mingw32
-host_vendor = w64
+host = x86_64-unknown-linux-gnu
+host_alias = 
+host_cpu = x86_64
+host_os = linux-gnu
+host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /root/current/temporo/Transend/build-aux/install-sh
+install_sh = ${SHELL} /home/dentist/Transend-2.0.0-Core/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -455,7 +455,7 @@ mandir = ${datarootdir}/man
 mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /root/current/temporo/Transend/depends/i686-w64-mingw32
+prefix = /usr/local
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
@@ -476,7 +476,7 @@ BITCOIN_CLI_BIN = $(top_builddir)/src/$(BITCOIN_CLI_NAME)$(EXEEXT)
 BITCOIN_WIN_INSTALLER = $(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
 empty := 
 space := $(empty) $(empty)
-OSX_APP = Solaris-Qt.app
+OSX_APP = Transend-Qt.app
 OSX_VOLNAME = $(subst $(space),-,$(PACKAGE_NAME))
 OSX_DMG = $(OSX_VOLNAME).dmg
 OSX_BACKGROUND_SVG = background.svg
@@ -501,13 +501,13 @@ OSX_PACKAGING = $(OSX_DEPLOY_SCRIPT) $(OSX_FANCY_PLIST) $(OSX_INSTALLER_ICONS) \
   $(top_srcdir)/contrib/macdeploy/detached-sig-create.sh
 
 COVERAGE_INFO = baseline_filtered_combined.info baseline.info block_test.info \
-  leveldb_baseline.info test_solaris_filtered.info total_coverage.info \
+  leveldb_baseline.info test_transend_filtered.info total_coverage.info \
   baseline_filtered.info block_test_filtered.info \
-  leveldb_baseline_filtered.info test_solaris_coverage.info test_solaris.info
+  leveldb_baseline_filtered.info test_transend_coverage.info test_transend.info
 
 OSX_APP_BUILT = $(OSX_APP)/Contents/PkgInfo $(OSX_APP)/Contents/Resources/empty.lproj \
   $(OSX_APP)/Contents/Resources/bitcoin.icns $(OSX_APP)/Contents/Info.plist \
-  $(OSX_APP)/Contents/MacOS/Solaris-Qt $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings
+  $(OSX_APP)/Contents/MacOS/Transend-Qt $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings
 
 APP_DIST_DIR = $(top_builddir)/dist
 APP_DIST_EXTRAS = $(APP_DIST_DIR)/.background/$(OSX_BACKGROUND_IMAGE) $(APP_DIST_DIR)/.DS_Store $(APP_DIST_DIR)/Applications
@@ -1044,7 +1044,7 @@ $(OSX_APP)/Contents/Resources/bitcoin.icns: $(OSX_INSTALLER_ICONS)
 	$(MKDIR_P) $(@D)
 	$(INSTALL_DATA) $< $@
 
-$(OSX_APP)/Contents/MacOS/Solaris-Qt: $(BITCOIN_QT_BIN)
+$(OSX_APP)/Contents/MacOS/Transend-Qt: $(BITCOIN_QT_BIN)
 	$(MKDIR_P) $(@D)
 	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM)  $< $@
 
@@ -1071,7 +1071,7 @@ $(APP_DIST_DIR)/Applications:
 	@rm -f $@
 	@cd $(@D); $(LN_S) /Applications $(@F)
 
-$(APP_DIST_EXTRAS): $(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/Solaris-Qt
+$(APP_DIST_EXTRAS): $(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/Transend-Qt
 
 $(OSX_DMG): $(APP_DIST_EXTRAS)
 	$(GENISOIMAGE) -no-cache-inodes -D -l -probe -V "$(OSX_VOLNAME)" -no-pad -r -dir-mode 0755 -apple -o $@ dist
@@ -1085,14 +1085,14 @@ $(APP_DIST_DIR)/.background/$(OSX_BACKGROUND_IMAGE): $(OSX_BACKGROUND_IMAGE_DPIF
 $(APP_DIST_DIR)/.DS_Store: $(OSX_DSSTORE_GEN)
 	$(PYTHON) $< "$@" "$(OSX_VOLNAME)"
 
-$(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/Solaris-Qt: $(OSX_APP_BUILT) $(OSX_PACKAGING)
+$(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/Transend-Qt: $(OSX_APP_BUILT) $(OSX_PACKAGING)
 	INSTALLNAMETOOL=$(INSTALLNAMETOOL)  OTOOL=$(OTOOL) STRIP=$(STRIP) $(PYTHON) $(OSX_DEPLOY_SCRIPT) $(OSX_APP) -translations-dir=$(QT_TRANSLATION_DIR) -add-qt-tr $(OSX_QT_TRANSLATIONS) -verbose 2
 
 deploydir: $(APP_DIST_EXTRAS)
 
 #appbundle: $(OSX_APP_BUILT)
 #deploy: $(OSX_DMG)
-deploy: $(BITCOIN_WIN_INSTALLER)
+#deploy: $(BITCOIN_WIN_INSTALLER)
 
 $(BITCOIN_QT_BIN): FORCE
 	$(MAKE) -C src qt/$(@F)
@@ -1118,16 +1118,16 @@ $(BITCOIN_CLI_BIN): FORCE
 #baseline_filtered_combined.info: leveldb_baseline_filtered.info baseline_filtered.info
 #	$(LCOV) -a leveldb_baseline_filtered.info -a baseline_filtered.info -o $@
 
-#test_solaris.info: baseline_filtered_combined.info
+#test_transend.info: baseline_filtered_combined.info
 #	$(MAKE) -C src/ check
-#	$(LCOV) -c -d $(abs_builddir)/src -t test_solaris -o $@
+#	$(LCOV) -c -d $(abs_builddir)/src -t test_transend -o $@
 #	$(LCOV) -z -d $(abs_builddir)/src
 #	$(LCOV) -z -d $(abs_builddir)/src/leveldb
 
-#test_solaris_filtered.info: test_solaris.info
+#test_transend_filtered.info: test_transend.info
 #	$(LCOV) -r $< "/usr/include/*" -o $@
 
-#block_test.info: test_solaris_filtered.info
+#block_test.info: test_transend_filtered.info
 #	$(MKDIR_P) qa/tmp
 #	-@TIMEOUT=15 qa/pull-tester/run-bitcoind-for-test.sh $(JAVA) -jar $(JAVA_COMPARISON_TOOL) qa/tmp/compTool 0
 #	$(LCOV) -c -d $(abs_builddir)/src --t BitcoinJBlockTest -o $@
@@ -1137,13 +1137,13 @@ $(BITCOIN_CLI_BIN): FORCE
 #block_test_filtered.info: block_test.info
 #	$(LCOV) -r $< "/usr/include/*" -o $@
 
-#test_solaris_coverage.info: baseline_filtered_combined.info test_solaris_filtered.info
-#	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_solaris_filtered.info -o $@
+#test_transend_coverage.info: baseline_filtered_combined.info test_transend_filtered.info
+#	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_transend_filtered.info -o $@
 
-#total_coverage.info:  baseline_filtered_combined.info test_solaris_filtered.info block_test_filtered.info
-#	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_solaris_filtered.info -a block_test_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
+#total_coverage.info:  baseline_filtered_combined.info test_transend_filtered.info block_test_filtered.info
+#	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_transend_filtered.info -a block_test_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
 
-#test_solaris.coverage/.dirstamp:  test_solaris_coverage.info
+#test_transend.coverage/.dirstamp:  test_transend_coverage.info
 #	$(GENHTML) -s $< -o $(@D)
 #	@touch $@
 
@@ -1151,12 +1151,12 @@ $(BITCOIN_CLI_BIN): FORCE
 #	$(GENHTML) -s $< -o $(@D)
 #	@touch $@
 
-#cov: test_solaris.coverage/.dirstamp total.coverage/.dirstamp
+#cov: test_transend.coverage/.dirstamp total.coverage/.dirstamp
 
 .INTERMEDIATE: $(COVERAGE_INFO)
 
 clean-local:
-	rm -rf test_solaris.coverage/ total.coverage/ $(OSX_APP)
+	rm -rf test_transend.coverage/ total.coverage/ $(OSX_APP)
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

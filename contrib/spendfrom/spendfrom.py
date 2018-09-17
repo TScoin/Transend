@@ -35,9 +35,9 @@ def check_json_precision():
 def determine_db_dir():
     """Return the default location of the solaris data directory"""
     if platform.system() == "Darwin":
-        return os.path.expanduser("~/Library/Application Support/Solaris/")
+        return os.path.expanduser("~/Library/Application Support/Transend/")
     elif platform.system() == "Windows":
-        return os.path.join(os.environ['APPDATA'], "Solaris")
+        return os.path.join(os.environ['APPDATA'], "Transend")
     return os.path.expanduser("~/.solaris")
 
 def read_bitcoin_config(dbdir):
