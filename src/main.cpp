@@ -1035,7 +1035,7 @@ void FindMints(vector<CZerocoinMint> vMintsToFind, vector<CZerocoinMint>& vMints
 
         //The mint has been incorrectly labelled as spent in zerocoinDB and needs to be undone
         int nHeightTx = 0;
-        if (fSpent, nHeightTx)) {
+        if (fSpent, nHeightTx;) {
             LogPrintf("%s : cannot find block %s. Erasing coinspend from zerocoinDB.\n", __func__, hashBlockSpend.GetHex());
             zerocoinDB->EraseCoinSpend(mint.GetSerialNumber());
             mint.SetUsed(false);
@@ -1071,19 +1071,6 @@ void FindMints(vector<CZerocoinMint> vMintsToFind, vector<CZerocoinMint>& vMints
             CBlock block;
             if(!ReadBlockFromDisk(block, chainActive[i]))
                 continue;
-
-
-            // search the blocks mints to see if it contains the mint that is requesting meta data updates
-            for (CZerocoinMint mintBlockChain : vMints) {
-                for (CZerocoinMint mintMissing : vMissingMints) {
-                    if (mintMissing.GetValue() == mintBlockChain.GetValue()) {
-                        LogPrintf("%s FOUND %s in block %d\n", __func__, mintMissing.GetValue().GetHex(), i);
-                        mintMissing.SetHeight(i);
-                        mintMissing.SetTxHash(mintBlockChain.GetTxHash());
-                        vMintsToUpdate.push_back(mintMissing);
-                    }
-                }
-            }
         }
     }
 
