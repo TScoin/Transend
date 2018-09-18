@@ -7,10 +7,6 @@ Fast transactions featuring guaranteed zero confirmation transactions, we call i
 Decentralized blockchain voting providing for consensus based advancement of the current Masternode technology used to secure the network and provide the above features, each Masternode is secured with collateral of 5000 TSC
 <br/>
 <h3>Installation and compilation notes:</h3>
-To prevent compilation errors in Linux OS, please execute these commands first from root source folder:<br/>
-```sudo chmod +x autogen.sh
-sudo chmod +x share/genbuild.sh
-sudo chmod +x src/leveldb/build_detect_platform```
 
 After that you can use normal (usual) command pack for source compilation:<br/>
 ```./autogen.sh && ./configure --without-gui && make```
