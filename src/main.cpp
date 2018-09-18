@@ -1035,7 +1035,7 @@ void FindMints(vector<CZerocoinMint> vMintsToFind, vector<CZerocoinMint>& vMints
 
         //The mint has been incorrectly labelled as spent in zerocoinDB and needs to be undone
         int nHeightTx = 0;
-        if (fSpent && !IsSerialInBlockchain(mint.GetSerialNumber(), nHeightTx)) {
+        if (fSpent, nHeightTx)) {
             LogPrintf("%s : cannot find block %s. Erasing coinspend from zerocoinDB.\n", __func__, hashBlockSpend.GetHex());
             zerocoinDB->EraseCoinSpend(mint.GetSerialNumber());
             mint.SetUsed(false);
@@ -1072,9 +1072,6 @@ void FindMints(vector<CZerocoinMint> vMintsToFind, vector<CZerocoinMint>& vMints
             if(!ReadBlockFromDisk(block, chainActive[i]))
                 continue;
 
-            list<CZerocoinMint> vMints;
-            if(!BlockToZerocoinMintList(block, vMints, true))
-                continue;
 
             // search the blocks mints to see if it contains the mint that is requesting meta data updates
             for (CZerocoinMint mintBlockChain : vMints) {
@@ -1255,9 +1252,6 @@ bool BlockToZerocoinMintList(const CBlock& block, std::list<CZerocoinMint>& vMin
             if(!TxOutToPublicCoin(txOut, pubCoin, state))
                 return false;
 
-            CZerocoinMint mint = CZerocoinMint(pubCoin.getDenomination(), pubCoin.getValue(), 0, 0, false);
-            mint.SetTxHash(tx.GetHash());
-            vMints.push_back(mint);
         }
     }
 
