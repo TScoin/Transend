@@ -1326,7 +1326,6 @@ bool IsZerocoinSpendUnknown(CoinSpend coinSpend, uint256 hashTx, CValidationStat
     return true;
 }
 
-bool CheckZerocoinSpend(const CTransaction tx, bool fVerifySignature, CValidationState& state)
 {
     //max needed non-mint outputs should be 2 - one for redemption address and a possible 2nd for change
     if (tx.vout.size() > 2) {
@@ -1470,11 +1469,6 @@ bool CheckTransaction(const CTransaction& tx, bool fZerocoinActive, bool fReject
                                      error("CheckTransaction() : zerocoinspend contains inputs that are not zerocoins"));
             }
 
-            // Do not require signature verification if this is initial sync and a block over 24 hours old
-            bool fVerifySignature = !IsInitialBlockDownload() && (GetTime() - chainActive.Tip()->GetBlockTime() < (60*60*24));
-            if (!CheckZerocoinSpend(tx, fVerifySignature, state))
-                return state.DoS(100, error("CheckTransaction() : invalid zerocoin spend"));
-        }
     }
 
     // Check for duplicate inputs
