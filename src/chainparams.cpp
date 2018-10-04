@@ -46,7 +46,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
 	(0, uint256("0x000009743650859b7527de68e4536b73cdde92e3a23f3c131d4bd80c5c9b27e2"));
-	
+
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1518182079, // * UNIX timestamp of last checkpoint block
@@ -101,22 +101,23 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 3 * 60; // Transend: 1 minute
         nTargetSpacing = 3 * 60;  // Transend: 1 minute
-        nMaturity = 101;
-		nMaxMoneyOut = 10000000000 * COIN;
+        nMaturity = 51;
+		    nMaxMoneyOut = 10000000000 * COIN;
         /** Height or Time Based Activations **/
         nLastPOWBlock = 963334;
         nModifierUpdateBlock = 1;
-		
+
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
         nZerocoinStartTime = 1586328884; // April 8, 2020 00:00:00 GMT
-		nZerocoinStartHeight = 1016969;
-		
-		const char* pszTimestamp = "NY Times 2018/02/09 China Suffers as the World Follows Wall Street's Slump";
-		
+		    nZerocoinStartHeight = 1016969;
+        nEnforceNewSporkKey = 1525158000; //!> Sporks signed after (GMT): Saturday, December 1, 2018 0:00:00 AM GMT must use the new spork key
+        nRejectOldSporkKey = 1544832000; //!> Fully reject old spork key after (GMT): Saturday, 15 December 2018, 0:00:00 AM GMT
+	      const char* pszTimestamp = "NY Times 2018/02/09 China Suffers as the World Follows Wall Street's Slump";
+
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
-				
+
         txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = 0 * COIN;
         txNew.vout[0].scriptPubKey = CScript() << ParseHex("045da9271f5d9df405d9e83c7c7e62e9c831cc85c51ffaa6b515c4f9c845dec4bf256460003f26ba9d394a17cb57e6759fe231eca75b801c20bccd19cbe4b7942d") << OP_CHECKSIG;
@@ -128,10 +129,10 @@ public:
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 2243049;
         hashGenesisBlock = genesis.GetHash();
-		
+
         assert(hashGenesisBlock == uint256("0x000009743650859b7527de68e4536b73cdde92e3a23f3c131d4bd80c5c9b27e2"));
         assert(genesis.hashMerkleRoot == uint256("0x84ee6061d0b556450b1db84594a343a33b0b78762f9926396e3bd5e637cc4adf"));
-		
+
 	vSeeds.push_back(CDNSSeedData("seed1.transendcoin.com", "seed1.transendcoin.com"));
         vSeeds.push_back(CDNSSeedData("seed2.transendcoin.com", "seed2.transendcoin.com"));
         vSeeds.push_back(CDNSSeedData("seed3.transendcoin.com", "seed3.transendcoin.com"));
@@ -139,7 +140,7 @@ public:
         vSeeds.push_back(CDNSSeedData("seed5.transendcoin.com", "seed5.transendcoin.com"));
         vSeeds.push_back(CDNSSeedData("seed6.transendcoin.com", "seed6.transendcoin.com"));
         vSeeds.push_back(CDNSSeedData("seed7.transendcoin.com", "seed7.transendcoin.com"));
-        		
+
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 65);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 212);
@@ -158,8 +159,9 @@ public:
         fTestnetToBeDeprecatedFieldRPC = false;
         fHeadersFirstSyncingActive = false;
         nPoolMaxTransactions = 3;
-        strSporkKey = "045da9271f5d9df405d9e83c7c7e62e9c831cc85c51ffaa6b515c4f9c845dec4bf256460003f26ba9d394a17cb57e6759fe231eca75b801c20bccd19cbe4b7942d";
-        
+        strSporkKey = "043a8ec55000ac42b2cef2be6d857be23c5a004ebe65b4672c2095b000138b643f8b8b643a5237e23557b4d2c7c649ab421bb20cf1ebd92d81e178a68d0cf16e6e";
+        strSporkKeyOld = "045da9271f5d9df405d9e83c7c7e62e9c831cc85c51ffaa6b515c4f9c845dec4bf256460003f26ba9d394a17cb57e6759fe231eca75b801c20bccd19cbe4b7942d";
+
         strObfuscationPoolDummyAddress = "TTNdqxPJtiiAdu5xGfm5paDVpruBfuJvcY";
         nStartMasternodePayments = 1521073200; //Thu, 15 Mar 2018 00:20:00 GMT
 
@@ -216,10 +218,6 @@ public:
         //assert(hashGenesisBlock == uint256("0x0000041e482b9b9691d98eefb48473405c0b8ec31b76df3797c74a78680ef818"));
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "transend-testnet.seed.fuzzbawls.pw"));
-        vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "transend-testnet.seed2.fuzzbawls.pw"));
-        vSeeds.push_back(CDNSSeedData("s3v3nh4cks.ddns.net", "s3v3nh4cks.ddns.net"));
-        vSeeds.push_back(CDNSSeedData("88.198.192.110", "88.198.192.110"));
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet transend addresses start with 'x' or 'y'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet transend script addresses start with '8' or '9'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
@@ -241,7 +239,7 @@ public:
         strSporkKey = "04348C2F50F90267E64FACC65BFDC9D0EB147D090872FB97ABAE92E9A36E6CA60983E28E741F8E7277B11A7479B626AC115BA31463AC48178A5075C5A9319D4A38";
         strObfuscationPoolDummyAddress = "y57cqfGRkekRyDRNeJiLtYVEbvhXrNbmox";
         nStartMasternodePayments = 1420837558; //Fri, 09 Jan 2015 21:05:58 GMT
-        nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short 
+        nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
                                        // here because we only have a 8 block finalization window on testnet
     }
     const Checkpoints::CCheckpointData& Checkpoints() const
